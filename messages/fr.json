@@ -81,7 +81,8 @@
     "shareCta": "Partager",
     "copyCta": "Copier le lien",
     "copyDone": "Lien copié",
-    "shareText": "Je viens de signer pour la paix sur 6billionforpeace.com — unir 6 milliards de voix autour d'un seul objectif : la paix dans le monde."
+    "shareText": "Je viens de signer pour la paix sur 6billionforpeace.com — unir 6 milliards de voix autour d'un seul objectif : la paix dans le monde.",
+    "errorNoDigits": "Veuillez saisir uniquement votre nom (sans numéros de document)."
   },
   "counter": {
     "label": "signatures de",

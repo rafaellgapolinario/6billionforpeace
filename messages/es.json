@@ -81,7 +81,8 @@
     "shareCta": "Compartir",
     "copyCta": "Copiar enlace",
     "copyDone": "Enlace copiado",
-    "shareText": "Acabo de firmar por la paz en 6billionforpeace.com — unir 6 mil millones de voces con un único objetivo: la paz en el mundo."
+    "shareText": "Acabo de firmar por la paz en 6billionforpeace.com — unir 6 mil millones de voces con un único objetivo: la paz en el mundo.",
+    "errorNoDigits": "Introduce solo tu nombre (sin números de documento)."
   },
   "counter": {
     "label": "firmas de",

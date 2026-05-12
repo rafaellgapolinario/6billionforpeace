@@ -17,6 +17,24 @@ const Body = z.object({
   turnstileToken: z.string().optional(),
 });
 
+/**
+ * Strip CPF/CNPJ/RG/phone-like digit runs that browser autofill (notably Chrome
+ * in Brazil) sometimes glues to the name field. We do not want to store national
+ * ID numbers — they violate LGPD purpose-limitation and the project promise.
+ */
+function sanitizeName(raw: string): string {
+  return raw
+    .replace(/[\d.\-/]{6,}/g, ' ')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
+}
+
+function sanitizeCity(raw: string | null): string | null {
+  if (!raw) return null;
+  const cleaned = raw.replace(/[\d.\-/]{6,}/g, ' ').replace(/\s{2,}/g, ' ').trim();
+  return cleaned || null;
+}
+
 const COUNTRY_SET = new Set(countryCodes);
 const LOCALE_SET = new Set<string>(locales as readonly string[]);
 
@@ -73,12 +91,17 @@ export async function POST(req: Request) {
     ? crypto.createHash('sha256').update(`${ip}|${salt}`).digest('hex')
     : null;
 
+  const cleanedName = sanitizeName(parsed.name);
+  if (cleanedName.length < 2) {
+    return NextResponse.json({ error: 'invalid_name' }, { status: 400 });
+  }
+
   const supabase = createSupabaseAdminClient();
   const { error } = await supabase.from('signatures').insert({
-    name: parsed.name,
+    name: cleanedName,
     email: parsed.email.toLowerCase(),
     country,
-    city: parsed.city || null,
+    city: sanitizeCity(parsed.city || null),
     locale,
     ip_country: ipCountry?.toUpperCase() ?? null,
     ip_hash: ipHash,

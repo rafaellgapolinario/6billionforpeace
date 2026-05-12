@@ -81,7 +81,8 @@
     "shareCta": "Condividi",
     "copyCta": "Copia link",
     "copyDone": "Link copiato",
-    "shareText": "Ho appena firmato per la pace su 6billionforpeace.com — unire 6 miliardi di voci attorno a un unico obiettivo: la pace nel mondo."
+    "shareText": "Ho appena firmato per la pace su 6billionforpeace.com — unire 6 miliardi di voci attorno a un unico obiettivo: la pace nel mondo.",
+    "errorNoDigits": "Inserisci solo il tuo nome (senza numeri di documento)."
   },
   "counter": {
     "label": "firme da",

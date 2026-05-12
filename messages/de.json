@@ -81,7 +81,8 @@
     "shareCta": "Teilen",
     "copyCta": "Link kopieren",
     "copyDone": "Link kopiert",
-    "shareText": "Ich habe gerade für den Frieden auf 6billionforpeace.com unterschrieben — 6 Milliarden Stimmen für ein einziges Ziel zu vereinen: Frieden in der Welt."
+    "shareText": "Ich habe gerade für den Frieden auf 6billionforpeace.com unterschrieben — 6 Milliarden Stimmen für ein einziges Ziel zu vereinen: Frieden in der Welt.",
+    "errorNoDigits": "Bitte nur deinen Namen eingeben (keine Ausweisnummern)."
   },
   "counter": {
     "label": "Unterschriften aus",

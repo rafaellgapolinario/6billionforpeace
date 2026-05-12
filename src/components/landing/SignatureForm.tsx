@@ -47,7 +47,12 @@ export function SignatureForm({
   const locale = useLocale();
 
   const schema = z.object({
-    name: z.string().trim().min(2, t('errorRequired')).max(120),
+    name: z
+      .string()
+      .trim()
+      .min(2, t('errorRequired'))
+      .max(120)
+      .refine((v) => !/\d{6,}/.test(v), { message: t('errorNoDigits') }),
     email: z.string().email(t('errorEmail')),
     country: z.string().length(2, t('errorRequired')),
     city: z.string().trim().max(120).optional().or(z.literal('')),
@@ -177,7 +182,8 @@ export function SignatureForm({
         <Field label={t('name')} error={errors.name?.message}>
           <input
             type="text"
-            autoComplete="name"
+            autoComplete="given-name additional-name family-name"
+            data-lpignore="true"
             placeholder={t('namePlaceholder')}
             {...register('name')}
             className={inputCls}

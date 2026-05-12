@@ -81,7 +81,8 @@
     "shareCta": "Compartilhar",
     "copyCta": "Copiar link",
     "copyDone": "Link copiado",
-    "shareText": "Acabei de assinar pela paz em 6billionforpeace.com — unindo 6 bilhões de vozes em torno de um único objetivo: a paz no mundo."
+    "shareText": "Acabei de assinar pela paz em 6billionforpeace.com — unindo 6 bilhões de vozes em torno de um único objetivo: a paz no mundo.",
+    "errorNoDigits": "Informe apenas seu nome (sem CPF ou números de documento)."
   },
   "counter": {
     "label": "assinaturas de",
