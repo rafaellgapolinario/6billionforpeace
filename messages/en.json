@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "title": "6billionforpeace — Time to unite 6 billion voices for peace",
+    "description": "A voluntary, independent global movement for world peace. Sign and add your voice to 6 billion others. No politics. No religion. No commerce. Only peace."
+  },
+  "header": {
+    "nav": {
+      "home": "Home",
+      "solution": "The solution",
+      "principles": "Principles",
+      "participate": "Participate",
+      "transparency": "Transparency"
+    },
+    "languagePicker": "Choose language",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu"
+  },
+  "hero": {
+    "tagline": "A movement for world peace"
+  },
+  "solution": {
+    "title": "The Solution",
+    "p1": "Throughout human history, we have lived in war.",
+    "p2": "Perhaps this made sense in the past. Today, it no longer does.",
+    "p3": "We are tired of the pain, suffering, and destruction caused by war.",
+    "p4": "The idea that violence is necessary to achieve peace no longer convinces us.",
+    "p5": "We cannot continue waiting for politics, governments, religions, corporations, or institutions.",
+    "p6": "It is time to unite 6 billion voices with a single goal: peace in the world.",
+    "cta": "Transparency"
+  },
+  "call": {
+    "p1": "This will be the greatest peace movement the world has ever known.",
+    "p2": "Peace will no longer be a speech, a promise, or a distant hope.",
+    "p3": "Peace is the survival of humanity.",
+    "cta": "Participate"
+  },
+  "principles": {
+    "title": "The Principles",
+    "noRevolutions": "No revolutions.",
+    "noIdeologies": "No ideologies.",
+    "withoutWar": "Without War.",
+    "sovereignty": "No interference in the internal laws or sovereignty of any nation.",
+    "requirementTitle": "There is only one requirement:",
+    "requirementBody": "the end of war.",
+    "maturity": "Humanity has reached sufficient maturity to resolve conflict without destroying itself. We know the horror of war. Now, we choose differently."
+  },
+  "volunteers": {
+    "title": "Peace Volunteers",
+    "body": "Join our community of dedicated volunteers making a real difference in the lives of people around the world.",
+    "cta": "Get involved"
+  },
+  "everest": {
+    "body": "On the summit of Mount Everest, a white flag bearing the heart of peace will be raised — a sign that humanity has chosen to survive.",
+    "highlight": "And live in peace.",
+    "cta": "Participate"
+  },
+  "form": {
+    "title": "Sign for peace",
+    "subtitle": "Add your voice. Free, anonymous to the public, secure.",
+    "name": "Full name",
+    "namePlaceholder": "Your name",
+    "email": "E-mail",
+    "emailPlaceholder": "you@example.com",
+    "country": "Country",
+    "countryPlaceholder": "Select your country",
+    "city": "City (optional)",
+    "cityPlaceholder": "Your city",
+    "consent": "I agree with the collection of my data under the terms of the LGPD/GDPR privacy policy.",
+    "submit": "Sign for peace",
+    "submitting": "Signing…",
+    "successTitle": "Thank you for your voice.",
+    "successBody": "Your signature has been added. Share the movement.",
+    "errorGeneric": "Something went wrong. Please try again.",
+    "errorDuplicate": "This e-mail has already signed. Thank you.",
+    "errorCaptcha": "Captcha verification failed. Please try again.",
+    "errorRequired": "This field is required.",
+    "errorEmail": "Please provide a valid e-mail.",
+    "share": "Share"
+  },
+  "counter": {
+    "label": "signatures from",
+    "countries": "{count, plural, one {# country} other {# countries}}",
+    "loading": "Loading counter…"
+  },
+  "map": {
+    "title": "Voices around the world",
+    "tooltip": "{country}: {count, plural, one {# signature} other {# signatures}}",
+    "loading": "Loading map…"
+  },
+  "footer": {
+    "mission": "This is a voluntary and independent project, with no political, religious, or commercial ties. Its sole purpose is peace.",
+    "linksTitle": "Quick links",
+    "home": "Home",
+    "participate": "Participate",
+    "transparency": "Transparency",
+    "privacy": "Privacy policy",
+    "terms": "Terms",
+    "language": "Language"
+  },
+  "cookie": {
+    "title": "We respect your privacy",
+    "body": "We use only the essential data needed to register your signature, in compliance with LGPD/GDPR. We do not use marketing trackers.",
+    "accept": "Accept",
+    "reject": "Reject",
+    "privacy": "Read the privacy policy"
+  },
+  "errors": {
+    "rateLimit": "Too many requests. Please wait a moment and try again.",
+    "network": "Network error. Please check your connection."
+  }
+}

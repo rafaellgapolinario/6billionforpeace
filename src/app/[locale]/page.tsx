@@ -1,0 +1,70 @@
+import { headers } from 'next/headers';
+import { setRequestLocale } from 'next-intl/server';
+import { hasLocale } from 'next-intl';
+import { routing } from '@/i18n/routing';
+import { createSupabaseServerClient } from '@/lib/supabase/server';
+
+import { Header } from '@/components/landing/Header';
+import { HeroHeart } from '@/components/landing/HeroHeart';
+import { SolutionSection } from '@/components/landing/SolutionSection';
+import { CallSection } from '@/components/landing/CallSection';
+import { PrinciplesSection } from '@/components/landing/PrinciplesSection';
+import { VolunteersSection } from '@/components/landing/VolunteersSection';
+import { SignatureForm } from '@/components/landing/SignatureForm';
+import { LiveCounter } from '@/components/landing/LiveCounter';
+import { WorldMapPlaceholder } from '@/components/landing/WorldMapPlaceholder';
+import { EverestSection } from '@/components/landing/EverestSection';
+import { Footer } from '@/components/landing/Footer';
+import { CookieBanner } from '@/components/landing/CookieBanner';
+
+export default async function Home(props: { params: Promise<{ locale: string }> }) {
+  const { locale } = await props.params;
+  if (!hasLocale(routing.locales, locale)) return null;
+  setRequestLocale(locale);
+
+  const h = await headers();
+  const ipCountry =
+    h.get('x-vercel-ip-country') ??
+    h.get('cf-ipcountry') ??
+    '';
+
+  let initialStats = undefined;
+  try {
+    const supabase = await createSupabaseServerClient();
+    const { data } = await supabase
+      .from('stats')
+      .select('total_signatures, by_country, updated_at')
+      .eq('id', 1)
+      .single();
+    if (data) initialStats = data;
+  } catch {
+    // first deploy: stats might not be reachable yet
+  }
+
+  return (
+    <>
+      <Header />
+      <main>
+        <HeroHeart />
+        <SolutionSection />
+        <CallSection />
+        <PrinciplesSection />
+        <VolunteersSection />
+
+        <section id="sign" className="bg-white px-6 py-20">
+          <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1fr_1fr] lg:items-start">
+            <div className="space-y-8">
+              <LiveCounter initialStats={initialStats} />
+              <WorldMapPlaceholder />
+            </div>
+            <SignatureForm initialCountry={ipCountry || undefined} />
+          </div>
+        </section>
+
+        <EverestSection />
+      </main>
+      <Footer />
+      <CookieBanner />
+    </>
+  );
+}

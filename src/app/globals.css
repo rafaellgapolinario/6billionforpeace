@@ -1,26 +1,77 @@
 @import "tailwindcss";
 
 :root {
+  /* === Brand palette — 6billionforpeace === */
+  --navy-950: #051A2E;
+  --navy-900: #0A2540;
+  --navy-800: #0F3057;
+  --navy-700: #14406E;
+  --cyan-500: #00BFFF;
+  --cyan-600: #0098D8;
+  --cyan-400: #4DD3FF;
+  --cyan-300: #80E0FF;
+  --foreground: var(--navy-900);
   --background: #ffffff;
-  --foreground: #171717;
+  --muted: #5A6B7E;
+  --surface: #F4F8FB;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-navy-50:  #E8EEF5;
+  --color-navy-100: #C9D6E5;
+  --color-navy-200: #95B0C9;
+  --color-navy-300: #6189AC;
+  --color-navy-400: #3A6890;
+  --color-navy-500: #1F4F7A;
+  --color-navy-600: #14406E;
+  --color-navy-700: #0F3057;
+  --color-navy-800: #0A2540;
+  --color-navy-900: #051A2E;
+  --color-cyan-300: #80E0FF;
+  --color-cyan-400: #4DD3FF;
+  --color-cyan-500: #00BFFF;
+  --color-cyan-600: #0098D8;
+  --color-cyan-700: #006FA0;
+  --color-muted: var(--muted);
+  --color-surface: var(--surface);
+  --font-script: var(--font-script);
+  --font-sans:   var(--font-sans);
+  --font-arabic: var(--font-arabic);
+  --font-zh:     var(--font-zh);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+html, body { height: 100%; }
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
+html[lang="ar"] body { font-family: var(--font-arabic), var(--font-sans), system-ui, sans-serif; }
+html[lang="zh"] body { font-family: var(--font-zh), var(--font-sans), system-ui, sans-serif; }
+
+/* ---------- heart pulse ---------- */
+@keyframes heart-pulse {
+  0%, 100% { transform: scale(1);   filter: drop-shadow(0 0 0px rgba(255,255,255,.0)); }
+  50%      { transform: scale(1.06); filter: drop-shadow(0 0 24px rgba(255,255,255,.55)); }
+}
+.heart-pulse { animation: heart-pulse 2.6s ease-in-out infinite; transform-origin: center; }
+
+/* ---------- pin pulse (mapa) ---------- */
+@keyframes pin-pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(0,191,255,.55); }
+  70%  { box-shadow: 0 0 0 18px rgba(0,191,255,0); }
+  100% { box-shadow: 0 0 0 0 rgba(0,191,255,0); }
+}
+.pin-pulse { animation: pin-pulse 1.8s ease-out 2; }
+
+/* ---------- counter flip ---------- */
+@keyframes count-bump {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-2px); color: var(--cyan-500); }
+  100% { transform: translateY(0); }
+}
+.count-bump { animation: count-bump .45s ease-out; }

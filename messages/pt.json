@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "title": "6billionforpeace — É hora de unir 6 bilhões de vozes pela paz",
+    "description": "Um movimento global, voluntário e independente pela paz mundial. Assine e some sua voz a outras 6 bilhões. Sem política. Sem religião. Sem comércio. Apenas paz."
+  },
+  "header": {
+    "nav": {
+      "home": "Início",
+      "solution": "A solução",
+      "principles": "Princípios",
+      "participate": "Participar",
+      "transparency": "Transparência"
+    },
+    "languagePicker": "Escolher idioma",
+    "menuOpen": "Abrir menu",
+    "menuClose": "Fechar menu"
+  },
+  "hero": {
+    "tagline": "Um movimento pela paz mundial"
+  },
+  "solution": {
+    "title": "A Solução",
+    "p1": "Ao longo da história humana, vivemos em guerra.",
+    "p2": "Talvez isso fizesse sentido no passado. Hoje, já não faz.",
+    "p3": "Estamos cansados da dor, do sofrimento e da destruição causados pela guerra.",
+    "p4": "A ideia de que a violência é necessária para alcançar a paz não nos convence mais.",
+    "p5": "Não podemos continuar esperando pela política, pelos governos, pelas religiões, pelas corporações ou pelas instituições.",
+    "p6": "É hora de unir 6 bilhões de vozes em torno de um único objetivo: a paz no mundo.",
+    "cta": "Transparência"
+  },
+  "call": {
+    "p1": "Este será o maior movimento pela paz que o mundo já conheceu.",
+    "p2": "A paz deixará de ser um discurso, uma promessa ou uma esperança distante.",
+    "p3": "A paz é a sobrevivência da humanidade.",
+    "cta": "Participar"
+  },
+  "principles": {
+    "title": "Os Princípios",
+    "noRevolutions": "Sem revoluções.",
+    "noIdeologies": "Sem ideologias.",
+    "withoutWar": "Sem guerra.",
+    "sovereignty": "Sem interferência nas leis internas ou na soberania de qualquer nação.",
+    "requirementTitle": "Existe apenas uma exigência:",
+    "requirementBody": "o fim da guerra.",
+    "maturity": "A humanidade atingiu maturidade suficiente para resolver conflitos sem se destruir. Conhecemos o horror da guerra. Agora, escolhemos diferente."
+  },
+  "volunteers": {
+    "title": "Voluntários pela paz",
+    "body": "Junte-se à nossa comunidade de voluntários dedicados, fazendo a diferença real na vida das pessoas pelo mundo.",
+    "cta": "Quero participar"
+  },
+  "everest": {
+    "body": "No topo do Monte Everest, uma bandeira branca com o coração da paz será erguida — um sinal de que a humanidade escolheu sobreviver.",
+    "highlight": "E viver em paz.",
+    "cta": "Participar"
+  },
+  "form": {
+    "title": "Assine pela paz",
+    "subtitle": "Acrescente sua voz. Grátis, anônimo ao público, seguro.",
+    "name": "Nome completo",
+    "namePlaceholder": "Seu nome",
+    "email": "E-mail",
+    "emailPlaceholder": "voce@exemplo.com",
+    "country": "País",
+    "countryPlaceholder": "Selecione seu país",
+    "city": "Cidade (opcional)",
+    "cityPlaceholder": "Sua cidade",
+    "consent": "Concordo com a coleta dos meus dados nos termos da política de privacidade (LGPD/GDPR).",
+    "submit": "Assinar pela paz",
+    "submitting": "Assinando…",
+    "successTitle": "Obrigado pela sua voz.",
+    "successBody": "Sua assinatura foi registrada. Compartilhe o movimento.",
+    "errorGeneric": "Algo deu errado. Tente novamente.",
+    "errorDuplicate": "Este e-mail já assinou. Obrigado.",
+    "errorCaptcha": "Falha na verificação anti-bot. Tente novamente.",
+    "errorRequired": "Este campo é obrigatório.",
+    "errorEmail": "Informe um e-mail válido.",
+    "share": "Compartilhar"
+  },
+  "counter": {
+    "label": "assinaturas de",
+    "countries": "{count, plural, one {# país} other {# países}}",
+    "loading": "Carregando contador…"
+  },
+  "map": {
+    "title": "Vozes ao redor do mundo",
+    "tooltip": "{country}: {count, plural, one {# assinatura} other {# assinaturas}}",
+    "loading": "Carregando mapa…"
+  },
+  "footer": {
+    "mission": "Este é um projeto voluntário e independente, sem vínculos políticos, religiosos ou comerciais. Seu único propósito é a paz.",
+    "linksTitle": "Links rápidos",
+    "home": "Início",
+    "participate": "Participar",
+    "transparency": "Transparência",
+    "privacy": "Política de privacidade",
+    "terms": "Termos",
+    "language": "Idioma"
+  },
+  "cookie": {
+    "title": "Respeitamos sua privacidade",
+    "body": "Usamos apenas os dados essenciais para registrar sua assinatura, em conformidade com LGPD/GDPR. Não usamos rastreadores de marketing.",
+    "accept": "Aceitar",
+    "reject": "Recusar",
+    "privacy": "Ler a política de privacidade"
+  },
+  "errors": {
+    "rateLimit": "Muitas tentativas. Aguarde um momento e tente novamente.",
+    "network": "Erro de rede. Verifique sua conexão."
+  }
+}

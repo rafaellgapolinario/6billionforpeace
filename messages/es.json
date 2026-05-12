@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "title": "6billionforpeace — Es hora de unir 6 mil millones de voces por la paz",
+    "description": "Un movimiento global, voluntario e independiente por la paz mundial. Firma y suma tu voz a otras 6 mil millones. Sin política. Sin religión. Sin comercio. Solo paz."
+  },
+  "header": {
+    "nav": {
+      "home": "Inicio",
+      "solution": "La solución",
+      "principles": "Principios",
+      "participate": "Participar",
+      "transparency": "Transparencia"
+    },
+    "languagePicker": "Elegir idioma",
+    "menuOpen": "Abrir menú",
+    "menuClose": "Cerrar menú"
+  },
+  "hero": {
+    "tagline": "Un movimiento por la paz mundial"
+  },
+  "solution": {
+    "title": "La Solución",
+    "p1": "A lo largo de la historia humana, hemos vivido en guerra.",
+    "p2": "Quizás tuvo sentido en el pasado. Hoy ya no.",
+    "p3": "Estamos cansados del dolor, el sufrimiento y la destrucción que causa la guerra.",
+    "p4": "La idea de que la violencia es necesaria para lograr la paz ya no nos convence.",
+    "p5": "No podemos seguir esperando a la política, los gobiernos, las religiones, las corporaciones o las instituciones.",
+    "p6": "Es hora de unir 6 mil millones de voces con un único objetivo: la paz en el mundo.",
+    "cta": "Transparencia"
+  },
+  "call": {
+    "p1": "Este será el mayor movimiento por la paz que el mundo haya conocido.",
+    "p2": "La paz ya no será un discurso, una promesa o una esperanza lejana.",
+    "p3": "La paz es la supervivencia de la humanidad.",
+    "cta": "Participar"
+  },
+  "principles": {
+    "title": "Los Principios",
+    "noRevolutions": "Sin revoluciones.",
+    "noIdeologies": "Sin ideologías.",
+    "withoutWar": "Sin guerra.",
+    "sovereignty": "Sin interferencia en las leyes internas o la soberanía de ninguna nación.",
+    "requirementTitle": "Solo existe una exigencia:",
+    "requirementBody": "el fin de la guerra.",
+    "maturity": "La humanidad ha alcanzado la madurez suficiente para resolver conflictos sin destruirse. Conocemos el horror de la guerra. Ahora elegimos diferente."
+  },
+  "volunteers": {
+    "title": "Voluntarios por la paz",
+    "body": "Únete a nuestra comunidad de voluntarios dedicados, marcando una diferencia real en la vida de las personas en el mundo.",
+    "cta": "Quiero participar"
+  },
+  "everest": {
+    "body": "En la cima del Monte Everest, se izará una bandera blanca con el corazón de la paz — una señal de que la humanidad ha elegido sobrevivir.",
+    "highlight": "Y vivir en paz.",
+    "cta": "Participar"
+  },
+  "form": {
+    "title": "Firma por la paz",
+    "subtitle": "Suma tu voz. Gratis, anónima al público, segura.",
+    "name": "Nombre completo",
+    "namePlaceholder": "Tu nombre",
+    "email": "Correo electrónico",
+    "emailPlaceholder": "tu@ejemplo.com",
+    "country": "País",
+    "countryPlaceholder": "Selecciona tu país",
+    "city": "Ciudad (opcional)",
+    "cityPlaceholder": "Tu ciudad",
+    "consent": "Acepto la recolección de mis datos según la política de privacidad (LGPD/GDPR).",
+    "submit": "Firmar por la paz",
+    "submitting": "Firmando…",
+    "successTitle": "Gracias por tu voz.",
+    "successBody": "Tu firma ha sido registrada. Comparte el movimiento.",
+    "errorGeneric": "Algo salió mal. Inténtalo de nuevo.",
+    "errorDuplicate": "Este correo ya ha firmado. Gracias.",
+    "errorCaptcha": "Falló la verificación anti-bot. Inténtalo de nuevo.",
+    "errorRequired": "Este campo es obligatorio.",
+    "errorEmail": "Introduce un correo válido.",
+    "share": "Compartir"
+  },
+  "counter": {
+    "label": "firmas de",
+    "countries": "{count, plural, one {# país} other {# países}}",
+    "loading": "Cargando contador…"
+  },
+  "map": {
+    "title": "Voces alrededor del mundo",
+    "tooltip": "{country}: {count, plural, one {# firma} other {# firmas}}",
+    "loading": "Cargando mapa…"
+  },
+  "footer": {
+    "mission": "Este es un proyecto voluntario e independiente, sin vínculos políticos, religiosos o comerciales. Su único propósito es la paz.",
+    "linksTitle": "Enlaces rápidos",
+    "home": "Inicio",
+    "participate": "Participar",
+    "transparency": "Transparencia",
+    "privacy": "Política de privacidad",
+    "terms": "Términos",
+    "language": "Idioma"
+  },
+  "cookie": {
+    "title": "Respetamos tu privacidad",
+    "body": "Usamos solo los datos esenciales para registrar tu firma, conforme LGPD/GDPR. No usamos rastreadores de marketing.",
+    "accept": "Aceptar",
+    "reject": "Rechazar",
+    "privacy": "Leer la política de privacidad"
+  },
+  "errors": {
+    "rateLimit": "Demasiadas solicitudes. Espera un momento e inténtalo de nuevo.",
+    "network": "Error de red. Verifica tu conexión."
+  }
+}

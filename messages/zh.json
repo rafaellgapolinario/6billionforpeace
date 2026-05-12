@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "title": "6billionforpeace — 是时候团结60亿人的声音,共同追求和平",
+    "description": "一场全球性、自愿且独立的世界和平运动。签名,让你的声音与另外60亿人汇聚在一起。无政治。无宗教。无商业。只有和平。"
+  },
+  "header": {
+    "nav": {
+      "home": "首页",
+      "solution": "解决方案",
+      "principles": "原则",
+      "participate": "参与",
+      "transparency": "透明度"
+    },
+    "languagePicker": "选择语言",
+    "menuOpen": "打开菜单",
+    "menuClose": "关闭菜单"
+  },
+  "hero": {
+    "tagline": "一场为世界和平的运动"
+  },
+  "solution": {
+    "title": "解决方案",
+    "p1": "纵观人类历史,我们一直生活在战争中。",
+    "p2": "也许过去这有它的道理。今天,已经没有了。",
+    "p3": "我们厌倦了战争带来的痛苦、苦难和破坏。",
+    "p4": "为了实现和平必须使用暴力的观念,已经无法说服我们了。",
+    "p5": "我们不能再继续等待政治、政府、宗教、企业或机构。",
+    "p6": "是时候将60亿人的声音团结起来,只为一个目标:世界和平。",
+    "cta": "透明度"
+  },
+  "call": {
+    "p1": "这将是世界上最伟大的和平运动。",
+    "p2": "和平将不再是一场演讲、一个承诺或一种遥远的希望。",
+    "p3": "和平就是人类的生存。",
+    "cta": "参与"
+  },
+  "principles": {
+    "title": "原则",
+    "noRevolutions": "不要革命。",
+    "noIdeologies": "不要意识形态。",
+    "withoutWar": "没有战争。",
+    "sovereignty": "不干涉任何国家的内部法律或主权。",
+    "requirementTitle": "只有一个要求:",
+    "requirementBody": "结束战争。",
+    "maturity": "人类已经达到了足够的成熟度,可以在不自我毁灭的情况下解决冲突。我们了解战争的恐怖。现在,我们做出不同的选择。"
+  },
+  "volunteers": {
+    "title": "和平志愿者",
+    "body": "加入我们专注的志愿者社区,为世界各地人们的生活带来真正的改变。",
+    "cta": "我要参与"
+  },
+  "everest": {
+    "body": "在珠穆朗玛峰之巅,一面带有和平之心的白旗将被升起 — 这是人类选择生存的标志。",
+    "highlight": "并和平地生活。",
+    "cta": "参与"
+  },
+  "form": {
+    "title": "为和平签名",
+    "subtitle": "添加您的声音。免费、对公众匿名、安全。",
+    "name": "全名",
+    "namePlaceholder": "您的姓名",
+    "email": "电子邮件",
+    "emailPlaceholder": "you@example.com",
+    "country": "国家",
+    "countryPlaceholder": "选择您的国家",
+    "city": "城市(可选)",
+    "cityPlaceholder": "您的城市",
+    "consent": "我同意根据隐私政策(LGPD/GDPR)收集我的数据。",
+    "submit": "为和平签名",
+    "submitting": "签名中…",
+    "successTitle": "感谢您的声音。",
+    "successBody": "您的签名已被记录。请分享这场运动。",
+    "errorGeneric": "出了点问题。请重试。",
+    "errorDuplicate": "此邮箱已签名。谢谢。",
+    "errorCaptcha": "反机器人验证失败。请重试。",
+    "errorRequired": "此字段为必填项。",
+    "errorEmail": "请提供有效的电子邮件。",
+    "share": "分享"
+  },
+  "counter": {
+    "label": "签名,来自",
+    "countries": "{count, plural, other {# 个国家}}",
+    "loading": "加载计数器…"
+  },
+  "map": {
+    "title": "来自世界各地的声音",
+    "tooltip": "{country}: {count, plural, other {# 个签名}}",
+    "loading": "加载地图…"
+  },
+  "footer": {
+    "mission": "这是一个自愿和独立的项目,与政治、宗教或商业无关。其唯一目的是和平。",
+    "linksTitle": "快速链接",
+    "home": "首页",
+    "participate": "参与",
+    "transparency": "透明度",
+    "privacy": "隐私政策",
+    "terms": "条款",
+    "language": "语言"
+  },
+  "cookie": {
+    "title": "我们尊重您的隐私",
+    "body": "我们只使用记录您签名所必需的数据,符合 LGPD/GDPR。我们不使用营销追踪器。",
+    "accept": "接受",
+    "reject": "拒绝",
+    "privacy": "阅读隐私政策"
+  },
+  "errors": {
+    "rateLimit": "请求过多。请稍后再试。",
+    "network": "网络错误。请检查您的连接。"
+  }
+}

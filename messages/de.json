@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "title": "6billionforpeace — Zeit, 6 Milliarden Stimmen für den Frieden zu vereinen",
+    "description": "Eine globale, freiwillige und unabhängige Bewegung für den Weltfrieden. Unterzeichne und füge deine Stimme zu 6 Milliarden anderen hinzu. Keine Politik. Keine Religion. Kein Kommerz. Nur Frieden."
+  },
+  "header": {
+    "nav": {
+      "home": "Start",
+      "solution": "Die Lösung",
+      "principles": "Prinzipien",
+      "participate": "Mitmachen",
+      "transparency": "Transparenz"
+    },
+    "languagePicker": "Sprache wählen",
+    "menuOpen": "Menü öffnen",
+    "menuClose": "Menü schließen"
+  },
+  "hero": {
+    "tagline": "Eine Bewegung für Weltfrieden"
+  },
+  "solution": {
+    "title": "Die Lösung",
+    "p1": "Im Laufe der Menschheitsgeschichte haben wir im Krieg gelebt.",
+    "p2": "Vielleicht ergab das früher Sinn. Heute nicht mehr.",
+    "p3": "Wir sind müde von Schmerz, Leid und Zerstörung durch Krieg.",
+    "p4": "Die Idee, dass Gewalt nötig sei, um Frieden zu erreichen, überzeugt uns nicht mehr.",
+    "p5": "Wir können nicht länger auf Politik, Regierungen, Religionen, Unternehmen oder Institutionen warten.",
+    "p6": "Es ist Zeit, 6 Milliarden Stimmen mit einem einzigen Ziel zu vereinen: Frieden in der Welt.",
+    "cta": "Transparenz"
+  },
+  "call": {
+    "p1": "Dies wird die größte Friedensbewegung sein, die die Welt je gesehen hat.",
+    "p2": "Frieden wird keine Rede mehr sein, kein Versprechen, keine ferne Hoffnung.",
+    "p3": "Frieden ist das Überleben der Menschheit.",
+    "cta": "Mitmachen"
+  },
+  "principles": {
+    "title": "Die Prinzipien",
+    "noRevolutions": "Keine Revolutionen.",
+    "noIdeologies": "Keine Ideologien.",
+    "withoutWar": "Ohne Krieg.",
+    "sovereignty": "Keine Einmischung in die inneren Gesetze oder die Souveränität irgendeiner Nation.",
+    "requirementTitle": "Es gibt nur eine Anforderung:",
+    "requirementBody": "das Ende des Krieges.",
+    "maturity": "Die Menschheit hat ausreichend Reife erreicht, Konflikte zu lösen, ohne sich selbst zu zerstören. Wir kennen den Schrecken des Krieges. Jetzt entscheiden wir uns anders."
+  },
+  "volunteers": {
+    "title": "Friedens-Freiwillige",
+    "body": "Werde Teil unserer Gemeinschaft engagierter Freiwilliger, die das Leben von Menschen weltweit wirklich verändern.",
+    "cta": "Mitmachen"
+  },
+  "everest": {
+    "body": "Auf dem Gipfel des Mount Everest wird eine weiße Flagge mit dem Herzen des Friedens gehisst — ein Zeichen, dass die Menschheit sich entschieden hat zu überleben.",
+    "highlight": "Und in Frieden zu leben.",
+    "cta": "Mitmachen"
+  },
+  "form": {
+    "title": "Für den Frieden unterschreiben",
+    "subtitle": "Füge deine Stimme hinzu. Kostenlos, anonym für die Öffentlichkeit, sicher.",
+    "name": "Vollständiger Name",
+    "namePlaceholder": "Dein Name",
+    "email": "E-Mail",
+    "emailPlaceholder": "du@beispiel.com",
+    "country": "Land",
+    "countryPlaceholder": "Wähle dein Land",
+    "city": "Stadt (optional)",
+    "cityPlaceholder": "Deine Stadt",
+    "consent": "Ich stimme der Erfassung meiner Daten gemäß der Datenschutzerklärung (DSGVO/LGPD) zu.",
+    "submit": "Für den Frieden unterschreiben",
+    "submitting": "Wird gesendet…",
+    "successTitle": "Danke für deine Stimme.",
+    "successBody": "Deine Unterschrift wurde registriert. Teile die Bewegung.",
+    "errorGeneric": "Etwas ist schiefgelaufen. Bitte erneut versuchen.",
+    "errorDuplicate": "Diese E-Mail hat bereits unterschrieben. Danke.",
+    "errorCaptcha": "Bot-Prüfung fehlgeschlagen. Bitte erneut versuchen.",
+    "errorRequired": "Dieses Feld ist erforderlich.",
+    "errorEmail": "Bitte gültige E-Mail eingeben.",
+    "share": "Teilen"
+  },
+  "counter": {
+    "label": "Unterschriften aus",
+    "countries": "{count, plural, one {# Land} other {# Ländern}}",
+    "loading": "Zähler wird geladen…"
+  },
+  "map": {
+    "title": "Stimmen aus aller Welt",
+    "tooltip": "{country}: {count, plural, one {# Unterschrift} other {# Unterschriften}}",
+    "loading": "Karte wird geladen…"
+  },
+  "footer": {
+    "mission": "Dies ist ein freiwilliges und unabhängiges Projekt ohne politische, religiöse oder kommerzielle Bindungen. Sein einziger Zweck ist der Frieden.",
+    "linksTitle": "Schnelllinks",
+    "home": "Start",
+    "participate": "Mitmachen",
+    "transparency": "Transparenz",
+    "privacy": "Datenschutzerklärung",
+    "terms": "Bedingungen",
+    "language": "Sprache"
+  },
+  "cookie": {
+    "title": "Wir respektieren deine Privatsphäre",
+    "body": "Wir verwenden nur die nötigen Daten, um deine Unterschrift zu registrieren, gemäß DSGVO/LGPD. Keine Marketing-Tracker.",
+    "accept": "Akzeptieren",
+    "reject": "Ablehnen",
+    "privacy": "Datenschutzerklärung lesen"
+  },
+  "errors": {
+    "rateLimit": "Zu viele Anfragen. Bitte einen Moment warten und erneut versuchen.",
+    "network": "Netzwerkfehler. Bitte Verbindung prüfen."
+  }
+}

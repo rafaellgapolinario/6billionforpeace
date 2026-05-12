@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "title": "6billionforpeace — È ora di unire 6 miliardi di voci per la pace",
+    "description": "Un movimento globale, volontario e indipendente per la pace nel mondo. Firma e aggiungi la tua voce ad altri 6 miliardi. Senza politica. Senza religione. Senza commercio. Solo pace."
+  },
+  "header": {
+    "nav": {
+      "home": "Home",
+      "solution": "La soluzione",
+      "principles": "Principi",
+      "participate": "Partecipa",
+      "transparency": "Trasparenza"
+    },
+    "languagePicker": "Scegli la lingua",
+    "menuOpen": "Apri menu",
+    "menuClose": "Chiudi menu"
+  },
+  "hero": {
+    "tagline": "Un movimento per la pace nel mondo"
+  },
+  "solution": {
+    "title": "La Soluzione",
+    "p1": "Nel corso della storia umana, abbiamo vissuto in guerra.",
+    "p2": "Forse nel passato aveva un senso. Oggi non più.",
+    "p3": "Siamo stanchi del dolore, della sofferenza e della distruzione causati dalla guerra.",
+    "p4": "L'idea che la violenza sia necessaria per ottenere la pace non ci convince più.",
+    "p5": "Non possiamo più aspettare la politica, i governi, le religioni, le aziende o le istituzioni.",
+    "p6": "È ora di unire 6 miliardi di voci attorno a un unico obiettivo: la pace nel mondo.",
+    "cta": "Trasparenza"
+  },
+  "call": {
+    "p1": "Sarà il più grande movimento per la pace che il mondo abbia mai conosciuto.",
+    "p2": "La pace non sarà più un discorso, una promessa o una speranza lontana.",
+    "p3": "La pace è la sopravvivenza dell'umanità.",
+    "cta": "Partecipa"
+  },
+  "principles": {
+    "title": "I Principi",
+    "noRevolutions": "Nessuna rivoluzione.",
+    "noIdeologies": "Nessuna ideologia.",
+    "withoutWar": "Senza guerra.",
+    "sovereignty": "Nessuna interferenza nelle leggi interne o nella sovranità di alcuna nazione.",
+    "requirementTitle": "C'è un solo requisito:",
+    "requirementBody": "la fine della guerra.",
+    "maturity": "L'umanità ha raggiunto la maturità sufficiente per risolvere i conflitti senza distruggersi. Conosciamo l'orrore della guerra. Ora scegliamo diversamente."
+  },
+  "volunteers": {
+    "title": "Volontari per la pace",
+    "body": "Unisciti alla nostra comunità di volontari impegnati che fanno la differenza nella vita delle persone in tutto il mondo.",
+    "cta": "Voglio partecipare"
+  },
+  "everest": {
+    "body": "Sulla cima del Monte Everest sarà issata una bandiera bianca con il cuore della pace — un segno che l'umanità ha scelto di sopravvivere.",
+    "highlight": "E vivere in pace.",
+    "cta": "Partecipa"
+  },
+  "form": {
+    "title": "Firma per la pace",
+    "subtitle": "Aggiungi la tua voce. Gratis, anonimo al pubblico, sicuro.",
+    "name": "Nome completo",
+    "namePlaceholder": "Il tuo nome",
+    "email": "E-mail",
+    "emailPlaceholder": "tu@esempio.com",
+    "country": "Paese",
+    "countryPlaceholder": "Seleziona il tuo paese",
+    "city": "Città (facoltativo)",
+    "cityPlaceholder": "La tua città",
+    "consent": "Acconsento alla raccolta dei miei dati secondo l'informativa sulla privacy (LGPD/GDPR).",
+    "submit": "Firma per la pace",
+    "submitting": "Invio in corso…",
+    "successTitle": "Grazie per la tua voce.",
+    "successBody": "La tua firma è stata registrata. Condividi il movimento.",
+    "errorGeneric": "Qualcosa è andato storto. Riprova.",
+    "errorDuplicate": "Questa e-mail ha già firmato. Grazie.",
+    "errorCaptcha": "Verifica anti-bot fallita. Riprova.",
+    "errorRequired": "Questo campo è obbligatorio.",
+    "errorEmail": "Inserisci un'e-mail valida.",
+    "share": "Condividi"
+  },
+  "counter": {
+    "label": "firme da",
+    "countries": "{count, plural, one {# paese} other {# paesi}}",
+    "loading": "Caricamento contatore…"
+  },
+  "map": {
+    "title": "Voci da tutto il mondo",
+    "tooltip": "{country}: {count, plural, one {# firma} other {# firme}}",
+    "loading": "Caricamento mappa…"
+  },
+  "footer": {
+    "mission": "Questo è un progetto volontario e indipendente, senza legami politici, religiosi o commerciali. Il suo unico scopo è la pace.",
+    "linksTitle": "Link rapidi",
+    "home": "Home",
+    "participate": "Partecipa",
+    "transparency": "Trasparenza",
+    "privacy": "Informativa sulla privacy",
+    "terms": "Termini",
+    "language": "Lingua"
+  },
+  "cookie": {
+    "title": "Rispettiamo la tua privacy",
+    "body": "Usiamo solo i dati essenziali per registrare la tua firma, in conformità con LGPD/GDPR. Nessun tracker di marketing.",
+    "accept": "Accetta",
+    "reject": "Rifiuta",
+    "privacy": "Leggi l'informativa sulla privacy"
+  },
+  "errors": {
+    "rateLimit": "Troppe richieste. Attendi un momento e riprova.",
+    "network": "Errore di rete. Verifica la connessione."
+  }
+}
