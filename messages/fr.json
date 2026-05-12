@@ -75,7 +75,13 @@
     "errorCaptcha": "Échec de la vérification anti-bot. Réessayez.",
     "errorRequired": "Ce champ est obligatoire.",
     "errorEmail": "Veuillez fournir un e-mail valide.",
-    "share": "Partager"
+    "share": "Partager",
+    "shareTitle": "Partagez le mouvement",
+    "shareBody": "Aidez-nous à atteindre plus de voix pour la paix.",
+    "shareCta": "Partager",
+    "copyCta": "Copier le lien",
+    "copyDone": "Lien copié",
+    "shareText": "Je viens de signer pour la paix sur 6billionforpeace.com — unir 6 milliards de voix autour d'un seul objectif : la paix dans le monde."
   },
   "counter": {
     "label": "signatures de",
@@ -177,5 +183,32 @@
       ],
       "contact": "Questions : 6billionforpeace@gmail.com"
     }
+  },
+  "transparency": {
+    "title": "Transparence",
+    "subtitle": "Comment nous gardons ce mouvement propre.",
+    "pillars": [
+      {
+        "title": "Aucune affiliation",
+        "body": "Aucun lien politique, religieux ou commercial. Un seul message partagé : la paix dans le monde."
+      },
+      {
+        "title": "Aucun traceur",
+        "body": "Aucun script publicitaire ou d'analyse. Pas de profilage. Pas de vente de données."
+      },
+      {
+        "title": "IP jamais stockée",
+        "body": "Nous ne conservons qu'un hash SHA-256 à sens unique avec un sel secret, pour prévenir les abus. Non réversible."
+      },
+      {
+        "title": "Infrastructure indépendante",
+        "body": "Base de données sur notre propre serveur. Carte par MapLibre. Anti-bot par Cloudflare Turnstile. Politique complète ci-dessous."
+      }
+    ],
+    "privacyLink": "Lire la politique de confidentialité",
+    "termsLink": "Lire les conditions"
+  },
+  "nav": {
+    "backToTop": "Retour en haut"
   }
 }

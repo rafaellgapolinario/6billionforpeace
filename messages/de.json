@@ -75,7 +75,13 @@
     "errorCaptcha": "Bot-Prüfung fehlgeschlagen. Bitte erneut versuchen.",
     "errorRequired": "Dieses Feld ist erforderlich.",
     "errorEmail": "Bitte gültige E-Mail eingeben.",
-    "share": "Teilen"
+    "share": "Teilen",
+    "shareTitle": "Teile die Bewegung",
+    "shareBody": "Hilf uns, mehr Stimmen für den Frieden zu erreichen.",
+    "shareCta": "Teilen",
+    "copyCta": "Link kopieren",
+    "copyDone": "Link kopiert",
+    "shareText": "Ich habe gerade für den Frieden auf 6billionforpeace.com unterschrieben — 6 Milliarden Stimmen für ein einziges Ziel zu vereinen: Frieden in der Welt."
   },
   "counter": {
     "label": "Unterschriften aus",
@@ -177,5 +183,32 @@
       ],
       "contact": "Fragen: 6billionforpeace@gmail.com"
     }
+  },
+  "transparency": {
+    "title": "Transparenz",
+    "subtitle": "So halten wir diese Bewegung sauber.",
+    "pillars": [
+      {
+        "title": "Keine Bindungen",
+        "body": "Keine politischen, religiösen oder kommerziellen Bindungen. Nur eine gemeinsame Botschaft: Frieden in der Welt."
+      },
+      {
+        "title": "Keine Tracker",
+        "body": "Keine Werbe- oder Analyse-Skripte. Kein Profiling. Kein Datenverkauf."
+      },
+      {
+        "title": "IP nie gespeichert",
+        "body": "Wir behalten nur einen einseitigen SHA-256-Hash mit geheimem Salt, um Missbrauch zu verhindern. Nicht umkehrbar."
+      },
+      {
+        "title": "Unabhängige Infrastruktur",
+        "body": "Datenbank auf eigenem Server. Karte von MapLibre. Anti-Bot von Cloudflare Turnstile. Vollständige Richtlinie unten."
+      }
+    ],
+    "privacyLink": "Datenschutzerklärung lesen",
+    "termsLink": "Bedingungen lesen"
+  },
+  "nav": {
+    "backToTop": "Nach oben"
   }
 }

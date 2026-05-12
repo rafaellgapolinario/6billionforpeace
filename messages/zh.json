@@ -75,7 +75,13 @@
     "errorCaptcha": "反机器人验证失败。请重试。",
     "errorRequired": "此字段为必填项。",
     "errorEmail": "请提供有效的电子邮件。",
-    "share": "分享"
+    "share": "分享",
+    "shareTitle": "分享这场运动",
+    "shareBody": "帮助我们触达更多和平的声音。",
+    "shareCta": "分享",
+    "copyCta": "复制链接",
+    "copyDone": "链接已复制",
+    "shareText": "我刚刚在 6billionforpeace.com 为和平签名 — 让 60 亿人的声音汇聚于同一目标:世界和平。"
   },
   "counter": {
     "label": "签名,来自",
@@ -177,5 +183,32 @@
       ],
       "contact": "如有疑问:6billionforpeace@gmail.com"
     }
+  },
+  "transparency": {
+    "title": "透明度",
+    "subtitle": "我们如何保持运动的纯净。",
+    "pillars": [
+      {
+        "title": "无任何隶属",
+        "body": "无政治、宗教或商业关系。只有一个共同的讯息:世界和平。"
+      },
+      {
+        "title": "无追踪",
+        "body": "无广告或分析脚本。不分析您的画像。不出售数据。"
+      },
+      {
+        "title": "从不存储 IP",
+        "body": "我们仅保留单向 SHA-256 哈希与机密盐值,用于防滥用。无法还原。"
+      },
+      {
+        "title": "独立基础设施",
+        "body": "数据库部署在我们自己的服务器。地图由 MapLibre 提供。反机器人由 Cloudflare Turnstile 提供。完整政策见下方。"
+      }
+    ],
+    "privacyLink": "阅读隐私政策",
+    "termsLink": "阅读使用条款"
+  },
+  "nav": {
+    "backToTop": "返回顶部"
   }
 }

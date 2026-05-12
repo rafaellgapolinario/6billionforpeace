@@ -6,7 +6,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { useLocale, useTranslations } from 'next-intl';
 import { toast } from 'sonner';
-import { Loader2, Heart } from 'lucide-react';
+import { Loader2, Heart, Share2, Copy, Check } from 'lucide-react';
 
 type CountryOption = { code: string; label: string };
 
@@ -160,23 +160,7 @@ export function SignatureForm({
   };
 
   if (done) {
-    return (
-      <div className="rounded-3xl border border-cyan-200 bg-cyan-50 px-8 py-12 text-center">
-        <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-cyan-500 text-white">
-          <Heart className="h-6 w-6 fill-white" />
-        </div>
-        <h3 className="mt-5 text-2xl font-semibold text-navy-900">
-          {t('successTitle')}
-        </h3>
-        <p className="mt-2 text-base text-navy-700">{t('successBody')}</p>
-        <button
-          onClick={() => setDone(false)}
-          className="mt-6 text-sm font-medium text-cyan-700 underline-offset-4 hover:underline"
-        >
-          ↺
-        </button>
-      </div>
-    );
+    return <SuccessCard t={t} onReset={() => setDone(false)} />;
   }
 
   return (
@@ -267,6 +251,88 @@ export function SignatureForm({
         )}
       </button>
     </form>
+  );
+}
+
+function SuccessCard({
+  t,
+  onReset,
+}: {
+  t: ReturnType<typeof useTranslations<'form'>>;
+  onReset: () => void;
+}) {
+  const [copied, setCopied] = useState(false);
+
+  const shareUrl =
+    typeof window !== 'undefined'
+      ? window.location.origin + '/'
+      : 'https://6billionforpeace.vercel.app/';
+
+  async function handleShare() {
+    const text = t('shareText');
+    const title = t('shareTitle');
+    if (typeof navigator !== 'undefined' && 'share' in navigator) {
+      try {
+        await navigator.share({ title, text, url: shareUrl });
+        return;
+      } catch {
+        // user cancelled, fall through to copy
+      }
+    }
+    await handleCopy();
+  }
+
+  async function handleCopy() {
+    try {
+      await navigator.clipboard.writeText(`${t('shareText')} ${shareUrl}`);
+      setCopied(true);
+      toast.success(t('copyDone'));
+      setTimeout(() => setCopied(false), 2200);
+    } catch {
+      toast.error(t('errorGeneric'));
+    }
+  }
+
+  return (
+    <div className="rounded-3xl border border-cyan-200 bg-cyan-50 px-8 py-12 text-center">
+      <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-cyan-500 text-white">
+        <Heart className="h-6 w-6 fill-white" />
+      </div>
+      <h3 className="mt-5 text-2xl font-semibold text-navy-900">
+        {t('successTitle')}
+      </h3>
+      <p className="mt-2 text-base text-navy-700">{t('successBody')}</p>
+
+      <div className="mt-7 rounded-2xl border border-cyan-200 bg-white p-5">
+        <p className="text-sm font-semibold text-navy-900">{t('shareTitle')}</p>
+        <p className="mt-1 text-xs text-navy-600">{t('shareBody')}</p>
+        <div className="mt-4 flex flex-col gap-2 sm:flex-row sm:justify-center">
+          <button
+            type="button"
+            onClick={handleShare}
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-navy-900 px-5 py-2.5 text-sm font-semibold text-white hover:bg-navy-800"
+          >
+            <Share2 className="h-4 w-4" />
+            {t('shareCta')}
+          </button>
+          <button
+            type="button"
+            onClick={handleCopy}
+            className="inline-flex items-center justify-center gap-2 rounded-full border border-navy-200 bg-white px-5 py-2.5 text-sm font-medium text-navy-800 hover:border-navy-300"
+          >
+            {copied ? <Check className="h-4 w-4 text-cyan-600" /> : <Copy className="h-4 w-4" />}
+            {copied ? t('copyDone') : t('copyCta')}
+          </button>
+        </div>
+      </div>
+
+      <button
+        onClick={onReset}
+        className="mt-6 text-xs font-medium text-cyan-700 underline-offset-4 hover:underline"
+      >
+        ↺
+      </button>
+    </div>
   );
 }
 

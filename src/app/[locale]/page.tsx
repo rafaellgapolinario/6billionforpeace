@@ -10,6 +10,7 @@ import { HeroHeart } from '@/components/landing/HeroHeart';
 import { SolutionSection } from '@/components/landing/SolutionSection';
 import { CallSection } from '@/components/landing/CallSection';
 import { PrinciplesSection } from '@/components/landing/PrinciplesSection';
+import { TransparencySection } from '@/components/landing/TransparencySection';
 import { VolunteersSection } from '@/components/landing/VolunteersSection';
 import { SignatureForm } from '@/components/landing/SignatureForm';
 import { LiveCounter } from '@/components/landing/LiveCounter';
@@ -17,6 +18,7 @@ import { WorldMap } from '@/components/landing/WorldMap';
 import { EverestSection } from '@/components/landing/EverestSection';
 import { Footer } from '@/components/landing/Footer';
 import { CookieBanner } from '@/components/landing/CookieBanner';
+import { BackToTop } from '@/components/landing/BackToTop';
 
 export default async function Home(props: { params: Promise<{ locale: string }> }) {
   const { locale } = await props.params;
@@ -50,6 +52,7 @@ export default async function Home(props: { params: Promise<{ locale: string }> 
         <SolutionSection />
         <CallSection />
         <PrinciplesSection />
+        <TransparencySection />
         <VolunteersSection />
 
         <section id="sign" className="bg-white px-6 py-20">
@@ -69,6 +72,7 @@ export default async function Home(props: { params: Promise<{ locale: string }> 
       </main>
       <Footer />
       <CookieBanner />
+      <BackToTop />
     </>
   );
 }

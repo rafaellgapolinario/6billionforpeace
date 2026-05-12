@@ -75,7 +75,13 @@
     "errorCaptcha": "Falha na verificação anti-bot. Tente novamente.",
     "errorRequired": "Este campo é obrigatório.",
     "errorEmail": "Informe um e-mail válido.",
-    "share": "Compartilhar"
+    "share": "Compartilhar",
+    "shareTitle": "Compartilhe o movimento",
+    "shareBody": "Ajude-nos a alcançar mais vozes pela paz.",
+    "shareCta": "Compartilhar",
+    "copyCta": "Copiar link",
+    "copyDone": "Link copiado",
+    "shareText": "Acabei de assinar pela paz em 6billionforpeace.com — unindo 6 bilhões de vozes em torno de um único objetivo: a paz no mundo."
   },
   "counter": {
     "label": "assinaturas de",
@@ -177,5 +183,32 @@
       ],
       "contact": "Dúvidas: 6billionforpeace@gmail.com"
     }
+  },
+  "transparency": {
+    "title": "Transparência",
+    "subtitle": "Como mantemos este movimento limpo.",
+    "pillars": [
+      {
+        "title": "Sem filiação",
+        "body": "Sem vínculos políticos, religiosos ou comerciais. Apenas uma mensagem em comum: paz no mundo."
+      },
+      {
+        "title": "Sem rastreadores",
+        "body": "Sem scripts de publicidade ou analytics. Não fazemos perfil de você. Não vendemos dados."
+      },
+      {
+        "title": "IP nunca armazenado",
+        "body": "Guardamos apenas um hash SHA-256 unidirecional com salt secreto, para evitar abuso. Não é reversível."
+      },
+      {
+        "title": "Infraestrutura independente",
+        "body": "Banco de dados em servidor próprio. Mapa pelo MapLibre. Anti-bot pelo Cloudflare Turnstile. Política completa logo abaixo."
+      }
+    ],
+    "privacyLink": "Ler a política de privacidade",
+    "termsLink": "Ler os termos"
+  },
+  "nav": {
+    "backToTop": "Voltar ao topo"
   }
 }
