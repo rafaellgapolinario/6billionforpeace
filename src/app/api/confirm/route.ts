@@ -28,6 +28,11 @@ export async function GET(req: Request) {
     .maybeSingle();
 
   if (fetchErr || !row) {
+    console.error('[confirm] lookup failed', {
+      token: token.slice(0, 8) + '…',
+      fetchErr: fetchErr ? { code: fetchErr.code, msg: fetchErr.message, details: fetchErr.details } : null,
+      rowFound: !!row,
+    });
     return NextResponse.redirect(failUrl, 302);
   }
 
