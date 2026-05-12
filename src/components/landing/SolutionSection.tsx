@@ -8,7 +8,7 @@ export function SolutionSection() {
   return (
     <section id="solution" className="bg-white py-24 sm:py-28">
       <div className="mx-auto max-w-3xl px-6 text-center">
-        <h2 className="text-4xl font-bold tracking-tight text-navy-900 sm:text-5xl">
+        <h2 className="text-2xl font-semibold tracking-tight text-cyan-600 sm:text-3xl">
           {t('title')}
         </h2>
         <div className="mt-8 space-y-5 text-balance text-lg leading-relaxed text-navy-800 sm:text-xl">

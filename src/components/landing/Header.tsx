@@ -12,29 +12,20 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   const navItems = [
-    { href: '#solution',     label: t('solution') },
-    { href: '#principles',   label: t('principles') },
-    { href: '#participate',  label: t('participate') },
+    { href: '#solution', label: t('solution') },
+    { href: '#principles', label: t('principles') },
+    { href: '#participate', label: t('participate') },
     { href: '#transparency', label: t('transparency') },
   ];
 
   return (
-    <header className="relative z-30 border-b border-white/5 bg-navy-900">
-      <div className="mx-auto flex max-w-5xl flex-col items-center px-4 py-6 sm:py-8">
-        <a href="#top" aria-label="6billionforpeace home">
-          <Logo variant="light" size="lg" />
+    <header className="sticky top-0 z-30 border-b border-white/5 bg-navy-900/85 backdrop-blur-md">
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+        <a href="#top" className="text-2xl">
+          <Logo variant="light" />
         </a>
 
-        <button
-          type="button"
-          onClick={() => setOpen((o) => !o)}
-          aria-label={open ? tHeader('menuClose') : tHeader('menuOpen')}
-          className="mt-4 inline-flex h-10 w-12 items-center justify-center rounded-md bg-white text-navy-900 shadow-sm lg:hidden"
-        >
-          {open ? <X size={20} /> : <Menu size={20} />}
-        </button>
-
-        <nav className="mt-4 hidden items-center gap-7 lg:flex">
+        <nav className="hidden items-center gap-7 lg:flex">
           {navItems.map((it) => (
             <a
               key={it.href}
@@ -45,6 +36,15 @@ export function Header() {
             </a>
           ))}
         </nav>
+
+        <button
+          type="button"
+          onClick={() => setOpen((o) => !o)}
+          aria-label={open ? tHeader('menuClose') : tHeader('menuOpen')}
+          className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-white/15 text-white lg:hidden"
+        >
+          {open ? <X size={18} /> : <Menu size={18} />}
+        </button>
       </div>
 
       <div
@@ -53,7 +53,7 @@ export function Header() {
           open ? 'max-h-72' : 'max-h-0',
         )}
       >
-        <nav className="mx-auto flex max-w-5xl flex-col gap-1 px-4 py-3">
+        <nav className="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-3 sm:px-6">
           {navItems.map((it) => (
             <a
               key={it.href}
