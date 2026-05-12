@@ -12,7 +12,7 @@ export function PrinciplesSection() {
   return (
     <section id="principles" className="bg-surface py-24 sm:py-28">
       <div className="mx-auto max-w-5xl px-6 text-center">
-        <h2 className="text-2xl font-semibold tracking-tight text-cyan-600 sm:text-3xl">
+        <h2 className="text-4xl font-bold tracking-tight text-navy-900 sm:text-5xl">
           {t('title')}
         </h2>
 
