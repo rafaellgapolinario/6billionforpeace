@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 const TURNSTILE_SCRIPT_SRC =
   'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
@@ -131,6 +132,12 @@ export function LoginForm() {
       >
         {loading ? 'Signing in…' : 'Sign in'}
       </button>
+      <Link
+        href="/admin/forgot"
+        className="block text-center text-xs text-white/60 hover:text-white"
+      >
+        Esqueci a senha
+      </Link>
     </form>
   );
 }

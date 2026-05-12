@@ -1,8 +1,8 @@
 import { redirect } from 'next/navigation';
 import { getAdminSession } from '@/lib/admin/auth';
-import { SignaturesPanel } from './SignaturesPanel';
 import { LogoutButton } from './LogoutButton';
 import { IdleSignOut } from './IdleSignOut';
+import { AdminShell } from './AdminShell';
 
 export const dynamic = 'force-dynamic';
 
@@ -30,9 +30,7 @@ export default async function AdminPage({
           <LogoutButton />
         </div>
       </header>
-      <section className="mx-auto max-w-6xl px-6 py-10">
-        <SignaturesPanel />
-      </section>
+      <AdminShell session={session} />
       <IdleSignOut />
     </main>
   );
