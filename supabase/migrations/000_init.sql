@@ -1,35 +1,12 @@
 -- 6billionforpeace.net — schema `bfp` (idempotente)
--- Aplica em projeto Supabase Cloud virgem. Roda no SQL Editor do painel.
+-- Aplica em projeto Supabase Cloud virgem. Roda no SQL Editor do painel
+-- ou via Management API POST /v1/projects/{ref}/database/query.
 
 create extension if not exists citext;
 
 create schema if not exists bfp;
 
--- Triggers function -----------------------------------------------------------
-create or replace function bfp.bump_signature_stats() returns trigger
-  language plpgsql security definer as $$
-begin
-  if (TG_OP = 'INSERT' and NEW.confirmed_at is not null)
-     or (TG_OP = 'UPDATE' and OLD.confirmed_at is null and NEW.confirmed_at is not null) then
-    update bfp.stats set
-      total_signatures = total_signatures + 1,
-      by_country = jsonb_set(by_country, array[NEW.country],
-        to_jsonb(coalesce((by_country->>NEW.country)::bigint, 0) + 1), true),
-      by_locale = jsonb_set(by_locale, array[NEW.locale],
-        to_jsonb(coalesce((by_locale->>NEW.locale)::bigint, 0) + 1), true),
-      updated_at = now()
-    where id = 1;
-  end if;
-  return NEW;
-end;
-$$;
-
-create or replace function bfp.is_admin() returns boolean
-  language sql stable security definer set search_path = bfp, public as $$
-  select exists (select 1 from bfp.admin_users where user_id = auth.uid());
-$$;
-
--- Tables ----------------------------------------------------------------------
+-- Tables ---------------------------------------------------------------------
 create table if not exists bfp.admin_users (
   user_id uuid primary key references auth.users(id) on delete cascade,
   role text not null default 'admin' check (role in ('admin', 'owner')),
@@ -72,6 +49,30 @@ create table if not exists bfp.stats (
 );
 
 insert into bfp.stats (id) values (1) on conflict (id) do nothing;
+
+-- Functions (criadas DEPOIS das tables porque referenciam elas) ---------------
+create or replace function bfp.bump_signature_stats() returns trigger
+  language plpgsql security definer as $$
+begin
+  if (TG_OP = 'INSERT' and NEW.confirmed_at is not null)
+     or (TG_OP = 'UPDATE' and OLD.confirmed_at is null and NEW.confirmed_at is not null) then
+    update bfp.stats set
+      total_signatures = total_signatures + 1,
+      by_country = jsonb_set(by_country, array[NEW.country],
+        to_jsonb(coalesce((by_country->>NEW.country)::bigint, 0) + 1), true),
+      by_locale = jsonb_set(by_locale, array[NEW.locale],
+        to_jsonb(coalesce((by_locale->>NEW.locale)::bigint, 0) + 1), true),
+      updated_at = now()
+    where id = 1;
+  end if;
+  return NEW;
+end;
+$$;
+
+create or replace function bfp.is_admin() returns boolean
+  language sql stable security definer set search_path = bfp, public as $$
+  select exists (select 1 from bfp.admin_users where user_id = auth.uid());
+$$;
 
 -- Trigger ---------------------------------------------------------------------
 drop trigger if exists bump_signature_stats_iu on bfp.signatures;
