@@ -68,6 +68,19 @@ html[lang="zh"] body { font-family: var(--font-zh), var(--font-sans), system-ui,
 }
 .pin-pulse { animation: pin-pulse 1.8s ease-out 2; }
 
+/* ---------- heart button pulse (glow verde brilhante por fora) ---------- */
+@keyframes heart-btn-pulse {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 6px rgba(52,211,153,.45)) drop-shadow(0 0 12px rgba(52,211,153,.25));
+  }
+  50% {
+    transform: scale(1.06);
+    filter: drop-shadow(0 0 14px rgba(52,211,153,.85)) drop-shadow(0 0 26px rgba(52,211,153,.55));
+  }
+}
+.heart-btn-pulse { animation: heart-btn-pulse 1.8s ease-in-out infinite; transform-origin: center; }
+
 /* ---------- counter flip ---------- */
 @keyframes count-bump {
   0%   { transform: translateY(0); }
