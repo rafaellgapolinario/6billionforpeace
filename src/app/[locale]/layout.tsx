@@ -1,5 +1,14 @@
 import type { Metadata } from 'next';
-import { Allura, Inter, Noto_Sans_Arabic, Noto_Sans_SC } from 'next/font/google';
+import {
+  Allura,
+  Dancing_Script,
+  Sacramento,
+  Tangerine,
+  Yellowtail,
+  Inter,
+  Noto_Sans_Arabic,
+  Noto_Sans_SC,
+} from 'next/font/google';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -18,6 +27,34 @@ const allura = Allura({
   subsets: ['latin'],
   weight: '400',
   variable: '--font-script',
+  display: 'swap',
+});
+
+const dancingScript = Dancing_Script({
+  subsets: ['latin'],
+  weight: ['400', '600', '700'],
+  variable: '--font-dancing',
+  display: 'swap',
+});
+
+const sacramento = Sacramento({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-sacramento',
+  display: 'swap',
+});
+
+const tangerine = Tangerine({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-tangerine',
+  display: 'swap',
+});
+
+const yellowtail = Yellowtail({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-yellowtail',
   display: 'swap',
 });
 
@@ -70,7 +107,7 @@ export default async function LocaleLayout(props: {
     <html
       lang={locale}
       dir={dir}
-      className={`${inter.variable} ${allura.variable} ${notoArabic.variable} ${notoSc.variable}`}
+      className={`${inter.variable} ${allura.variable} ${dancingScript.variable} ${sacramento.variable} ${tangerine.variable} ${yellowtail.variable} ${notoArabic.variable} ${notoSc.variable}`}
     >
       <body className="min-h-full bg-background text-navy-900 antialiased">
         <NextIntlClientProvider locale={locale} messages={messages}>
