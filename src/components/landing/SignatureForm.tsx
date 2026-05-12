@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
@@ -8,6 +8,32 @@ import { useLocale, useTranslations } from 'next-intl';
 import { toast } from 'sonner';
 import { Loader2, Heart } from 'lucide-react';
 import { listCountries } from '@/lib/countries';
+
+declare global {
+  interface Window {
+    turnstile?: {
+      render: (
+        el: HTMLElement | string,
+        opts: {
+          sitekey: string;
+          callback?: (token: string) => void;
+          'error-callback'?: () => void;
+          'expired-callback'?: () => void;
+          'timeout-callback'?: () => void;
+          theme?: 'light' | 'dark' | 'auto';
+          size?: 'normal' | 'compact' | 'flexible' | 'invisible';
+          appearance?: 'always' | 'execute' | 'interaction-only';
+        },
+      ) => string;
+      reset: (widgetId?: string) => void;
+      remove: (widgetId?: string) => void;
+    };
+  }
+}
+
+const TURNSTILE_SCRIPT_SRC =
+  'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
+const SITE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY ?? '';
 
 export function SignatureForm({ initialCountry }: { initialCountry?: string }) {
   const t = useTranslations('form');
@@ -42,17 +68,69 @@ export function SignatureForm({ initialCountry }: { initialCountry?: string }) {
   });
 
   const [done, setDone] = useState(false);
+  const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
+  const widgetIdRef = useRef<string | null>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     if (initialCountry) setValue('country', initialCountry);
   }, [initialCountry, setValue]);
+
+  useEffect(() => {
+    if (!SITE_KEY) return;
+
+    const mount = () => {
+      if (
+        !window.turnstile ||
+        !containerRef.current ||
+        widgetIdRef.current
+      )
+        return;
+      widgetIdRef.current = window.turnstile.render(containerRef.current, {
+        sitekey: SITE_KEY,
+        appearance: 'interaction-only',
+        theme: 'light',
+        callback: (token) => setTurnstileToken(token),
+        'expired-callback': () => setTurnstileToken(null),
+        'timeout-callback': () => setTurnstileToken(null),
+        'error-callback': () => setTurnstileToken(null),
+      });
+    };
+
+    if (window.turnstile) {
+      mount();
+      return;
+    }
+    let script = document.querySelector<HTMLScriptElement>(
+      `script[src^="${TURNSTILE_SCRIPT_SRC}"]`,
+    );
+    if (!script) {
+      script = document.createElement('script');
+      script.src = TURNSTILE_SCRIPT_SRC;
+      script.async = true;
+      script.defer = true;
+      document.head.appendChild(script);
+    }
+    script.addEventListener('load', mount);
+    return () => {
+      script?.removeEventListener('load', mount);
+      if (widgetIdRef.current && window.turnstile) {
+        window.turnstile.remove(widgetIdRef.current);
+        widgetIdRef.current = null;
+      }
+    };
+  }, []);
 
   const onSubmit = async (values: FormValues) => {
     try {
       const res = await fetch('/api/sign', {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({ ...values, locale }),
+        body: JSON.stringify({
+          ...values,
+          locale,
+          turnstileToken: turnstileToken ?? undefined,
+        }),
       });
       const json = await res.json();
       if (!res.ok) {
@@ -65,6 +143,10 @@ export function SignatureForm({ initialCountry }: { initialCountry?: string }) {
       }
       setDone(true);
       reset();
+      setTurnstileToken(null);
+      if (widgetIdRef.current && window.turnstile) {
+        window.turnstile.reset(widgetIdRef.current);
+      }
       toast.success(t('successTitle'), { description: t('successBody') });
     } catch {
       toast.error(t('errorGeneric'));
@@ -159,8 +241,7 @@ export function SignatureForm({ initialCountry }: { initialCountry?: string }) {
         </span>
       </label>
 
-      {/* Cloudflare Turnstile placeholder. Real widget will be mounted in D2 with site_key. */}
-      <div id="cf-turnstile" className="mt-5" />
+      <div ref={containerRef} className="mt-5 flex justify-center" />
 
       <button
         type="submit"
