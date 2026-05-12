@@ -12,5 +12,6 @@ export function createSupabaseAdminClient() {
   }
   return createClient(url, serviceKey, {
     auth: { persistSession: false, autoRefreshToken: false },
+    db: { schema: 'bfp' },
   });
 }
