@@ -83,9 +83,9 @@
     "errorNoDigits": "请只填写您的姓名(不要填写证件号码)。",
     "supportTreaty": "我支持《世界和平条约》。",
     "supportTreatyRequired": "请同意《和平条约》后再签名。",
-    "successPendingTitle": "请查收邮箱",
-    "successPendingBody": "我们已向您的邮箱发送确认链接。点击链接即可让您的声音被计入。",
-    "errorRateLimit": "此网络的请求次数过多。请稍后再试。"
+    "errorRateLimit": "此网络的请求次数过多。请稍后再试。",
+    "errorTooFast": "请认真填写表单。",
+    "errorDisposable": "请使用长期有效的邮箱。"
   },
   "counter": {
     "label": "签名,来自",
@@ -223,10 +223,10 @@
     "invalidBody": "无法确认您的签名。该链接可能已被使用或已过期。"
   },
   "email": {
-    "subject": "确认您的签名 — 6billionforpeace",
-    "heading": "确认您的签名",
-    "body": "您好 {name},\n\n感谢您为和平签名。请点击下方按钮确认您的签名,让您的声音在 6billionforpeace.com 上被计入。\n\n如果您未签名,可忽略此邮件。",
-    "cta": "确认我的签名",
+    "subject": "感谢您的签名 — 6billionforpeace",
+    "heading": "您的声音已计入",
+    "body": "感谢您为和平签名,{name}。\n\n您的签名已记录在 6billionforpeace.com。您现在是这场全球自愿运动的一员,致力于让 60 亿人的声音汇聚于同一目标:世界和平。\n\n请分享这场运动,让更多人加入。",
+    "cta": "回到运动",
     "footer": "6billionforpeace — 自愿且独立的世界和平运动。"
   }
 }

@@ -57,6 +57,7 @@ export function SignatureForm({
     country: z.string().length(2, t('errorRequired')),
     supportsTreaty: z.boolean().refine((v) => v === true, { message: t('supportTreatyRequired') }),
     consent: z.boolean().refine((v) => v === true, { message: t('errorRequired') }),
+    website: z.string().optional(), // honeypot
   });
 
   type FormValues = z.infer<typeof schema>;
@@ -75,13 +76,15 @@ export function SignatureForm({
       country: initialCountry ?? '',
       supportsTreaty: false,
       consent: false,
+      website: '',
     },
   });
 
-  const [done, setDone] = useState<false | 'pending' | 'confirmed'>(false);
+  const [done, setDone] = useState(false);
   const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
   const widgetIdRef = useRef<string | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+  const formStartedAtRef = useRef<number>(Date.now());
 
   useEffect(() => {
     if (initialCountry) setValue('country', initialCountry);
@@ -141,6 +144,7 @@ export function SignatureForm({
           ...values,
           locale,
           turnstileToken: turnstileToken ?? undefined,
+          formStartedAt: formStartedAtRef.current,
         }),
       });
       const json = await res.json();
@@ -148,10 +152,12 @@ export function SignatureForm({
         if (json?.error === 'duplicate') toast.success(t('errorDuplicate'));
         else if (json?.error === 'captcha') toast.error(t('errorCaptcha'));
         else if (json?.error === 'rate_limit') toast.error(t('errorRateLimit'));
+        else if (json?.error === 'too_fast') toast.error(t('errorTooFast'));
+        else if (json?.error === 'disposable_email') toast.error(t('errorDisposable'));
         else toast.error(t('errorGeneric'));
         return;
       }
-      setDone(json?.pending ? 'pending' : 'confirmed');
+      setDone(true);
       reset();
       setTurnstileToken(null);
       if (widgetIdRef.current && window.turnstile) {
@@ -163,10 +169,7 @@ export function SignatureForm({
     }
   };
 
-  if (done === 'pending') {
-    return <PendingCard t={t} onReset={() => setDone(false)} />;
-  }
-  if (done === 'confirmed') {
+  if (done) {
     return <SuccessCard t={t} onReset={() => setDone(false)} />;
   }
 
@@ -247,6 +250,29 @@ export function SignatureForm({
 
       <div ref={containerRef} className="mt-5 flex justify-center" />
 
+      {/* Honeypot: hidden from humans, bots tend to autofill any input */}
+      <div
+        aria-hidden
+        style={{
+          position: 'absolute',
+          left: '-10000px',
+          top: 'auto',
+          width: '1px',
+          height: '1px',
+          overflow: 'hidden',
+        }}
+      >
+        <label>
+          Website
+          <input
+            type="text"
+            tabIndex={-1}
+            autoComplete="off"
+            {...register('website')}
+          />
+        </label>
+      </div>
+
       <button
         type="submit"
         disabled={isSubmitting}
@@ -265,32 +291,6 @@ export function SignatureForm({
         )}
       </button>
     </form>
-  );
-}
-
-function PendingCard({
-  t,
-  onReset,
-}: {
-  t: ReturnType<typeof useTranslations<'form'>>;
-  onReset: () => void;
-}) {
-  return (
-    <div className="rounded-3xl border border-cyan-200 bg-cyan-50 px-8 py-12 text-center">
-      <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-cyan-500 text-white">
-        <Heart className="h-6 w-6 fill-white" />
-      </div>
-      <h3 className="mt-5 text-2xl font-semibold text-navy-900">
-        {t('successPendingTitle')}
-      </h3>
-      <p className="mt-2 text-base text-navy-700">{t('successPendingBody')}</p>
-      <button
-        onClick={onReset}
-        className="mt-6 text-xs font-medium text-cyan-700 underline-offset-4 hover:underline"
-      >
-        ↺
-      </button>
-    </div>
   );
 }
 

@@ -4,7 +4,8 @@ import crypto from 'node:crypto';
 import { createSupabaseAdminClient } from '@/lib/supabase/admin';
 import { countryCodes } from '@/lib/countries';
 import { locales } from '@/i18n/locales';
-import { sendConfirmationEmail } from '@/lib/email';
+import { sendThankYouEmail } from '@/lib/email';
+import { isDisposableEmail } from '@/lib/disposable';
 
 export const runtime = 'nodejs';
 
@@ -16,6 +17,9 @@ const Body = z.object({
   supportsTreaty: z.literal(true),
   consent: z.literal(true),
   turnstileToken: z.string().optional(),
+  // Anti-bot signals
+  website: z.string().optional(), // honeypot — must stay empty
+  formStartedAt: z.number().int().optional(), // ms timestamp when form mounted
 });
 
 function sanitizeName(raw: string): string {
@@ -29,6 +33,7 @@ const COUNTRY_SET = new Set(countryCodes);
 const LOCALE_SET = new Set<string>(locales as readonly string[]);
 const RATE_LIMIT_WINDOW_MIN = 5;
 const RATE_LIMIT_MAX = 3;
+const MIN_FORM_FILL_MS = 3000; // bot threshold
 
 async function verifyTurnstile(token: string | undefined, ip: string | null) {
   const secret = process.env.TURNSTILE_SECRET_KEY;
@@ -54,6 +59,19 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: 'invalid_payload' }, { status: 400 });
   }
 
+  // ---- silent honeypot: bot fills, return fake-ok so it does not retry ----
+  if (parsed.website && parsed.website.trim().length > 0) {
+    return NextResponse.json({ ok: true });
+  }
+
+  // ---- timing: humans take >3s to fill form ----
+  if (parsed.formStartedAt) {
+    const elapsed = Date.now() - parsed.formStartedAt;
+    if (elapsed < MIN_FORM_FILL_MS) {
+      return NextResponse.json({ error: 'too_fast' }, { status: 400 });
+    }
+  }
+
   const country = parsed.country.toUpperCase();
   if (!COUNTRY_SET.has(country)) {
     return NextResponse.json({ error: 'invalid_country' }, { status: 400 });
@@ -61,6 +79,10 @@ export async function POST(req: Request) {
   const locale = parsed.locale.toLowerCase();
   if (!LOCALE_SET.has(locale)) {
     return NextResponse.json({ error: 'invalid_locale' }, { status: 400 });
+  }
+
+  if (isDisposableEmail(parsed.email)) {
+    return NextResponse.json({ error: 'disposable_email' }, { status: 400 });
   }
 
   const fwd = req.headers.get('x-forwarded-for') ?? '';
@@ -88,7 +110,7 @@ export async function POST(req: Request) {
 
   const supabase = createSupabaseAdminClient();
 
-  // ---- rate limit per ip_hash (sliding window) ----
+  // ---- rate limit per ip_hash ----
   if (ipHash) {
     const since = new Date(Date.now() - RATE_LIMIT_WINDOW_MIN * 60_000).toISOString();
     const { count, error: rlErr } = await supabase
@@ -101,27 +123,18 @@ export async function POST(req: Request) {
     }
   }
 
-  // ---- double opt-in token ----
-  const requireConfirm = process.env.RESEND_API_KEY ? true : false;
-  const confirmationToken = requireConfirm ? crypto.randomBytes(32).toString('hex') : null;
-  const confirmedAt = requireConfirm ? null : new Date().toISOString();
-
-  const { data: inserted, error } = await supabase
-    .from('signatures')
-    .insert({
-      name: cleanedName,
-      email: parsed.email.toLowerCase(),
-      country,
-      locale,
-      ip_country: ipCountry?.toUpperCase() ?? null,
-      ip_hash: ipHash,
-      user_agent: userAgent.slice(0, 512),
-      supports_treaty: true,
-      confirmation_token: confirmationToken,
-      confirmed_at: confirmedAt,
-    })
-    .select('id')
-    .single();
+  // Auto-confirm: counts immediately. Email goes out as a thank-you (no gating).
+  const { error } = await supabase.from('signatures').insert({
+    name: cleanedName,
+    email: parsed.email.toLowerCase(),
+    country,
+    locale,
+    ip_country: ipCountry?.toUpperCase() ?? null,
+    ip_hash: ipHash,
+    user_agent: userAgent.slice(0, 512),
+    supports_treaty: true,
+    confirmed_at: new Date().toISOString(),
+  });
 
   if (error) {
     if (error.code === '23505') {
@@ -131,31 +144,14 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: 'server' }, { status: 500 });
   }
 
-  if (requireConfirm && confirmationToken) {
-    const baseUrl =
-      process.env.NEXT_PUBLIC_SITE_URL ??
-      `https://${req.headers.get('host') ?? '6billionforpeace.vercel.app'}`;
-    const confirmUrl = `${baseUrl}/api/confirm?token=${confirmationToken}`;
-    try {
-      const sent = await sendConfirmationEmail({
-        to: parsed.email.toLowerCase(),
-        name: cleanedName,
-        locale,
-        confirmUrl,
-      });
-      if (!sent) {
-        // email skipped (no key in env at request time) → auto-confirm so user never gets stuck
-        await supabase
-          .from('signatures')
-          .update({ confirmed_at: new Date().toISOString(), confirmation_token: null })
-          .eq('id', inserted!.id);
-        return NextResponse.json({ ok: true, pending: false });
-      }
-    } catch (e) {
-      console.error('[sign] email failed', e);
-      // do not block sign — user already in DB awaiting confirmation
-    }
+  // Fire-and-forget thank-you email. Failure must not block the response.
+  if (process.env.RESEND_API_KEY) {
+    sendThankYouEmail({
+      to: parsed.email.toLowerCase(),
+      name: cleanedName,
+      locale,
+    }).catch((e) => console.error('[sign] thank-you email failed', e));
   }
 
-  return NextResponse.json({ ok: true, pending: requireConfirm });
+  return NextResponse.json({ ok: true });
 }

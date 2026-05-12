@@ -21,6 +21,14 @@ async function loadMessages(locale: string): Promise<EmailMessages> {
   return msgs.default.email;
 }
 
+function escapeHtml(s: string): string {
+  return s
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
 function renderHtml(opts: {
   m: EmailMessages;
   name: string;
@@ -61,59 +69,50 @@ function renderText(opts: { m: EmailMessages; name: string; url: string }): stri
   ].join('\n');
 }
 
-function escapeHtml(s: string): string {
-  return s
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;');
-}
-
-/**
- * Sends the double opt-in confirmation email.
- * Falls back to a no-op + log when RESEND_API_KEY is absent so the rest of the
- * flow keeps working in dev/preview without an external service.
- *
- * Returns true if an email was actually dispatched, false if skipped (no key).
- */
-export async function sendConfirmationEmail(params: {
+async function send(params: {
   to: string;
   name: string;
   locale: string;
-  confirmUrl: string;
+  url: string;
 }): Promise<boolean> {
   const apiKey = process.env.RESEND_API_KEY;
   const from = process.env.EMAIL_FROM ?? 'onboarding@resend.dev';
-  const m = await loadMessages(params.locale);
-  const dir = params.locale === 'ar' ? 'rtl' : 'ltr';
-
   if (!apiKey) {
-    console.warn('[email] RESEND_API_KEY missing — skipping send', {
-      to: params.to,
-      url: params.confirmUrl,
-    });
+    console.warn('[email] RESEND_API_KEY missing — skipping send', { to: params.to });
     return false;
   }
-
+  const m = await loadMessages(params.locale);
+  const dir = params.locale === 'ar' ? 'rtl' : 'ltr';
   const res = await fetch('https://api.resend.com/emails', {
     method: 'POST',
-    headers: {
-      Authorization: `Bearer ${apiKey}`,
-      'content-type': 'application/json',
-    },
+    headers: { Authorization: `Bearer ${apiKey}`, 'content-type': 'application/json' },
     body: JSON.stringify({
       from,
       to: params.to,
       subject: m.subject,
-      html: renderHtml({ m, name: params.name, url: params.confirmUrl, dir }),
-      text: renderText({ m, name: params.name, url: params.confirmUrl }),
+      html: renderHtml({ m, name: params.name, url: params.url, dir }),
+      text: renderText({ m, name: params.name, url: params.url }),
     }),
   });
-
   if (!res.ok) {
     const txt = await res.text().catch(() => '');
     console.error('[email] resend non-ok', res.status, txt.slice(0, 240));
     return false;
   }
   return true;
+}
+
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://6billionforpeace.vercel.app';
+
+/**
+ * Single opt-in thank-you. Sent right after a signature is confirmed, as a
+ * notification — does not gate anything. The CTA points back to the site
+ * (share-the-movement use case), not to a confirmation endpoint.
+ */
+export async function sendThankYouEmail(params: {
+  to: string;
+  name: string;
+  locale: string;
+}): Promise<boolean> {
+  return send({ ...params, url: SITE_URL });
 }

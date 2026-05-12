@@ -83,9 +83,9 @@
     "errorNoDigits": "Introduce solo tu nombre (sin números de documento).",
     "supportTreaty": "Apoyo un Tratado Mundial de Paz.",
     "supportTreatyRequired": "Para firmar, debes aceptar el Tratado por la Paz.",
-    "successPendingTitle": "Revisa tu correo",
-    "successPendingBody": "Enviamos un enlace de confirmación a tu correo. Haz clic en él para contar tu voz.",
-    "errorRateLimit": "Demasiados intentos desde esta red. Espera unos minutos."
+    "errorRateLimit": "Demasiados intentos desde esta red. Espera unos minutos.",
+    "errorTooFast": "Por favor, tómate un momento para llenar el formulario.",
+    "errorDisposable": "Por favor, usa un correo permanente."
   },
   "counter": {
     "label": "firmas de",
@@ -223,10 +223,10 @@
     "invalidBody": "No pudimos confirmar tu firma. El enlace puede haber sido usado o haber caducado."
   },
   "email": {
-    "subject": "Confirma tu firma — 6billionforpeace",
-    "heading": "Confirma tu firma",
-    "body": "Hola {name},\n\nGracias por firmar por la paz. Haz clic en el botón para confirmar tu firma y contar tu voz en 6billionforpeace.com.\n\nSi no firmaste, puedes ignorar este correo.",
-    "cta": "Confirmar mi firma",
+    "subject": "Gracias por firmar — 6billionforpeace",
+    "heading": "Tu voz ha sido contada",
+    "body": "Gracias por firmar por la paz, {name}.\n\nTu firma ha sido registrada en 6billionforpeace.com. Ahora formas parte de un movimiento global y voluntario para unir 6 mil millones de voces alrededor de un único objetivo: la paz en el mundo.\n\nComparte el movimiento para que más personas se sumen.",
+    "cta": "Volver al movimiento",
     "footer": "6billionforpeace — Movimiento voluntario e independiente por la paz mundial."
   }
 }

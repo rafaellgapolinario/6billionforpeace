@@ -83,9 +83,9 @@
     "errorNoDigits": "Please enter only your name (no ID numbers).",
     "supportTreaty": "I support a World Peace Treaty.",
     "supportTreatyRequired": "You must agree with the Peace Treaty to sign.",
-    "successPendingTitle": "Check your inbox",
-    "successPendingBody": "We sent a confirmation link to your email. Click it to count your voice.",
-    "errorRateLimit": "Too many attempts from this network. Please wait a few minutes."
+    "errorRateLimit": "Too many attempts from this network. Please wait a few minutes.",
+    "errorTooFast": "Please take a moment to fill out the form.",
+    "errorDisposable": "Please use a permanent email address."
   },
   "counter": {
     "label": "signatures from",
@@ -223,10 +223,10 @@
     "invalidBody": "We could not confirm your signature. The link may have already been used or has expired."
   },
   "email": {
-    "subject": "Confirm your signature — 6billionforpeace",
-    "heading": "Confirm your signature",
-    "body": "Hi {name},\n\nThanks for signing for peace. Click the button below to confirm your signature and have your voice counted on 6billionforpeace.com.\n\nIf you didn't sign, you can ignore this email.",
-    "cta": "Confirm my signature",
+    "subject": "Thank you for signing — 6billionforpeace",
+    "heading": "Your voice is counted",
+    "body": "Thank you for signing for peace, {name}.\n\nYour signature has been registered on 6billionforpeace.com. You are now part of a global, voluntary movement to unite 6 billion voices around a single goal: peace in the world.\n\nShare the movement so more people can join.",
+    "cta": "Back to the movement",
     "footer": "6billionforpeace — A voluntary, independent movement for world peace."
   }
 }
