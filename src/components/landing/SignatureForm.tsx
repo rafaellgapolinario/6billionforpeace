@@ -149,7 +149,7 @@ export function SignatureForm({
       });
       const json = await res.json();
       if (!res.ok) {
-        if (json?.error === 'duplicate') toast.success(t('errorDuplicate'));
+        if (json?.error === 'duplicate') toast.warning(t('errorDuplicate'));
         else if (json?.error === 'captcha') toast.error(t('errorCaptcha'));
         else if (json?.error === 'rate_limit') toast.error(t('errorRateLimit'));
         else if (json?.error === 'too_fast') toast.error(t('errorTooFast'));
