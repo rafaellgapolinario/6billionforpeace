@@ -1,13 +1,14 @@
 'use client';
 
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { useLocale, useTranslations } from 'next-intl';
 import { toast } from 'sonner';
 import { Loader2, Heart } from 'lucide-react';
-import { listCountries } from '@/lib/countries';
+
+type CountryOption = { code: string; label: string };
 
 declare global {
   interface Window {
@@ -35,10 +36,15 @@ const TURNSTILE_SCRIPT_SRC =
   'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
 const SITE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY ?? '';
 
-export function SignatureForm({ initialCountry }: { initialCountry?: string }) {
+export function SignatureForm({
+  initialCountry,
+  countries,
+}: {
+  initialCountry?: string;
+  countries: CountryOption[];
+}) {
   const t = useTranslations('form');
   const locale = useLocale();
-  const countries = useMemo(() => listCountries(locale), [locale]);
 
   const schema = z.object({
     name: z.string().trim().min(2, t('errorRequired')).max(120),

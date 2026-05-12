@@ -3,6 +3,7 @@ import { setRequestLocale } from 'next-intl/server';
 import { hasLocale } from 'next-intl';
 import { routing } from '@/i18n/routing';
 import { createSupabaseServerClient } from '@/lib/supabase/server';
+import { listCountries } from '@/lib/countries';
 
 import { Header } from '@/components/landing/Header';
 import { HeroHeart } from '@/components/landing/HeroHeart';
@@ -57,7 +58,10 @@ export default async function Home(props: { params: Promise<{ locale: string }> 
               <LiveCounter initialStats={initialStats} />
               <WorldMap initialStats={initialStats} />
             </div>
-            <SignatureForm initialCountry={ipCountry || undefined} />
+            <SignatureForm
+              initialCountry={ipCountry || undefined}
+              countries={listCountries(locale)}
+            />
           </div>
         </section>
 

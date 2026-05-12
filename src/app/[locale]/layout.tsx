@@ -3,7 +3,7 @@ import { Allura, Inter, Noto_Sans_Arabic, Noto_Sans_SC } from 'next/font/google'
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-import { Toaster } from 'sonner';
+import { MountedToaster } from '@/components/MountedToaster';
 import { routing } from '@/i18n/routing';
 import { localeMeta } from '@/i18n/locales';
 import '../globals.css';
@@ -75,7 +75,7 @@ export default async function LocaleLayout(props: {
       <body className="min-h-full bg-background text-navy-900 antialiased">
         <NextIntlClientProvider locale={locale} messages={messages}>
           {props.children}
-          <Toaster richColors position="top-center" />
+          <MountedToaster />
         </NextIntlClientProvider>
       </body>
     </html>
