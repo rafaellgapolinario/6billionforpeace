@@ -51,7 +51,29 @@ async function verifyTurnstile(token: string | undefined, ip: string | null) {
   return Boolean(j.success);
 }
 
+function isSameOrigin(req: Request): boolean {
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://6billionforpeace.net';
+  const allowed = new Set<string>([
+    siteUrl,
+    siteUrl.replace('://', '://www.'),
+  ]);
+  // Permite preview deployments do Vercel + dev local
+  if (process.env.VERCEL_URL) allowed.add(`https://${process.env.VERCEL_URL}`);
+  if (process.env.NODE_ENV !== 'production') allowed.add('http://localhost:3000');
+
+  const origin = req.headers.get('origin');
+  const referer = req.headers.get('referer');
+
+  if (origin && [...allowed].some((a) => origin === a)) return true;
+  if (referer && [...allowed].some((a) => referer.startsWith(a + '/') || referer === a)) return true;
+  return false;
+}
+
 export async function POST(req: Request) {
+  if (!isSameOrigin(req)) {
+    return NextResponse.json({ error: 'forbidden' }, { status: 403 });
+  }
+
   let parsed;
   try {
     parsed = Body.parse(await req.json());

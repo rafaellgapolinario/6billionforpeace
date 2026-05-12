@@ -10,28 +10,6 @@ import { Loader2, Heart, Share2, Copy, Check } from 'lucide-react';
 
 type CountryOption = { code: string; label: string };
 
-declare global {
-  interface Window {
-    turnstile?: {
-      render: (
-        el: HTMLElement | string,
-        opts: {
-          sitekey: string;
-          callback?: (token: string) => void;
-          'error-callback'?: () => void;
-          'expired-callback'?: () => void;
-          'timeout-callback'?: () => void;
-          theme?: 'light' | 'dark' | 'auto';
-          size?: 'normal' | 'compact' | 'flexible' | 'invisible';
-          appearance?: 'always' | 'execute' | 'interaction-only';
-        },
-      ) => string;
-      reset: (widgetId?: string) => void;
-      remove: (widgetId?: string) => void;
-    };
-  }
-}
-
 const TURNSTILE_SCRIPT_SRC =
   'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
 const SITE_KEY = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY ?? '';
