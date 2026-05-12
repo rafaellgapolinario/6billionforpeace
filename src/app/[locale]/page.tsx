@@ -19,6 +19,7 @@ import { EverestSection } from '@/components/landing/EverestSection';
 import { Footer } from '@/components/landing/Footer';
 import { CookieBanner } from '@/components/landing/CookieBanner';
 import { BackToTop } from '@/components/landing/BackToTop';
+import { ShareLinkBlock } from '@/components/landing/ShareLinkBlock';
 
 export default async function Home(props: { params: Promise<{ locale: string }> }) {
   const { locale } = await props.params;
@@ -69,6 +70,10 @@ export default async function Home(props: { params: Promise<{ locale: string }> 
         </section>
 
         <EverestSection />
+
+        <section className="bg-white px-6 py-16">
+          <ShareLinkBlock />
+        </section>
       </main>
       <Footer />
       <CookieBanner />

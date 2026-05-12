@@ -16,43 +16,48 @@
     "menuClose": "Menü schließen"
   },
   "hero": {
-    "tagline": "Eine Bewegung für Weltfrieden"
+    "tagline": "Wir haben noch die Wahl",
+    "logoAlt": "6 Milliarden für den Frieden"
   },
   "solution": {
-    "title": "Die Lösung",
-    "p1": "Im Laufe der Menschheitsgeschichte haben wir im Krieg gelebt.",
-    "p2": "Vielleicht ergab das früher Sinn. Heute nicht mehr.",
-    "p3": "Wir sind müde von Schmerz, Leid und Zerstörung durch Krieg.",
-    "p4": "Die Idee, dass Gewalt nötig sei, um Frieden zu erreichen, überzeugt uns nicht mehr.",
-    "p5": "Wir können nicht länger auf Politik, Regierungen, Religionen, Unternehmen oder Institutionen warten.",
-    "p6": "Es ist Zeit, 6 Milliarden Stimmen mit einem einzigen Ziel zu vereinen: Frieden in der Welt.",
-    "cta": "Transparenz"
+    "title": "Die Lösung ist Frieden",
+    "p1": "Im Laufe der Geschichte hat die Menschheit Konflikte durchlebt, im Glauben, Krieg könne Frieden bringen.",
+    "p2": "Wir sind das Leid und die Zerstörung durch Gewalt leid.",
+    "p3": "Wir wollen uns nicht länger allein auf Politiker, Religionen, Unternehmen oder Institutionen verlassen.",
+    "p4": "Es ist Zeit, Milliarden von Menschen für ein gemeinsames Ziel zu vereinen: Frieden in der Welt.",
+    "p5": "",
+    "p6": "",
+    "cta": "Für den Frieden unterschreiben"
   },
   "call": {
-    "p1": "Dies wird die größte Friedensbewegung sein, die die Welt je gesehen hat.",
-    "p2": "Frieden wird keine Rede mehr sein, kein Versprechen, keine ferne Hoffnung.",
+    "p1": "Schließen Sie sich der größten Friedensbewegung der Menschheitsgeschichte an.",
+    "p2": "Frieden wird nicht länger nur ein Traum sein, eine Rede, ein Versprechen oder eine ferne Hoffnung.",
     "p3": "Frieden ist das Überleben der Menschheit.",
-    "cta": "Mitmachen"
+    "cta": "Für den Frieden unterschreiben"
   },
   "principles": {
-    "title": "Die Prinzipien",
-    "noRevolutions": "Keine Revolutionen.",
+    "title": "Unsere Prinzipien",
     "noIdeologies": "Keine Ideologien.",
-    "withoutWar": "Ohne Krieg.",
+    "noWar": "Kein Krieg.",
+    "withoutWar": "Kein Krieg.",
+    "noRevolutions": "",
     "sovereignty": "Keine Einmischung in die inneren Gesetze oder die Souveränität irgendeiner Nation.",
     "requirementTitle": "Es gibt nur eine Forderung:",
     "requirementBody": "das Ende des Krieges.",
-    "maturity": "Die Menschheit hat ausreichend Reife erreicht, Konflikte zu lösen, ohne sich selbst zu zerstören. Wir kennen den Schrecken des Krieges. Jetzt entscheiden wir uns anders."
+    "maturity": "Die Menschheit ist reif genug, Konflikte zu lösen, ohne sich selbst zu zerstören. Wir kennen den Schrecken des Krieges. Jetzt ist es Zeit, die Freude des Friedens zu erleben.",
+    "cta": "Für den Frieden unterschreiben"
   },
   "volunteers": {
     "title": "Friedens-Freiwillige",
-    "body": "Werde Teil unserer Gemeinschaft engagierter Freiwilliger, die das Leben von Menschen weltweit wirklich verändern.",
-    "cta": "Mitmachen"
+    "subtitle": "Für den Frieden um die Welt reisen",
+    "comingSoon": "Demnächst",
+    "body": "",
+    "cta": ""
   },
   "everest": {
-    "body": "Auf dem Gipfel des Mount Everest wird eine weiße Flagge mit dem Herzen des Friedens gehisst — ein Zeichen, dass die Menschheit sich entschieden hat zu überleben.",
-    "highlight": "Und in Frieden zu leben.",
-    "cta": "Mitmachen"
+    "body": "Auf dem Gipfel des Mount Everest wird eine weiße Flagge mit dem Herzen des Friedens gehisst — als Symbol einer Menschheit, die sich entschieden hat, in Frieden zu leben.",
+    "highlight": "",
+    "cta": ""
   },
   "form": {
     "title": "Für den Frieden unterschreiben",
@@ -98,14 +103,45 @@
     "loading": "Karte wird geladen…"
   },
   "footer": {
-    "mission": "Dies ist ein freiwilliges und unabhängiges Projekt ohne politische, religiöse oder kommerzielle Bindungen. Sein einziger Zweck ist der Frieden.",
+    "mission": "Dies ist ein freies und unabhängiges Projekt ohne Unterscheidungen oder politische, religiöse, kommerzielle oder nationale Bindungen. Sein einziger Zweck ist der Frieden.",
     "linksTitle": "Schnelllinks",
+    "socialTitle": "Folgen Sie uns",
     "home": "Start",
-    "participate": "Mitmachen",
+    "participate": "Teilnahme",
     "transparency": "Transparenz",
+    "donations": "Spenden",
+    "peaceWall": "Friedensmauer",
     "privacy": "Datenschutzerklärung",
     "terms": "Bedingungen",
     "language": "Sprache"
+  },
+  "shareLink": {
+    "title": "An einen Freund senden",
+    "body": "Kopieren Sie den Link und teilen Sie ihn — jede Stimme zählt.",
+    "copy": "Link kopieren",
+    "copied": "Link kopiert"
+  },
+  "comingSoon": {
+    "label": "Demnächst verfügbar",
+    "body": "Diese Seite wird vorbereitet. Schauen Sie bald wieder vorbei."
+  },
+  "pages": {
+    "participation": {
+      "title": "Teilnahme",
+      "lead": "Wie Sie sich anschließen und diese Bewegung verstärken können."
+    },
+    "transparency": {
+      "title": "Transparenz",
+      "lead": "Wie wir diese Initiative frei, unabhängig und vertrauenswürdig halten."
+    },
+    "donations": {
+      "title": "Spenden",
+      "lead": "Wie Beiträge entgegengenommen und verwendet werden."
+    },
+    "peaceWall": {
+      "title": "Friedensmauer",
+      "lead": "Eine globale Wand der Stimmen für den Frieden."
+    }
   },
   "cookie": {
     "title": "Wir respektieren deine Privatsphäre",

@@ -9,8 +9,10 @@ import { cn } from '@/lib/utils';
 
 export function LanguagePicker({
   variant = 'light',
+  showFlags = false,
 }: {
   variant?: 'light' | 'dark';
+  showFlags?: boolean;
 }) {
   const t = useTranslations('header');
   const router = useRouter();
@@ -70,9 +72,11 @@ export function LanguagePicker({
                   dir={localeMeta[lc].dir}
                 >
                   <span className="flex items-center gap-2">
-                    <span aria-hidden className="text-base">
-                      {localeMeta[lc].flag}
-                    </span>
+                    {showFlags && (
+                      <span aria-hidden className="text-base">
+                        {localeMeta[lc].flag}
+                      </span>
+                    )}
                     <span className="font-medium">{localeMeta[lc].native}</span>
                   </span>
                   {lc === current && <Check size={14} className="text-cyan-600" />}

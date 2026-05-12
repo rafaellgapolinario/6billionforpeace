@@ -16,43 +16,48 @@
     "menuClose": "Chiudi menu"
   },
   "hero": {
-    "tagline": "Un movimento per la pace nel mondo"
+    "tagline": "Abbiamo ancora una scelta",
+    "logoAlt": "6 miliardi per la pace"
   },
   "solution": {
-    "title": "La Soluzione",
-    "p1": "Nel corso della storia umana, abbiamo vissuto in guerra.",
-    "p2": "Forse nel passato aveva un senso. Oggi non più.",
-    "p3": "Siamo stanchi del dolore, della sofferenza e della distruzione causati dalla guerra.",
-    "p4": "L'idea che la violenza sia necessaria per ottenere la pace non ci convince più.",
-    "p5": "Non possiamo più aspettare la politica, i governi, le religioni, le aziende o le istituzioni.",
-    "p6": "È ora di unire 6 miliardi di voci attorno a un unico obiettivo: la pace nel mondo.",
-    "cta": "Trasparenza"
+    "title": "La soluzione è la pace",
+    "p1": "Nel corso della storia, l'umanità ha vissuto conflitti credendo che la guerra potesse portare la pace.",
+    "p2": "Siamo stanchi della sofferenza e della distruzione causate dalla violenza.",
+    "p3": "Non vogliamo più dipendere solo da politici, religioni, aziende o istituzioni.",
+    "p4": "È ora di unire miliardi di persone attorno a un obiettivo comune: la pace nel mondo.",
+    "p5": "",
+    "p6": "",
+    "cta": "Firma per la pace"
   },
   "call": {
-    "p1": "Sarà il più grande movimento per la pace che il mondo abbia mai conosciuto.",
-    "p2": "La pace non sarà più un discorso, una promessa o una speranza lontana.",
+    "p1": "Unisciti al più grande movimento per la pace della storia umana.",
+    "p2": "La pace non sarà più solo un sogno, un discorso, una promessa o una speranza lontana.",
     "p3": "La pace è la sopravvivenza dell'umanità.",
-    "cta": "Partecipa"
+    "cta": "Firma per la pace"
   },
   "principles": {
-    "title": "I Principi",
-    "noRevolutions": "Nessuna rivoluzione.",
+    "title": "I nostri principi",
     "noIdeologies": "Nessuna ideologia.",
-    "withoutWar": "Senza guerra.",
+    "noWar": "Nessuna guerra.",
+    "withoutWar": "Nessuna guerra.",
+    "noRevolutions": "",
     "sovereignty": "Nessuna interferenza nelle leggi interne o nella sovranità di alcuna nazione.",
     "requirementTitle": "C'è una sola richiesta:",
     "requirementBody": "la fine della guerra.",
-    "maturity": "L'umanità ha raggiunto la maturità sufficiente per risolvere i conflitti senza distruggersi. Conosciamo l'orrore della guerra. Ora scegliamo diversamente."
+    "maturity": "L'umanità è abbastanza matura per risolvere i conflitti senza autodistruggersi. Conosciamo l'orrore della guerra. Ora è il momento di sperimentare la gioia della pace.",
+    "cta": "Firma per la pace"
   },
   "volunteers": {
     "title": "Volontari per la pace",
-    "body": "Unisciti alla nostra comunità di volontari impegnati che fanno la differenza nella vita delle persone in tutto il mondo.",
-    "cta": "Voglio partecipare"
+    "subtitle": "Viaggia per il mondo per la pace",
+    "comingSoon": "Presto",
+    "body": "",
+    "cta": ""
   },
   "everest": {
-    "body": "Sulla cima del Monte Everest sarà issata una bandiera bianca con il cuore della pace — un segno che l'umanità ha scelto di sopravvivere.",
-    "highlight": "E vivere in pace.",
-    "cta": "Partecipa"
+    "body": "Sulla cima del Monte Everest, una bandiera bianca che porta il cuore della pace si alzerà come simbolo di un'umanità che ha scelto di vivere in pace.",
+    "highlight": "",
+    "cta": ""
   },
   "form": {
     "title": "Firma per la pace",
@@ -98,14 +103,45 @@
     "loading": "Caricamento mappa…"
   },
   "footer": {
-    "mission": "Questo è un progetto volontario e indipendente, senza legami politici, religiosi o commerciali. Il suo unico scopo è la pace.",
+    "mission": "Questo è un progetto libero e indipendente, senza distinzioni o legami politici, religiosi, commerciali o nazionali. Il suo unico scopo è la pace.",
     "linksTitle": "Link rapidi",
+    "socialTitle": "Seguici",
     "home": "Home",
-    "participate": "Partecipa",
+    "participate": "Partecipazione",
     "transparency": "Trasparenza",
+    "donations": "Donazioni",
+    "peaceWall": "Muro della pace",
     "privacy": "Informativa sulla privacy",
     "terms": "Termini",
     "language": "Lingua"
+  },
+  "shareLink": {
+    "title": "Invia a un amico",
+    "body": "Copia il link e condividilo — ogni voce conta.",
+    "copy": "Copia link",
+    "copied": "Link copiato"
+  },
+  "comingSoon": {
+    "label": "Prossimamente",
+    "body": "Questa pagina è in preparazione. Torna presto."
+  },
+  "pages": {
+    "participation": {
+      "title": "Partecipazione",
+      "lead": "Come unirti e amplificare questo movimento."
+    },
+    "transparency": {
+      "title": "Trasparenza",
+      "lead": "Come manteniamo questa iniziativa libera, indipendente e affidabile."
+    },
+    "donations": {
+      "title": "Donazioni",
+      "lead": "Come vengono ricevuti e utilizzati i contributi."
+    },
+    "peaceWall": {
+      "title": "Muro della pace",
+      "lead": "Un muro globale di voci per la pace."
+    }
   },
   "cookie": {
     "title": "Rispettiamo la tua privacy",

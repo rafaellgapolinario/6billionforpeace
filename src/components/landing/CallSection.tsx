@@ -1,5 +1,5 @@
 import { useTranslations } from 'next-intl';
-import { Heart } from 'lucide-react';
+import { HeartButton } from '@/components/HeartButton';
 
 export function CallSection() {
   const t = useTranslations('call');
@@ -17,13 +17,9 @@ export function CallSection() {
           <p>{t('p2')}</p>
           <p className="text-2xl font-semibold sm:text-3xl">{t('p3')}</p>
         </div>
-        <a
-          href="#participate"
-          className="mt-10 inline-flex items-center gap-2 rounded-full bg-navy-900 px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-white shadow-lg transition-transform hover:-translate-y-0.5 hover:bg-navy-800"
-        >
-          {t('cta')}
-          <Heart size={16} className="fill-cyan-400 text-cyan-400" />
-        </a>
+        <div className="mt-10">
+          <HeartButton href="#sign">{t('cta')}</HeartButton>
+        </div>
       </div>
     </section>
   );

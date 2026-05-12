@@ -1,15 +1,18 @@
 import { useTranslations } from 'next-intl';
+import Link from 'next/link';
 import { Logo } from '@/components/Logo';
 import { LanguagePicker } from '@/components/LanguagePicker';
 
 export function Footer() {
   const t = useTranslations('footer');
   const links = [
-    { href: '#top',           label: t('home') },
-    { href: '#participate',   label: t('participate') },
-    { href: '#transparency',  label: t('transparency') },
-    { href: '/privacy',       label: t('privacy') },
-    { href: '/terms',         label: t('terms') },
+    { href: '#top',              label: t('home'),         external: false },
+    { href: '#participate',      label: t('participate'),  external: false },
+    { href: '#transparency',     label: t('transparency'), external: false },
+    { href: '/donations',        label: t('donations'),    external: false },
+    { href: '/peace-wall',       label: t('peaceWall'),    external: false },
+    { href: '/privacy',          label: t('privacy'),      external: false },
+    { href: '/terms',            label: t('terms'),        external: false },
   ];
   return (
     <footer className="bg-navy-900 px-6 py-14 text-white">
@@ -30,9 +33,15 @@ export function Footer() {
           <ul className="space-y-2">
             {links.map((l) => (
               <li key={l.href}>
-                <a href={l.href} className="text-white/80 hover:text-white">
-                  {l.label}
-                </a>
+                {l.href.startsWith('#') ? (
+                  <a href={l.href} className="text-white/80 hover:text-white">
+                    {l.label}
+                  </a>
+                ) : (
+                  <Link href={l.href} className="text-white/80 hover:text-white">
+                    {l.label}
+                  </Link>
+                )}
               </li>
             ))}
           </ul>
@@ -42,7 +51,7 @@ export function Footer() {
           <h4 className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-cyan-400">
             {t('language')}
           </h4>
-          <LanguagePicker variant="light" />
+          <LanguagePicker variant="light" showFlags={false} />
         </div>
       </div>
 

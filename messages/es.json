@@ -16,43 +16,48 @@
     "menuClose": "Cerrar menú"
   },
   "hero": {
-    "tagline": "Un movimiento por la paz mundial"
+    "tagline": "Aún tenemos una elección",
+    "logoAlt": "6 mil millones por la paz"
   },
   "solution": {
-    "title": "La Solución",
-    "p1": "A lo largo de la historia humana, hemos vivido en guerra.",
-    "p2": "Quizás tuvo sentido en el pasado. Hoy ya no.",
-    "p3": "Estamos cansados del dolor, el sufrimiento y la destrucción que causa la guerra.",
-    "p4": "La idea de que la violencia es necesaria para lograr la paz ya no nos convence.",
-    "p5": "No podemos seguir esperando a la política, los gobiernos, las religiones, las corporaciones o las instituciones.",
-    "p6": "Es hora de unir 6 mil millones de voces con un único objetivo: la paz en el mundo.",
-    "cta": "Transparencia"
+    "title": "La solución es la paz",
+    "p1": "A lo largo de la historia, la humanidad ha vivido conflictos creyendo que la guerra podía traer la paz.",
+    "p2": "Estamos cansados del sufrimiento y la destrucción causados por la violencia.",
+    "p3": "Ya no queremos depender solo de políticos, religiones, empresas o instituciones.",
+    "p4": "Es hora de unir a miles de millones de personas en torno a un objetivo compartido: la paz en el mundo.",
+    "p5": "",
+    "p6": "",
+    "cta": "Firmar por la paz"
   },
   "call": {
-    "p1": "Este será el mayor movimiento por la paz que el mundo haya conocido.",
-    "p2": "La paz ya no será un discurso, una promesa o una esperanza lejana.",
+    "p1": "Únete al mayor movimiento por la paz en la historia de la humanidad.",
+    "p2": "La paz ya no será solo un sueño, un discurso, una promesa o una esperanza lejana.",
     "p3": "La paz es la supervivencia de la humanidad.",
-    "cta": "Participar"
+    "cta": "Firmar por la paz"
   },
   "principles": {
-    "title": "Los Principios",
-    "noRevolutions": "Sin revoluciones.",
+    "title": "Nuestros principios",
     "noIdeologies": "Sin ideologías.",
+    "noWar": "Sin guerra.",
     "withoutWar": "Sin guerra.",
+    "noRevolutions": "",
     "sovereignty": "Sin interferencia en las leyes internas o la soberanía de ninguna nación.",
     "requirementTitle": "Solo existe una exigencia:",
     "requirementBody": "el fin de la guerra.",
-    "maturity": "La humanidad ha alcanzado la madurez suficiente para resolver conflictos sin destruirse. Conocemos el horror de la guerra. Ahora elegimos diferente."
+    "maturity": "La humanidad ha madurado lo suficiente para resolver conflictos sin autodestruirse. Conocemos el horror de la guerra. Ahora es momento de experimentar la alegría de la paz.",
+    "cta": "Firmar por la paz"
   },
   "volunteers": {
     "title": "Voluntarios por la paz",
-    "body": "Únete a nuestra comunidad de voluntarios dedicados, marcando una diferencia real en la vida de las personas en el mundo.",
-    "cta": "Quiero participar"
+    "subtitle": "Viaja por el mundo por la paz",
+    "comingSoon": "Pronto",
+    "body": "",
+    "cta": ""
   },
   "everest": {
-    "body": "En la cima del Monte Everest, se izará una bandera blanca con el corazón de la paz — una señal de que la humanidad ha elegido sobrevivir.",
-    "highlight": "Y vivir en paz.",
-    "cta": "Participar"
+    "body": "En la cima del Monte Everest, una bandera blanca portando el corazón de la paz se alzará como símbolo de una humanidad que eligió vivir en paz.",
+    "highlight": "",
+    "cta": ""
   },
   "form": {
     "title": "Firma por la paz",
@@ -98,14 +103,45 @@
     "loading": "Cargando mapa…"
   },
   "footer": {
-    "mission": "Este es un proyecto voluntario e independiente, sin vínculos políticos, religiosos o comerciales. Su único propósito es la paz.",
+    "mission": "Este es un proyecto libre e independiente, sin distinciones ni vínculos políticos, religiosos, comerciales o nacionales. Su único propósito es la paz.",
     "linksTitle": "Enlaces rápidos",
+    "socialTitle": "Síguenos",
     "home": "Inicio",
-    "participate": "Participar",
+    "participate": "Participación",
     "transparency": "Transparencia",
+    "donations": "Donaciones",
+    "peaceWall": "Muro de la paz",
     "privacy": "Política de privacidad",
     "terms": "Términos",
     "language": "Idioma"
+  },
+  "shareLink": {
+    "title": "Envía a un amigo",
+    "body": "Copia el enlace y compártelo — cada voz cuenta.",
+    "copy": "Copiar enlace",
+    "copied": "Enlace copiado"
+  },
+  "comingSoon": {
+    "label": "Próximamente",
+    "body": "Esta página está siendo preparada. Vuelve pronto."
+  },
+  "pages": {
+    "participation": {
+      "title": "Participación",
+      "lead": "Cómo unirte y amplificar este movimiento."
+    },
+    "transparency": {
+      "title": "Transparencia",
+      "lead": "Cómo mantenemos esta iniciativa libre, independiente y confiable."
+    },
+    "donations": {
+      "title": "Donaciones",
+      "lead": "Cómo se reciben y utilizan las contribuciones."
+    },
+    "peaceWall": {
+      "title": "Muro de la paz",
+      "lead": "Un muro global de voces por la paz."
+    }
   },
   "cookie": {
     "title": "Respetamos tu privacidad",

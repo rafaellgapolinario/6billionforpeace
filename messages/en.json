@@ -8,7 +8,7 @@
       "home": "Home",
       "solution": "The solution",
       "principles": "Principles",
-      "participate": "Participate",
+      "participate": "Participation",
       "transparency": "Transparency"
     },
     "languagePicker": "Choose language",
@@ -16,43 +16,48 @@
     "menuClose": "Close menu"
   },
   "hero": {
-    "tagline": "A movement for world peace"
+    "tagline": "We still have a choice",
+    "logoAlt": "6 billion for peace"
   },
   "solution": {
-    "title": "The Solution",
-    "p1": "Throughout human history, we have lived in war.",
-    "p2": "Perhaps this made sense in the past. Today, it no longer does.",
-    "p3": "We are tired of the pain, suffering, and destruction caused by war.",
-    "p4": "The idea that violence is necessary to achieve peace no longer convinces us.",
-    "p5": "We cannot continue waiting for politics, governments, religions, corporations, or institutions.",
-    "p6": "It is time to unite 6 billion voices with a single goal: peace in the world.",
-    "cta": "Transparency"
+    "title": "The solution is peace",
+    "p1": "Throughout history, humanity has lived through conflicts believing that war could bring peace.",
+    "p2": "We are tired of the suffering and destruction caused by violence.",
+    "p3": "We no longer want to depend only on politicians, religions, companies, or institutions.",
+    "p4": "It is time to unite billions of people around one shared goal: peace in the world.",
+    "p5": "",
+    "p6": "",
+    "cta": "Sign for peace"
   },
   "call": {
-    "p1": "This will be the greatest peace movement the world has ever known.",
-    "p2": "Peace will no longer be a speech, a promise, or a distant hope.",
+    "p1": "Join the largest peace movement in human history.",
+    "p2": "Peace will no longer be just a dream, a speech, a promise, or a distant hope.",
     "p3": "Peace is the survival of humanity.",
-    "cta": "Participate"
+    "cta": "Sign for peace"
   },
   "principles": {
-    "title": "The Principles",
-    "noRevolutions": "No revolutions.",
+    "title": "Our principles",
     "noIdeologies": "No ideologies.",
-    "withoutWar": "Without war.",
+    "noWar": "No war.",
+    "withoutWar": "No war.",
+    "noRevolutions": "",
     "sovereignty": "No interference in the internal laws or sovereignty of any nation.",
     "requirementTitle": "There is only one requirement:",
     "requirementBody": "the end of war.",
-    "maturity": "Humanity has reached sufficient maturity to resolve conflict without destroying itself. We know the horror of war. Now, we choose differently."
+    "maturity": "Humanity has matured enough to resolve conflicts without self-destruction. We know the horror of war. Now it is time to experience the joy of peace.",
+    "cta": "Sign for peace"
   },
   "volunteers": {
-    "title": "Peace Volunteers",
-    "body": "Join our community of dedicated volunteers making a real difference in the lives of people around the world.",
-    "cta": "Get involved"
+    "title": "Peace volunteers",
+    "subtitle": "Travel the world for peace",
+    "comingSoon": "Soon",
+    "body": "",
+    "cta": ""
   },
   "everest": {
-    "body": "On the summit of Mount Everest, a white flag bearing the heart of peace will be raised — a sign that humanity has chosen to survive.",
-    "highlight": "And live in peace.",
-    "cta": "Participate"
+    "body": "At the top of Mount Everest, a white flag carrying the heart of peace will rise as a symbol of a humanity that chose to live in peace.",
+    "highlight": "",
+    "cta": ""
   },
   "form": {
     "title": "Sign for peace",
@@ -79,13 +84,19 @@
     "shareCta": "Share",
     "copyCta": "Copy link",
     "copyDone": "Link copied",
-    "shareText": "I just signed for peace at 6billionforpeace.com — unite 6 billion voices for a single goal: peace in the world.",
+    "shareText": "I just signed for peace at 6billionforpeace.net — unite billions of voices for a single goal: peace in the world.",
     "errorNoDigits": "Please enter only your name (no ID numbers).",
     "supportTreaty": "I support a World Peace Treaty.",
     "supportTreatyRequired": "You must agree with the Peace Treaty to sign.",
     "errorRateLimit": "Too many attempts from this network. Please wait a few minutes.",
     "errorTooFast": "Please take a moment to fill out the form.",
     "errorDisposable": "Please use a permanent email address."
+  },
+  "shareLink": {
+    "title": "Send to a friend",
+    "body": "Copy the link and share with anyone — every voice counts.",
+    "copy": "Copy link",
+    "copied": "Link copied"
   },
   "counter": {
     "label": "signatures from",
@@ -98,11 +109,14 @@
     "loading": "Loading map…"
   },
   "footer": {
-    "mission": "This is a voluntary and independent project, with no political, religious, or commercial ties. Its sole purpose is peace.",
+    "mission": "This is a free and independent project, with no distinctions or political, religious, commercial, or national affiliations. Its sole purpose is peace.",
     "linksTitle": "Quick links",
+    "socialTitle": "Follow us",
     "home": "Home",
-    "participate": "Participate",
+    "participate": "Participation",
     "transparency": "Transparency",
+    "donations": "Donations",
+    "peaceWall": "Peace wall",
     "privacy": "Privacy policy",
     "terms": "Terms",
     "language": "Language"
@@ -225,8 +239,30 @@
   "email": {
     "subject": "Thank you for signing — 6billionforpeace",
     "heading": "Your voice is counted",
-    "body": "Thank you for signing for peace, {name}.\n\nYour signature has been registered on 6billionforpeace.com. You are now part of a global, voluntary movement to unite 6 billion voices around a single goal: peace in the world.\n\nShare the movement so more people can join.",
+    "body": "Thank you for signing for peace, {name}.\n\nYour signature has been registered on 6billionforpeace.net. You are now part of a global, voluntary movement to unite billions of voices around a single goal: peace in the world.\n\nShare the movement so more people can join.",
     "cta": "Back to the movement",
     "footer": "6billionforpeace — A voluntary, independent movement for world peace."
+  },
+  "comingSoon": {
+    "label": "Coming soon",
+    "body": "This page is being prepared. Check back soon."
+  },
+  "pages": {
+    "participation": {
+      "title": "Participation",
+      "lead": "How to join and amplify this movement."
+    },
+    "transparency": {
+      "title": "Transparency",
+      "lead": "How we keep this initiative free, independent and trustworthy."
+    },
+    "donations": {
+      "title": "Donations",
+      "lead": "How contributions are received and used."
+    },
+    "peaceWall": {
+      "title": "Peace wall",
+      "lead": "A global mural of voices for peace."
+    }
   }
 }

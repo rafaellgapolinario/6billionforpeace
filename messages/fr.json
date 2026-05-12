@@ -16,43 +16,48 @@
     "menuClose": "Fermer le menu"
   },
   "hero": {
-    "tagline": "Un mouvement pour la paix mondiale"
+    "tagline": "Nous avons encore le choix",
+    "logoAlt": "6 milliards pour la paix"
   },
   "solution": {
-    "title": "La Solution",
-    "p1": "Tout au long de l'histoire humaine, nous avons vécu en guerre.",
-    "p2": "Cela avait peut-être un sens autrefois. Aujourd'hui, ce n'est plus le cas.",
-    "p3": "Nous sommes fatigués de la douleur, de la souffrance et de la destruction causées par la guerre.",
-    "p4": "L'idée que la violence est nécessaire pour atteindre la paix ne nous convainc plus.",
-    "p5": "Nous ne pouvons plus attendre la politique, les gouvernements, les religions, les entreprises ou les institutions.",
-    "p6": "Il est temps d'unir 6 milliards de voix autour d'un seul objectif : la paix dans le monde.",
-    "cta": "Transparence"
+    "title": "La solution, c'est la paix",
+    "p1": "Tout au long de l'histoire, l'humanité a traversé des conflits en croyant que la guerre pouvait apporter la paix.",
+    "p2": "Nous sommes fatigués de la souffrance et de la destruction causées par la violence.",
+    "p3": "Nous ne voulons plus dépendre uniquement des politiciens, des religions, des entreprises ou des institutions.",
+    "p4": "Il est temps d'unir des milliards de personnes autour d'un objectif commun : la paix dans le monde.",
+    "p5": "",
+    "p6": "",
+    "cta": "Signer pour la paix"
   },
   "call": {
-    "p1": "Ce sera le plus grand mouvement pour la paix que le monde ait jamais connu.",
-    "p2": "La paix ne sera plus un discours, une promesse ou un espoir lointain.",
+    "p1": "Rejoignez le plus grand mouvement pour la paix de l'histoire de l'humanité.",
+    "p2": "La paix ne sera plus seulement un rêve, un discours, une promesse ou un espoir lointain.",
     "p3": "La paix, c'est la survie de l'humanité.",
-    "cta": "Participer"
+    "cta": "Signer pour la paix"
   },
   "principles": {
-    "title": "Les Principes",
-    "noRevolutions": "Sans révolutions.",
-    "noIdeologies": "Sans idéologies.",
-    "withoutWar": "Sans guerre.",
+    "title": "Nos principes",
+    "noIdeologies": "Pas d'idéologies.",
+    "noWar": "Pas de guerre.",
+    "withoutWar": "Pas de guerre.",
+    "noRevolutions": "",
     "sovereignty": "Aucune ingérence dans les lois internes ou la souveraineté d'aucune nation.",
     "requirementTitle": "Il n'y a qu'une seule exigence :",
     "requirementBody": "la fin de la guerre.",
-    "maturity": "L'humanité a atteint une maturité suffisante pour résoudre les conflits sans s'autodétruire. Nous connaissons l'horreur de la guerre. Aujourd'hui, nous choisissons autrement."
+    "maturity": "L'humanité a suffisamment mûri pour résoudre les conflits sans s'autodétruire. Nous connaissons l'horreur de la guerre. Il est temps de connaître la joie de la paix.",
+    "cta": "Signer pour la paix"
   },
   "volunteers": {
     "title": "Volontaires pour la paix",
-    "body": "Rejoignez notre communauté de volontaires engagés, qui font une vraie différence dans la vie des personnes à travers le monde.",
-    "cta": "Je veux participer"
+    "subtitle": "Voyagez à travers le monde pour la paix",
+    "comingSoon": "Bientôt",
+    "body": "",
+    "cta": ""
   },
   "everest": {
-    "body": "Au sommet du Mont Everest, un drapeau blanc portant le cœur de la paix sera hissé — un signe que l'humanité a choisi de survivre.",
-    "highlight": "Et de vivre en paix.",
-    "cta": "Participer"
+    "body": "Au sommet du Mont Everest, un drapeau blanc portant le cœur de la paix sera hissé en symbole d'une humanité qui a choisi de vivre en paix.",
+    "highlight": "",
+    "cta": ""
   },
   "form": {
     "title": "Signer pour la paix",
@@ -98,14 +103,45 @@
     "loading": "Chargement de la carte…"
   },
   "footer": {
-    "mission": "Ce projet est volontaire et indépendant, sans liens politiques, religieux ou commerciaux. Son seul but est la paix.",
+    "mission": "Ce projet est libre et indépendant, sans distinctions ni liens politiques, religieux, commerciaux ou nationaux. Son seul but est la paix.",
     "linksTitle": "Liens rapides",
+    "socialTitle": "Suivez-nous",
     "home": "Accueil",
-    "participate": "Participer",
+    "participate": "Participation",
     "transparency": "Transparence",
+    "donations": "Dons",
+    "peaceWall": "Mur de la paix",
     "privacy": "Politique de confidentialité",
     "terms": "Conditions",
     "language": "Langue"
+  },
+  "shareLink": {
+    "title": "Envoyer à un ami",
+    "body": "Copiez le lien et partagez-le — chaque voix compte.",
+    "copy": "Copier le lien",
+    "copied": "Lien copié"
+  },
+  "comingSoon": {
+    "label": "Bientôt disponible",
+    "body": "Cette page est en préparation. Revenez bientôt."
+  },
+  "pages": {
+    "participation": {
+      "title": "Participation",
+      "lead": "Comment rejoindre et amplifier ce mouvement."
+    },
+    "transparency": {
+      "title": "Transparence",
+      "lead": "Comment nous maintenons cette initiative libre, indépendante et digne de confiance."
+    },
+    "donations": {
+      "title": "Dons",
+      "lead": "Comment les contributions sont reçues et utilisées."
+    },
+    "peaceWall": {
+      "title": "Mur de la paix",
+      "lead": "Une fresque mondiale de voix pour la paix."
+    }
   },
   "cookie": {
     "title": "Nous respectons votre vie privée",
