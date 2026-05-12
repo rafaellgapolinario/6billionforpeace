@@ -63,7 +63,7 @@
     "emailPlaceholder": "vous@exemple.com",
     "country": "Pays",
     "countryPlaceholder": "Sélectionnez votre pays",
-    "consent": "J'accepte la collecte de mes données selon la politique de confidentialité (LGPD/GDPR).",
+    "consent": "J'accepte la collecte de mes données selon la politique de confidentialité (LGPD/RGPD).",
     "submit": "Signer pour la paix",
     "submitting": "Signature en cours…",
     "successTitle": "Merci pour votre voix.",
@@ -158,7 +158,7 @@
     },
     "terms": {
       "title": "Conditions d'utilisation",
-      "intro": "En signant, vous rejoignez un mouvement mondial et bénévole pour la paix, sans aucun lien politique, religieux ou commercial. Ces conditions décrivent comment participer.",
+      "intro": "En signant, vous rejoignez un mouvement mondial et bénévole pour la paix, sans aucun lien politique, religieux ou commercial. Ces conditions décrivent comment participer et à quoi s'attendre.",
       "sections": [
         {
           "heading": "Nature du mouvement",

@@ -40,7 +40,7 @@
     "noIdeologies": "Nessuna ideologia.",
     "withoutWar": "Senza guerra.",
     "sovereignty": "Nessuna interferenza nelle leggi interne o nella sovranità di alcuna nazione.",
-    "requirementTitle": "C'è un solo requisito:",
+    "requirementTitle": "C'è una sola richiesta:",
     "requirementBody": "la fine della guerra.",
     "maturity": "L'umanità ha raggiunto la maturità sufficiente per risolvere i conflitti senza distruggersi. Conosciamo l'orrore della guerra. Ora scegliamo diversamente."
   },
@@ -158,7 +158,7 @@
     },
     "terms": {
       "title": "Termini di utilizzo",
-      "intro": "Firmando, ti unisci a un movimento globale e volontario per la pace, senza legami politici, religiosi o commerciali. Questi termini descrivono come partecipare.",
+      "intro": "Firmando, ti unisci a un movimento globale e volontario per la pace, senza legami politici, religiosi o commerciali. Questi termini descrivono come partecipare e cosa aspettarsi.",
       "sections": [
         {
           "heading": "Natura del movimento",

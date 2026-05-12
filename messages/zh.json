@@ -84,7 +84,7 @@
     "supportTreaty": "我支持《世界和平条约》。",
     "supportTreatyRequired": "请同意《和平条约》后再签名。",
     "errorRateLimit": "此网络的请求次数过多。请稍后再试。",
-    "errorTooFast": "请认真填写表单。",
+    "errorTooFast": "请花一点时间填写表单。",
     "errorDisposable": "请使用长期有效的邮箱。"
   },
   "counter": {

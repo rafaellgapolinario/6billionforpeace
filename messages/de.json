@@ -40,7 +40,7 @@
     "noIdeologies": "Keine Ideologien.",
     "withoutWar": "Ohne Krieg.",
     "sovereignty": "Keine Einmischung in die inneren Gesetze oder die Souveränität irgendeiner Nation.",
-    "requirementTitle": "Es gibt nur eine Anforderung:",
+    "requirementTitle": "Es gibt nur eine Forderung:",
     "requirementBody": "das Ende des Krieges.",
     "maturity": "Die Menschheit hat ausreichend Reife erreicht, Konflikte zu lösen, ohne sich selbst zu zerstören. Wir kennen den Schrecken des Krieges. Jetzt entscheiden wir uns anders."
   },
@@ -79,7 +79,7 @@
     "shareCta": "Teilen",
     "copyCta": "Link kopieren",
     "copyDone": "Link kopiert",
-    "shareText": "Ich habe gerade für den Frieden auf 6billionforpeace.com unterschrieben — 6 Milliarden Stimmen für ein einziges Ziel zu vereinen: Frieden in der Welt.",
+    "shareText": "Ich habe gerade für den Frieden auf 6billionforpeace.com unterschrieben — um 6 Milliarden Stimmen für ein einziges Ziel zu vereinen: Frieden in der Welt.",
     "errorNoDigits": "Bitte nur deinen Namen eingeben (keine Ausweisnummern).",
     "supportTreaty": "Ich unterstütze einen Welt-Friedensvertrag.",
     "supportTreatyRequired": "Du musst dem Friedensvertrag zustimmen, um zu unterzeichnen.",
@@ -158,7 +158,7 @@
     },
     "terms": {
       "title": "Nutzungsbedingungen",
-      "intro": "Mit deiner Unterschrift trittst du einer globalen, ehrenamtlichen Bewegung für Frieden bei — ohne politische, religiöse oder kommerzielle Bindungen. Diese Bedingungen beschreiben die Teilnahme.",
+      "intro": "Mit deiner Unterschrift trittst du einer globalen, ehrenamtlichen Bewegung für Frieden bei — ohne politische, religiöse oder kommerzielle Bindungen. Diese Bedingungen beschreiben, wie man teilnimmt und was zu erwarten ist.",
       "sections": [
         {
           "heading": "Natur der Bewegung",
