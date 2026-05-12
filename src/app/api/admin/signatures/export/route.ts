@@ -35,6 +35,8 @@ export async function GET(req: Request) {
   const stream = new ReadableStream<Uint8Array>({
     async start(controller) {
       const enc = new TextEncoder();
+      // UTF-8 BOM so Excel/Numbers auto-detect encoding instead of latin-1
+      controller.enqueue(enc.encode('﻿'));
       controller.enqueue(enc.encode(header));
 
       let offset = 0;
