@@ -63,8 +63,6 @@
     "emailPlaceholder": "du@beispiel.com",
     "country": "Land",
     "countryPlaceholder": "Wähle dein Land",
-    "city": "Stadt (optional)",
-    "cityPlaceholder": "Deine Stadt",
     "consent": "Ich stimme der Erfassung meiner Daten gemäß der Datenschutzerklärung (DSGVO/LGPD) zu.",
     "submit": "Für den Frieden unterschreiben",
     "submitting": "Wird gesendet…",
@@ -82,7 +80,12 @@
     "copyCta": "Link kopieren",
     "copyDone": "Link kopiert",
     "shareText": "Ich habe gerade für den Frieden auf 6billionforpeace.com unterschrieben — 6 Milliarden Stimmen für ein einziges Ziel zu vereinen: Frieden in der Welt.",
-    "errorNoDigits": "Bitte nur deinen Namen eingeben (keine Ausweisnummern)."
+    "errorNoDigits": "Bitte nur deinen Namen eingeben (keine Ausweisnummern).",
+    "supportTreaty": "Ich unterstütze einen Welt-Friedensvertrag.",
+    "supportTreatyRequired": "Du musst dem Friedensvertrag zustimmen, um zu unterzeichnen.",
+    "successPendingTitle": "Prüfe dein Postfach",
+    "successPendingBody": "Wir haben dir einen Bestätigungslink geschickt. Klicke darauf, damit deine Stimme zählt.",
+    "errorRateLimit": "Zu viele Versuche aus diesem Netzwerk. Bitte einige Minuten warten."
   },
   "counter": {
     "label": "Unterschriften aus",
@@ -211,5 +214,19 @@
   },
   "nav": {
     "backToTop": "Nach oben"
+  },
+  "confirmed": {
+    "title": "Deine Stimme zählt.",
+    "body": "Danke für die Bestätigung. Du bist jetzt Teil der Bewegung.",
+    "cta": "Zurück zur Startseite",
+    "invalidTitle": "Link ungültig oder abgelaufen",
+    "invalidBody": "Wir konnten deine Unterschrift nicht bestätigen. Der Link wurde vielleicht schon verwendet oder ist abgelaufen."
+  },
+  "email": {
+    "subject": "Unterschrift bestätigen — 6billionforpeace",
+    "heading": "Unterschrift bestätigen",
+    "body": "Hallo {name},\n\nDanke fürs Unterzeichnen. Klicke auf den Button, um deine Unterschrift zu bestätigen und deine Stimme auf 6billionforpeace.com zählen zu lassen.\n\nFalls du nicht unterschrieben hast, kannst du diese E-Mail ignorieren.",
+    "cta": "Unterschrift bestätigen",
+    "footer": "6billionforpeace — Freiwillige, unabhängige Bewegung für Weltfrieden."
   }
 }

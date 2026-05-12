@@ -4,6 +4,7 @@ import crypto from 'node:crypto';
 import { createSupabaseAdminClient } from '@/lib/supabase/admin';
 import { countryCodes } from '@/lib/countries';
 import { locales } from '@/i18n/locales';
+import { sendConfirmationEmail } from '@/lib/email';
 
 export const runtime = 'nodejs';
 
@@ -11,17 +12,12 @@ const Body = z.object({
   name: z.string().trim().min(2).max(120),
   email: z.string().email().max(254),
   country: z.string().length(2),
-  city: z.string().trim().max(120).optional().or(z.literal('')),
   locale: z.string().length(2),
+  supportsTreaty: z.literal(true),
   consent: z.literal(true),
   turnstileToken: z.string().optional(),
 });
 
-/**
- * Strip CPF/CNPJ/RG/phone-like digit runs that browser autofill (notably Chrome
- * in Brazil) sometimes glues to the name field. We do not want to store national
- * ID numbers — they violate LGPD purpose-limitation and the project promise.
- */
 function sanitizeName(raw: string): string {
   return raw
     .replace(/[\d.\-/]{6,}/g, ' ')
@@ -29,18 +25,14 @@ function sanitizeName(raw: string): string {
     .trim();
 }
 
-function sanitizeCity(raw: string | null): string | null {
-  if (!raw) return null;
-  const cleaned = raw.replace(/[\d.\-/]{6,}/g, ' ').replace(/\s{2,}/g, ' ').trim();
-  return cleaned || null;
-}
-
 const COUNTRY_SET = new Set(countryCodes);
 const LOCALE_SET = new Set<string>(locales as readonly string[]);
+const RATE_LIMIT_WINDOW_MIN = 5;
+const RATE_LIMIT_MAX = 3;
 
 async function verifyTurnstile(token: string | undefined, ip: string | null) {
   const secret = process.env.TURNSTILE_SECRET_KEY;
-  if (!secret) return true; // not configured yet (D1)
+  if (!secret) return true;
   if (!token) return false;
   const form = new URLSearchParams();
   form.set('secret', secret);
@@ -58,7 +50,7 @@ export async function POST(req: Request) {
   let parsed;
   try {
     parsed = Body.parse(await req.json());
-  } catch (err) {
+  } catch {
     return NextResponse.json({ error: 'invalid_payload' }, { status: 400 });
   }
 
@@ -71,7 +63,6 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: 'invalid_locale' }, { status: 400 });
   }
 
-  // ---- collect request signals (server-only, never returned) ----
   const fwd = req.headers.get('x-forwarded-for') ?? '';
   const ip = (fwd.split(',')[0] || '').trim() || null;
   const userAgent = req.headers.get('user-agent') ?? '';
@@ -85,7 +76,6 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: 'captcha' }, { status: 403 });
   }
 
-  // ---- LGPD/GDPR-friendly: store sha256(ip + salt), not the raw IP ----
   const salt = process.env.IP_HASH_SALT ?? 'dev_salt_change_me';
   const ipHash = ip
     ? crypto.createHash('sha256').update(`${ip}|${salt}`).digest('hex')
@@ -97,16 +87,41 @@ export async function POST(req: Request) {
   }
 
   const supabase = createSupabaseAdminClient();
-  const { error } = await supabase.from('signatures').insert({
-    name: cleanedName,
-    email: parsed.email.toLowerCase(),
-    country,
-    city: sanitizeCity(parsed.city || null),
-    locale,
-    ip_country: ipCountry?.toUpperCase() ?? null,
-    ip_hash: ipHash,
-    user_agent: userAgent.slice(0, 512),
-  });
+
+  // ---- rate limit per ip_hash (sliding window) ----
+  if (ipHash) {
+    const since = new Date(Date.now() - RATE_LIMIT_WINDOW_MIN * 60_000).toISOString();
+    const { count, error: rlErr } = await supabase
+      .from('signatures')
+      .select('id', { count: 'exact', head: true })
+      .eq('ip_hash', ipHash)
+      .gte('created_at', since);
+    if (!rlErr && (count ?? 0) >= RATE_LIMIT_MAX) {
+      return NextResponse.json({ error: 'rate_limit' }, { status: 429 });
+    }
+  }
+
+  // ---- double opt-in token ----
+  const requireConfirm = process.env.RESEND_API_KEY ? true : false;
+  const confirmationToken = requireConfirm ? crypto.randomBytes(32).toString('hex') : null;
+  const confirmedAt = requireConfirm ? null : new Date().toISOString();
+
+  const { data: inserted, error } = await supabase
+    .from('signatures')
+    .insert({
+      name: cleanedName,
+      email: parsed.email.toLowerCase(),
+      country,
+      locale,
+      ip_country: ipCountry?.toUpperCase() ?? null,
+      ip_hash: ipHash,
+      user_agent: userAgent.slice(0, 512),
+      supports_treaty: true,
+      confirmation_token: confirmationToken,
+      confirmed_at: confirmedAt,
+    })
+    .select('id')
+    .single();
 
   if (error) {
     if (error.code === '23505') {
@@ -116,5 +131,31 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: 'server' }, { status: 500 });
   }
 
-  return NextResponse.json({ ok: true });
+  if (requireConfirm && confirmationToken) {
+    const baseUrl =
+      process.env.NEXT_PUBLIC_SITE_URL ??
+      `https://${req.headers.get('host') ?? '6billionforpeace.vercel.app'}`;
+    const confirmUrl = `${baseUrl}/api/confirm?token=${confirmationToken}`;
+    try {
+      const sent = await sendConfirmationEmail({
+        to: parsed.email.toLowerCase(),
+        name: cleanedName,
+        locale,
+        confirmUrl,
+      });
+      if (!sent) {
+        // email skipped (no key in env at request time) → auto-confirm so user never gets stuck
+        await supabase
+          .from('signatures')
+          .update({ confirmed_at: new Date().toISOString(), confirmation_token: null })
+          .eq('id', inserted!.id);
+        return NextResponse.json({ ok: true, pending: false });
+      }
+    } catch (e) {
+      console.error('[sign] email failed', e);
+      // do not block sign — user already in DB awaiting confirmation
+    }
+  }
+
+  return NextResponse.json({ ok: true, pending: requireConfirm });
 }

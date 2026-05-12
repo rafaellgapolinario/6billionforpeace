@@ -55,7 +55,7 @@ export function SignatureForm({
       .refine((v) => !/\d{6,}/.test(v), { message: t('errorNoDigits') }),
     email: z.string().email(t('errorEmail')),
     country: z.string().length(2, t('errorRequired')),
-    city: z.string().trim().max(120).optional().or(z.literal('')),
+    supportsTreaty: z.boolean().refine((v) => v === true, { message: t('supportTreatyRequired') }),
     consent: z.boolean().refine((v) => v === true, { message: t('errorRequired') }),
   });
 
@@ -73,12 +73,12 @@ export function SignatureForm({
       name: '',
       email: '',
       country: initialCountry ?? '',
-      city: '',
+      supportsTreaty: false,
       consent: false,
     },
   });
 
-  const [done, setDone] = useState(false);
+  const [done, setDone] = useState<false | 'pending' | 'confirmed'>(false);
   const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
   const widgetIdRef = useRef<string | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -147,12 +147,11 @@ export function SignatureForm({
       if (!res.ok) {
         if (json?.error === 'duplicate') toast.success(t('errorDuplicate'));
         else if (json?.error === 'captcha') toast.error(t('errorCaptcha'));
-        else if (json?.error === 'rate_limit')
-          toast.error(t('errorGeneric'));
+        else if (json?.error === 'rate_limit') toast.error(t('errorRateLimit'));
         else toast.error(t('errorGeneric'));
         return;
       }
-      setDone(true);
+      setDone(json?.pending ? 'pending' : 'confirmed');
       reset();
       setTurnstileToken(null);
       if (widgetIdRef.current && window.turnstile) {
@@ -164,7 +163,10 @@ export function SignatureForm({
     }
   };
 
-  if (done) {
+  if (done === 'pending') {
+    return <PendingCard t={t} onReset={() => setDone(false)} />;
+  }
+  if (done === 'confirmed') {
     return <SuccessCard t={t} onReset={() => setDone(false)} />;
   }
 
@@ -211,31 +213,37 @@ export function SignatureForm({
             ))}
           </select>
         </Field>
-
-        <Field label={t('city')} error={errors.city?.message}>
-          <input
-            type="text"
-            autoComplete="address-level2"
-            placeholder={t('cityPlaceholder')}
-            {...register('city')}
-            className={inputCls}
-          />
-        </Field>
       </div>
 
-      <label className="mt-6 flex items-start gap-3 text-sm text-navy-800">
-        <input
-          type="checkbox"
-          {...register('consent')}
-          className="mt-0.5 h-4 w-4 rounded border-navy-300 text-cyan-600 accent-cyan-600"
-        />
-        <span>
-          {t('consent')}
-          {errors.consent?.message && (
-            <span className="ml-2 text-red-600">— {errors.consent.message}</span>
-          )}
-        </span>
-      </label>
+      <div className="mt-6 space-y-3">
+        <label className="flex items-start gap-3 text-sm font-medium text-navy-900">
+          <input
+            type="checkbox"
+            {...register('supportsTreaty')}
+            className="mt-0.5 h-4 w-4 rounded border-navy-300 text-cyan-600 accent-cyan-600"
+          />
+          <span>
+            {t('supportTreaty')}
+            {errors.supportsTreaty?.message && (
+              <span className="ml-2 text-red-600">— {errors.supportsTreaty.message}</span>
+            )}
+          </span>
+        </label>
+
+        <label className="flex items-start gap-3 text-sm text-navy-800">
+          <input
+            type="checkbox"
+            {...register('consent')}
+            className="mt-0.5 h-4 w-4 rounded border-navy-300 text-cyan-600 accent-cyan-600"
+          />
+          <span>
+            {t('consent')}
+            {errors.consent?.message && (
+              <span className="ml-2 text-red-600">— {errors.consent.message}</span>
+            )}
+          </span>
+        </label>
+      </div>
 
       <div ref={containerRef} className="mt-5 flex justify-center" />
 
@@ -257,6 +265,32 @@ export function SignatureForm({
         )}
       </button>
     </form>
+  );
+}
+
+function PendingCard({
+  t,
+  onReset,
+}: {
+  t: ReturnType<typeof useTranslations<'form'>>;
+  onReset: () => void;
+}) {
+  return (
+    <div className="rounded-3xl border border-cyan-200 bg-cyan-50 px-8 py-12 text-center">
+      <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-cyan-500 text-white">
+        <Heart className="h-6 w-6 fill-white" />
+      </div>
+      <h3 className="mt-5 text-2xl font-semibold text-navy-900">
+        {t('successPendingTitle')}
+      </h3>
+      <p className="mt-2 text-base text-navy-700">{t('successPendingBody')}</p>
+      <button
+        onClick={onReset}
+        className="mt-6 text-xs font-medium text-cyan-700 underline-offset-4 hover:underline"
+      >
+        ↺
+      </button>
+    </div>
   );
 }
 

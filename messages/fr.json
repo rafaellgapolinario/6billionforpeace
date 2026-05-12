@@ -63,8 +63,6 @@
     "emailPlaceholder": "vous@exemple.com",
     "country": "Pays",
     "countryPlaceholder": "Sélectionnez votre pays",
-    "city": "Ville (optionnel)",
-    "cityPlaceholder": "Votre ville",
     "consent": "J'accepte la collecte de mes données selon la politique de confidentialité (LGPD/GDPR).",
     "submit": "Signer pour la paix",
     "submitting": "Signature en cours…",
@@ -82,7 +80,12 @@
     "copyCta": "Copier le lien",
     "copyDone": "Lien copié",
     "shareText": "Je viens de signer pour la paix sur 6billionforpeace.com — unir 6 milliards de voix autour d'un seul objectif : la paix dans le monde.",
-    "errorNoDigits": "Veuillez saisir uniquement votre nom (sans numéros de document)."
+    "errorNoDigits": "Veuillez saisir uniquement votre nom (sans numéros de document).",
+    "supportTreaty": "Je soutiens un Traité Mondial pour la Paix.",
+    "supportTreatyRequired": "Vous devez accepter le Traité pour la Paix pour signer.",
+    "successPendingTitle": "Vérifiez votre boîte de réception",
+    "successPendingBody": "Nous avons envoyé un lien de confirmation à votre adresse. Cliquez pour valider votre voix.",
+    "errorRateLimit": "Trop de tentatives depuis ce réseau. Patientez quelques minutes."
   },
   "counter": {
     "label": "signatures de",
@@ -211,5 +214,19 @@
   },
   "nav": {
     "backToTop": "Retour en haut"
+  },
+  "confirmed": {
+    "title": "Votre voix est comptée.",
+    "body": "Merci d'avoir confirmé. Vous faites désormais partie du mouvement.",
+    "cta": "Retour à l'accueil",
+    "invalidTitle": "Lien invalide ou expiré",
+    "invalidBody": "Nous n'avons pas pu confirmer votre signature. Le lien peut avoir déjà été utilisé ou avoir expiré."
+  },
+  "email": {
+    "subject": "Confirmez votre signature — 6billionforpeace",
+    "heading": "Confirmez votre signature",
+    "body": "Bonjour {name},\n\nMerci d'avoir signé pour la paix. Cliquez sur le bouton pour confirmer votre signature et faire compter votre voix sur 6billionforpeace.com.\n\nSi vous n'avez pas signé, vous pouvez ignorer cet e-mail.",
+    "cta": "Confirmer ma signature",
+    "footer": "6billionforpeace — Mouvement bénévole et indépendant pour la paix dans le monde."
   }
 }

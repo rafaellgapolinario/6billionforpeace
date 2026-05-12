@@ -63,8 +63,6 @@
     "emailPlaceholder": "tu@ejemplo.com",
     "country": "País",
     "countryPlaceholder": "Selecciona tu país",
-    "city": "Ciudad (opcional)",
-    "cityPlaceholder": "Tu ciudad",
     "consent": "Acepto la recopilación de mis datos según la política de privacidad (LGPD/GDPR).",
     "submit": "Firmar por la paz",
     "submitting": "Firmando…",
@@ -82,7 +80,12 @@
     "copyCta": "Copiar enlace",
     "copyDone": "Enlace copiado",
     "shareText": "Acabo de firmar por la paz en 6billionforpeace.com — unir 6 mil millones de voces con un único objetivo: la paz en el mundo.",
-    "errorNoDigits": "Introduce solo tu nombre (sin números de documento)."
+    "errorNoDigits": "Introduce solo tu nombre (sin números de documento).",
+    "supportTreaty": "Apoyo un Tratado Mundial de Paz.",
+    "supportTreatyRequired": "Para firmar, debes aceptar el Tratado por la Paz.",
+    "successPendingTitle": "Revisa tu correo",
+    "successPendingBody": "Enviamos un enlace de confirmación a tu correo. Haz clic en él para contar tu voz.",
+    "errorRateLimit": "Demasiados intentos desde esta red. Espera unos minutos."
   },
   "counter": {
     "label": "firmas de",
@@ -211,5 +214,19 @@
   },
   "nav": {
     "backToTop": "Volver arriba"
+  },
+  "confirmed": {
+    "title": "Tu voz ha sido contada.",
+    "body": "Gracias por confirmar. Ahora formas parte del movimiento.",
+    "cta": "Volver al inicio",
+    "invalidTitle": "Enlace inválido o caducado",
+    "invalidBody": "No pudimos confirmar tu firma. El enlace puede haber sido usado o haber caducado."
+  },
+  "email": {
+    "subject": "Confirma tu firma — 6billionforpeace",
+    "heading": "Confirma tu firma",
+    "body": "Hola {name},\n\nGracias por firmar por la paz. Haz clic en el botón para confirmar tu firma y contar tu voz en 6billionforpeace.com.\n\nSi no firmaste, puedes ignorar este correo.",
+    "cta": "Confirmar mi firma",
+    "footer": "6billionforpeace — Movimiento voluntario e independiente por la paz mundial."
   }
 }

@@ -63,8 +63,6 @@
     "emailPlaceholder": "tu@esempio.com",
     "country": "Paese",
     "countryPlaceholder": "Seleziona il tuo paese",
-    "city": "Città (facoltativo)",
-    "cityPlaceholder": "La tua città",
     "consent": "Acconsento alla raccolta dei miei dati secondo l'informativa sulla privacy (LGPD/GDPR).",
     "submit": "Firma per la pace",
     "submitting": "Invio in corso…",
@@ -82,7 +80,12 @@
     "copyCta": "Copia link",
     "copyDone": "Link copiato",
     "shareText": "Ho appena firmato per la pace su 6billionforpeace.com — unire 6 miliardi di voci attorno a un unico obiettivo: la pace nel mondo.",
-    "errorNoDigits": "Inserisci solo il tuo nome (senza numeri di documento)."
+    "errorNoDigits": "Inserisci solo il tuo nome (senza numeri di documento).",
+    "supportTreaty": "Sostengo un Trattato Mondiale per la Pace.",
+    "supportTreatyRequired": "Devi accettare il Trattato per la Pace per firmare.",
+    "successPendingTitle": "Controlla la tua casella di posta",
+    "successPendingBody": "Ti abbiamo inviato un link di conferma. Cliccalo per contare la tua voce.",
+    "errorRateLimit": "Troppi tentativi da questa rete. Aspetta qualche minuto."
   },
   "counter": {
     "label": "firme da",
@@ -211,5 +214,19 @@
   },
   "nav": {
     "backToTop": "Torna su"
+  },
+  "confirmed": {
+    "title": "La tua voce è stata contata.",
+    "body": "Grazie per aver confermato. Ora fai parte del movimento.",
+    "cta": "Torna alla home",
+    "invalidTitle": "Link non valido o scaduto",
+    "invalidBody": "Non abbiamo potuto confermare la tua firma. Il link potrebbe essere già stato usato o scaduto."
+  },
+  "email": {
+    "subject": "Conferma la tua firma — 6billionforpeace",
+    "heading": "Conferma la tua firma",
+    "body": "Ciao {name},\n\nGrazie per aver firmato per la pace. Clicca sul pulsante per confermare la tua firma e far contare la tua voce su 6billionforpeace.com.\n\nSe non hai firmato, puoi ignorare questa email.",
+    "cta": "Conferma la mia firma",
+    "footer": "6billionforpeace — Movimento volontario e indipendente per la pace nel mondo."
   }
 }

@@ -63,8 +63,6 @@
     "emailPlaceholder": "you@example.com",
     "country": "国家",
     "countryPlaceholder": "选择您的国家",
-    "city": "城市(可选)",
-    "cityPlaceholder": "您的城市",
     "consent": "我同意根据隐私政策(LGPD/GDPR)收集我的数据。",
     "submit": "为和平签名",
     "submitting": "签名中…",
@@ -82,7 +80,12 @@
     "copyCta": "复制链接",
     "copyDone": "链接已复制",
     "shareText": "我刚刚在 6billionforpeace.com 为和平签名 — 让 60 亿人的声音汇聚于同一目标:世界和平。",
-    "errorNoDigits": "请只填写您的姓名(不要填写证件号码)。"
+    "errorNoDigits": "请只填写您的姓名(不要填写证件号码)。",
+    "supportTreaty": "我支持《世界和平条约》。",
+    "supportTreatyRequired": "请同意《和平条约》后再签名。",
+    "successPendingTitle": "请查收邮箱",
+    "successPendingBody": "我们已向您的邮箱发送确认链接。点击链接即可让您的声音被计入。",
+    "errorRateLimit": "此网络的请求次数过多。请稍后再试。"
   },
   "counter": {
     "label": "签名,来自",
@@ -211,5 +214,19 @@
   },
   "nav": {
     "backToTop": "返回顶部"
+  },
+  "confirmed": {
+    "title": "您的声音已计入。",
+    "body": "感谢确认。您已成为运动的一员。",
+    "cta": "返回首页",
+    "invalidTitle": "链接已失效或无效",
+    "invalidBody": "无法确认您的签名。该链接可能已被使用或已过期。"
+  },
+  "email": {
+    "subject": "确认您的签名 — 6billionforpeace",
+    "heading": "确认您的签名",
+    "body": "您好 {name},\n\n感谢您为和平签名。请点击下方按钮确认您的签名,让您的声音在 6billionforpeace.com 上被计入。\n\n如果您未签名,可忽略此邮件。",
+    "cta": "确认我的签名",
+    "footer": "6billionforpeace — 自愿且独立的世界和平运动。"
   }
 }

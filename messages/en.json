@@ -63,8 +63,6 @@
     "emailPlaceholder": "you@example.com",
     "country": "Country",
     "countryPlaceholder": "Select your country",
-    "city": "City (optional)",
-    "cityPlaceholder": "Your city",
     "consent": "I agree with the collection of my data under the terms of the LGPD/GDPR privacy policy.",
     "submit": "Sign for peace",
     "submitting": "Signing…",
@@ -82,7 +80,12 @@
     "copyCta": "Copy link",
     "copyDone": "Link copied",
     "shareText": "I just signed for peace at 6billionforpeace.com — unite 6 billion voices for a single goal: peace in the world.",
-    "errorNoDigits": "Please enter only your name (no ID numbers)."
+    "errorNoDigits": "Please enter only your name (no ID numbers).",
+    "supportTreaty": "I support a World Peace Treaty.",
+    "supportTreatyRequired": "You must agree with the Peace Treaty to sign.",
+    "successPendingTitle": "Check your inbox",
+    "successPendingBody": "We sent a confirmation link to your email. Click it to count your voice.",
+    "errorRateLimit": "Too many attempts from this network. Please wait a few minutes."
   },
   "counter": {
     "label": "signatures from",
@@ -211,5 +214,19 @@
   },
   "nav": {
     "backToTop": "Back to top"
+  },
+  "confirmed": {
+    "title": "Your voice is counted.",
+    "body": "Thank you for confirming. You are now part of the movement.",
+    "cta": "Back to home",
+    "invalidTitle": "Link expired or invalid",
+    "invalidBody": "We could not confirm your signature. The link may have already been used or has expired."
+  },
+  "email": {
+    "subject": "Confirm your signature — 6billionforpeace",
+    "heading": "Confirm your signature",
+    "body": "Hi {name},\n\nThanks for signing for peace. Click the button below to confirm your signature and have your voice counted on 6billionforpeace.com.\n\nIf you didn't sign, you can ignore this email.",
+    "cta": "Confirm my signature",
+    "footer": "6billionforpeace — A voluntary, independent movement for world peace."
   }
 }

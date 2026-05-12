@@ -63,8 +63,6 @@
     "emailPlaceholder": "voce@exemplo.com",
     "country": "País",
     "countryPlaceholder": "Selecione seu país",
-    "city": "Cidade (opcional)",
-    "cityPlaceholder": "Sua cidade",
     "consent": "Concordo com a coleta dos meus dados nos termos da política de privacidade (LGPD/GDPR).",
     "submit": "Assinar pela paz",
     "submitting": "Assinando…",
@@ -82,7 +80,12 @@
     "copyCta": "Copiar link",
     "copyDone": "Link copiado",
     "shareText": "Acabei de assinar pela paz em 6billionforpeace.com — unindo 6 bilhões de vozes em torno de um único objetivo: a paz no mundo.",
-    "errorNoDigits": "Informe apenas seu nome (sem CPF ou números de documento)."
+    "errorNoDigits": "Informe apenas seu nome (sem CPF ou números de documento).",
+    "supportTreaty": "Eu apoio um Tratado Mundial de Paz.",
+    "supportTreatyRequired": "Para assinar, é necessário concordar com o Tratado pela Paz.",
+    "successPendingTitle": "Confirme seu email",
+    "successPendingBody": "Enviamos um link para o seu email. Clique nele para contar sua voz.",
+    "errorRateLimit": "Muitas tentativas dessa rede. Aguarde alguns minutos."
   },
   "counter": {
     "label": "assinaturas de",
@@ -211,5 +214,19 @@
   },
   "nav": {
     "backToTop": "Voltar ao topo"
+  },
+  "confirmed": {
+    "title": "Sua voz foi contada.",
+    "body": "Obrigado por confirmar. Agora você faz parte do movimento.",
+    "cta": "Voltar ao início",
+    "invalidTitle": "Link expirado ou inválido",
+    "invalidBody": "Não conseguimos confirmar sua assinatura. O link pode já ter sido usado ou expirou."
+  },
+  "email": {
+    "subject": "Confirme sua assinatura — 6billionforpeace",
+    "heading": "Confirme sua assinatura",
+    "body": "Olá {name},\n\nObrigado por assinar pela paz. Clique no botão abaixo para confirmar sua assinatura e ter sua voz contada em 6billionforpeace.com.\n\nSe você não assinou, pode ignorar este email.",
+    "cta": "Confirmar minha assinatura",
+    "footer": "6billionforpeace — Movimento voluntário e independente pela paz mundial."
   }
 }
