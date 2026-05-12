@@ -107,5 +107,75 @@
   "errors": {
     "rateLimit": "Too many requests. Please wait a moment and try again.",
     "network": "Network error. Please check your connection."
+  },
+  "legal": {
+    "backToHome": "← Back to home",
+    "updated": "Last updated: 12 May 2026",
+    "privacy": {
+      "title": "Privacy Policy",
+      "intro": "This page explains what data we collect when you sign the petition and how we handle it. We follow LGPD (Brazil) and GDPR (EU) by design: we collect only what is essential, and we do not run marketing trackers.",
+      "sections": [
+        {
+          "heading": "Data we collect",
+          "body": "When you sign, we record your name, email, country, optional city, the language you signed in, and a timestamp. That is it."
+        },
+        {
+          "heading": "Why we collect it",
+          "body": "Your data is used to count your voice, display it on the live counter and map, and prevent duplicate signatures. It is never used for marketing, profiling, or any commercial purpose."
+        },
+        {
+          "heading": "IP addresses",
+          "body": "Your IP address is never stored. To prevent abuse we keep only a one-way SHA-256 hash combined with a secret salt — it cannot be reversed back to your IP."
+        },
+        {
+          "heading": "Cookies",
+          "body": "We use one cookie to remember the language you selected, and a Supabase session cookie only when an administrator logs in. There are no advertising or analytics trackers."
+        },
+        {
+          "heading": "Third parties",
+          "body": "Hosting: Vercel. Database: Supabase, on our own server. Anti-bot: Cloudflare Turnstile. Map tiles: MapLibre. None of them receive your personal data beyond what is technically required to deliver the page."
+        },
+        {
+          "heading": "Your rights",
+          "body": "You may request access to, correction of, or deletion of your signature at any time by contacting us. Deletions are processed within 30 days."
+        },
+        {
+          "heading": "Retention",
+          "body": "Signatures are kept for the duration of the movement. If the movement ends, the data is anonymised or deleted."
+        }
+      ],
+      "contact": "Contact: 6billionforpeace@gmail.com"
+    },
+    "terms": {
+      "title": "Terms of Use",
+      "intro": "By signing, you join a global, voluntary movement for peace, with no political, religious, or commercial ties. These terms describe how to participate and what to expect.",
+      "sections": [
+        {
+          "heading": "Nature of the movement",
+          "body": "6billionforpeace is a peaceful, independent civic initiative. Its only goal is to unite voices around a single message: peace in the world."
+        },
+        {
+          "heading": "Who can sign",
+          "body": "Anyone may sign, regardless of nationality, faith, or background. We ask that the information you provide be accurate and that you sign only once per person."
+        },
+        {
+          "heading": "Acceptable use",
+          "body": "Do not submit false data, hate speech, illegal content, or anything that promotes violence. We may remove signatures that violate these terms."
+        },
+        {
+          "heading": "Intellectual property",
+          "body": "The 6billionforpeace name, copy and visuals belong to the movement. The aggregated, anonymous signature count is public information and may be shared freely."
+        },
+        {
+          "heading": "Limitation of liability",
+          "body": "We provide this site as-is, in good faith, with no warranties. We are not liable for actions taken by third parties based on the contents of this site."
+        },
+        {
+          "heading": "Changes to these terms",
+          "body": "We may update these terms as the movement grows. Material changes will be flagged on this page along with the updated date above."
+        }
+      ],
+      "contact": "Questions: 6billionforpeace@gmail.com"
+    }
   }
 }

@@ -107,5 +107,75 @@
   "errors": {
     "rateLimit": "Demasiadas solicitudes. Espera un momento e inténtalo de nuevo.",
     "network": "Error de red. Verifica tu conexión."
+  },
+  "legal": {
+    "backToHome": "← Volver al inicio",
+    "updated": "Última actualización: 12 de mayo de 2026",
+    "privacy": {
+      "title": "Política de Privacidad",
+      "intro": "Esta página explica qué datos recopilamos cuando firmas el manifiesto y cómo los tratamos. Seguimos la LGPD (Brasil) y el GDPR (UE) por principio: recopilamos solo lo esencial y no utilizamos rastreadores de marketing.",
+      "sections": [
+        {
+          "heading": "Datos que recopilamos",
+          "body": "Al firmar registramos tu nombre, correo, país, ciudad (opcional), el idioma en que firmaste y la fecha. Eso es todo."
+        },
+        {
+          "heading": "Para qué los usamos",
+          "body": "Tus datos sirven para contar tu voz, mostrarla en el contador y el mapa en vivo, y evitar firmas duplicadas. Nunca se utilizan con fines de marketing, perfilado o comerciales."
+        },
+        {
+          "heading": "Dirección IP",
+          "body": "Tu IP nunca se almacena. Para prevenir abusos guardamos solo un hash SHA-256 unidireccional combinado con una sal secreta — no se puede revertir a la IP original."
+        },
+        {
+          "heading": "Cookies",
+          "body": "Usamos una cookie para recordar el idioma elegido y una cookie de sesión de Supabase solo cuando un administrador inicia sesión. No hay rastreadores publicitarios ni de analítica."
+        },
+        {
+          "heading": "Terceros",
+          "body": "Hospedaje: Vercel. Base de datos: Supabase, en servidor propio. Anti-bot: Cloudflare Turnstile. Mapa: MapLibre. Ninguno recibe tus datos personales más allá de lo técnicamente necesario para entregar la página."
+        },
+        {
+          "heading": "Tus derechos",
+          "body": "Puedes solicitar acceso, rectificación o eliminación de tu firma en cualquier momento contactándonos. Las eliminaciones se procesan en hasta 30 días."
+        },
+        {
+          "heading": "Retención",
+          "body": "Las firmas se mantienen mientras exista el movimiento. Si el movimiento termina, los datos se anonimizan o se eliminan."
+        }
+      ],
+      "contact": "Contacto: 6billionforpeace@gmail.com"
+    },
+    "terms": {
+      "title": "Términos de Uso",
+      "intro": "Al firmar, te unes a un movimiento global y voluntario por la paz, sin ningún vínculo político, religioso o comercial. Estos términos describen cómo participar y qué esperar.",
+      "sections": [
+        {
+          "heading": "Naturaleza del movimiento",
+          "body": "6billionforpeace es una iniciativa cívica pacífica e independiente. Su único objetivo es unir voces alrededor de un mensaje: paz en el mundo."
+        },
+        {
+          "heading": "Quién puede firmar",
+          "body": "Cualquier persona puede firmar, sin importar nacionalidad, fe u origen. Pedimos que la información sea verdadera y que cada persona firme una sola vez."
+        },
+        {
+          "heading": "Uso aceptable",
+          "body": "No envíes datos falsos, discurso de odio, contenido ilegal o material que promueva violencia. Podemos eliminar firmas que infrinjan estos términos."
+        },
+        {
+          "heading": "Propiedad intelectual",
+          "body": "El nombre, los textos y los recursos visuales de 6billionforpeace pertenecen al movimiento. El recuento agregado y anónimo de firmas es información pública y puede compartirse libremente."
+        },
+        {
+          "heading": "Limitación de responsabilidad",
+          "body": "Ofrecemos este sitio tal cual, de buena fe, sin garantías. No somos responsables por acciones de terceros basadas en el contenido de este sitio."
+        },
+        {
+          "heading": "Cambios en los términos",
+          "body": "Podemos actualizar estos términos a medida que crece el movimiento. Los cambios relevantes se señalarán en esta página junto a la fecha indicada arriba."
+        }
+      ],
+      "contact": "Preguntas: 6billionforpeace@gmail.com"
+    }
   }
 }

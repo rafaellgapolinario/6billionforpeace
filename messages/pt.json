@@ -107,5 +107,75 @@
   "errors": {
     "rateLimit": "Muitas tentativas. Aguarde um momento e tente novamente.",
     "network": "Erro de rede. Verifique sua conexão."
+  },
+  "legal": {
+    "backToHome": "← Voltar ao início",
+    "updated": "Atualizado em: 12 de maio de 2026",
+    "privacy": {
+      "title": "Política de Privacidade",
+      "intro": "Esta página explica quais dados coletamos quando você assina o manifesto e como os tratamos. Seguimos a LGPD (Brasil) e o GDPR (UE) por princípio: coletamos apenas o essencial e não usamos rastreadores de marketing.",
+      "sections": [
+        {
+          "heading": "Dados que coletamos",
+          "body": "Ao assinar, registramos seu nome, e-mail, país, cidade (opcional), o idioma em que você assinou e a data e hora. Só isso."
+        },
+        {
+          "heading": "Por que coletamos",
+          "body": "Seus dados servem para contar sua voz, exibi-la no contador e no mapa ao vivo, e evitar assinaturas duplicadas. Nunca são usados para marketing, perfilamento ou fins comerciais."
+        },
+        {
+          "heading": "Endereço IP",
+          "body": "Seu IP nunca é armazenado. Para evitar abuso, guardamos apenas um hash SHA-256 unidirecional combinado com um salt secreto — não é possível voltar ao IP original."
+        },
+        {
+          "heading": "Cookies",
+          "body": "Usamos um cookie para lembrar o idioma escolhido e um cookie de sessão do Supabase apenas quando um administrador faz login. Não há rastreadores de publicidade ou analytics."
+        },
+        {
+          "heading": "Terceiros",
+          "body": "Hospedagem: Vercel. Banco de dados: Supabase, em servidor próprio. Anti-bot: Cloudflare Turnstile. Mapa: MapLibre. Nenhum deles recebe seus dados pessoais além do que é tecnicamente necessário para entregar a página."
+        },
+        {
+          "heading": "Seus direitos",
+          "body": "Você pode solicitar acesso, correção ou exclusão da sua assinatura a qualquer momento entrando em contato. Pedidos de exclusão são processados em até 30 dias."
+        },
+        {
+          "heading": "Retenção",
+          "body": "As assinaturas são mantidas enquanto o movimento existir. Caso o movimento seja encerrado, os dados são anonimizados ou apagados."
+        }
+      ],
+      "contact": "Contato: 6billionforpeace@gmail.com"
+    },
+    "terms": {
+      "title": "Termos de Uso",
+      "intro": "Ao assinar, você adere a um movimento global e voluntário pela paz, sem qualquer vínculo político, religioso ou comercial. Estes termos descrevem como participar e o que esperar.",
+      "sections": [
+        {
+          "heading": "Natureza do movimento",
+          "body": "O 6billionforpeace é uma iniciativa cívica pacífica e independente. Seu único objetivo é unir vozes em torno de uma mensagem: paz no mundo."
+        },
+        {
+          "heading": "Quem pode assinar",
+          "body": "Qualquer pessoa pode assinar, independentemente de nacionalidade, crença ou origem. Pedimos que as informações sejam verdadeiras e que cada pessoa assine apenas uma vez."
+        },
+        {
+          "heading": "Uso aceitável",
+          "body": "Não envie dados falsos, discurso de ódio, conteúdo ilegal ou qualquer coisa que promova violência. Podemos remover assinaturas que violarem estes termos."
+        },
+        {
+          "heading": "Propriedade intelectual",
+          "body": "O nome, os textos e os visuais do 6billionforpeace pertencem ao movimento. A contagem agregada e anônima de assinaturas é informação pública e pode ser compartilhada livremente."
+        },
+        {
+          "heading": "Limitação de responsabilidade",
+          "body": "O site é fornecido como está, em boa-fé, sem garantias. Não nos responsabilizamos por ações tomadas por terceiros com base no conteúdo deste site."
+        },
+        {
+          "heading": "Alterações nos termos",
+          "body": "Estes termos podem ser atualizados conforme o movimento cresce. Mudanças relevantes serão sinalizadas nesta página junto à data acima."
+        }
+      ],
+      "contact": "Dúvidas: 6billionforpeace@gmail.com"
+    }
   }
 }

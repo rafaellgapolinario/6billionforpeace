@@ -107,5 +107,75 @@
   "errors": {
     "rateLimit": "Zu viele Anfragen. Bitte einen Moment warten und erneut versuchen.",
     "network": "Netzwerkfehler. Bitte Verbindung prüfen."
+  },
+  "legal": {
+    "backToHome": "← Zurück zur Startseite",
+    "updated": "Zuletzt aktualisiert: 12. Mai 2026",
+    "privacy": {
+      "title": "Datenschutzerklärung",
+      "intro": "Diese Seite erklärt, welche Daten wir erheben, wenn du das Manifest unterzeichnest, und wie wir damit umgehen. Wir folgen DSGVO und LGPD nach Designprinzip: Wir erheben nur das Nötigste und verwenden keine Marketing-Tracker.",
+      "sections": [
+        {
+          "heading": "Erhobene Daten",
+          "body": "Beim Unterzeichnen speichern wir deinen Namen, deine E-Mail-Adresse, dein Land, optional deine Stadt, die gewählte Sprache und einen Zeitstempel. Mehr nicht."
+        },
+        {
+          "heading": "Zweck der Erhebung",
+          "body": "Deine Daten dienen dazu, deine Stimme zu zählen, sie im Live-Zähler und auf der Karte anzuzeigen und doppelte Unterschriften zu verhindern. Sie werden niemals für Marketing, Profiling oder kommerzielle Zwecke genutzt."
+        },
+        {
+          "heading": "IP-Adresse",
+          "body": "Deine IP-Adresse wird nie gespeichert. Zur Missbrauchsvermeidung behalten wir nur einen einseitigen SHA-256-Hash mit einem geheimen Salt — eine Rückrechnung zur IP ist nicht möglich."
+        },
+        {
+          "heading": "Cookies",
+          "body": "Wir verwenden einen Cookie, um die gewählte Sprache zu merken, und einen Supabase-Session-Cookie nur, wenn ein Administrator sich anmeldet. Keine Werbe- oder Analyse-Tracker."
+        },
+        {
+          "heading": "Dritte",
+          "body": "Hosting: Vercel. Datenbank: Supabase auf unserem eigenen Server. Anti-Bot: Cloudflare Turnstile. Karte: MapLibre. Keiner erhält deine Daten über das technisch Notwendige hinaus."
+        },
+        {
+          "heading": "Deine Rechte",
+          "body": "Du kannst jederzeit Auskunft, Berichtigung oder Löschung deiner Unterschrift verlangen, indem du uns kontaktierst. Löschungen werden innerhalb von 30 Tagen bearbeitet."
+        },
+        {
+          "heading": "Speicherdauer",
+          "body": "Unterschriften werden so lange aufbewahrt, wie die Bewegung existiert. Endet die Bewegung, werden die Daten anonymisiert oder gelöscht."
+        }
+      ],
+      "contact": "Kontakt: 6billionforpeace@gmail.com"
+    },
+    "terms": {
+      "title": "Nutzungsbedingungen",
+      "intro": "Mit deiner Unterschrift trittst du einer globalen, ehrenamtlichen Bewegung für Frieden bei — ohne politische, religiöse oder kommerzielle Bindungen. Diese Bedingungen beschreiben die Teilnahme.",
+      "sections": [
+        {
+          "heading": "Natur der Bewegung",
+          "body": "6billionforpeace ist eine friedliche, unabhängige zivile Initiative. Ihr einziges Ziel ist es, Stimmen für eine Botschaft zu vereinen: Frieden in der Welt."
+        },
+        {
+          "heading": "Wer unterschreiben darf",
+          "body": "Jeder darf unterzeichnen, unabhängig von Herkunft, Glauben oder Nationalität. Wir bitten um wahrheitsgemäße Angaben und nur eine Unterschrift pro Person."
+        },
+        {
+          "heading": "Zulässige Nutzung",
+          "body": "Reiche keine falschen Daten, keine Hassrede, keine illegalen Inhalte und nichts ein, was Gewalt verherrlicht. Unterschriften, die diesen Regeln widersprechen, können entfernt werden."
+        },
+        {
+          "heading": "Geistiges Eigentum",
+          "body": "Name, Texte und Gestaltung von 6billionforpeace gehören der Bewegung. Die aggregierte, anonyme Zählung ist öffentliche Information und darf frei geteilt werden."
+        },
+        {
+          "heading": "Haftungsbeschränkung",
+          "body": "Wir stellen diese Seite in gutem Glauben ohne Garantie bereit. Wir haften nicht für Handlungen Dritter auf Grundlage der Inhalte."
+        },
+        {
+          "heading": "Änderungen",
+          "body": "Diese Bedingungen können sich weiterentwickeln. Wesentliche Änderungen werden auf dieser Seite mit dem Datum oben markiert."
+        }
+      ],
+      "contact": "Fragen: 6billionforpeace@gmail.com"
+    }
   }
 }

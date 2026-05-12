@@ -107,5 +107,75 @@
   "errors": {
     "rateLimit": "Trop de requêtes. Patientez un instant et réessayez.",
     "network": "Erreur réseau. Vérifiez votre connexion."
+  },
+  "legal": {
+    "backToHome": "← Retour à l'accueil",
+    "updated": "Dernière mise à jour : 12 mai 2026",
+    "privacy": {
+      "title": "Politique de confidentialité",
+      "intro": "Cette page explique quelles données nous collectons lorsque vous signez le manifeste et comment nous les traitons. Nous appliquons par principe la LGPD (Brésil) et le RGPD (UE) : nous ne collectons que l'essentiel et n'utilisons aucun traceur marketing.",
+      "sections": [
+        {
+          "heading": "Données collectées",
+          "body": "Lorsque vous signez, nous enregistrons votre nom, votre e-mail, votre pays, votre ville (facultatif), la langue choisie et un horodatage. C'est tout."
+        },
+        {
+          "heading": "Pourquoi nous les collectons",
+          "body": "Vos données servent à compter votre voix, l'afficher sur le compteur et la carte en direct, et empêcher les signatures en double. Elles ne sont jamais utilisées à des fins marketing, de profilage ou commerciales."
+        },
+        {
+          "heading": "Adresses IP",
+          "body": "Votre adresse IP n'est jamais stockée. Pour prévenir les abus nous ne conservons qu'un hash SHA-256 à sens unique combiné à un sel secret — il ne peut pas être reconverti en IP."
+        },
+        {
+          "heading": "Cookies",
+          "body": "Nous utilisons un cookie pour mémoriser la langue choisie et un cookie de session Supabase uniquement quand un administrateur se connecte. Aucun traceur publicitaire ni d'analyse."
+        },
+        {
+          "heading": "Tiers",
+          "body": "Hébergement : Vercel. Base de données : Supabase, sur notre propre serveur. Anti-bot : Cloudflare Turnstile. Carte : MapLibre. Aucun d'eux ne reçoit vos données personnelles au-delà de ce qui est techniquement nécessaire pour servir la page."
+        },
+        {
+          "heading": "Vos droits",
+          "body": "Vous pouvez demander à tout moment l'accès, la rectification ou la suppression de votre signature en nous contactant. Les suppressions sont traitées sous 30 jours."
+        },
+        {
+          "heading": "Conservation",
+          "body": "Les signatures sont conservées tant que le mouvement existe. Si le mouvement prend fin, les données sont anonymisées ou supprimées."
+        }
+      ],
+      "contact": "Contact : 6billionforpeace@gmail.com"
+    },
+    "terms": {
+      "title": "Conditions d'utilisation",
+      "intro": "En signant, vous rejoignez un mouvement mondial et bénévole pour la paix, sans aucun lien politique, religieux ou commercial. Ces conditions décrivent comment participer.",
+      "sections": [
+        {
+          "heading": "Nature du mouvement",
+          "body": "6billionforpeace est une initiative citoyenne pacifique et indépendante. Son unique but est d'unir les voix autour d'un seul message : la paix dans le monde."
+        },
+        {
+          "heading": "Qui peut signer",
+          "body": "Toute personne peut signer, quelle que soit sa nationalité, sa foi ou son origine. Nous demandons que les informations soient exactes et que chaque personne ne signe qu'une seule fois."
+        },
+        {
+          "heading": "Usage acceptable",
+          "body": "Ne soumettez pas de fausses données, de discours haineux, de contenu illégal ni rien qui incite à la violence. Nous pouvons retirer les signatures qui enfreignent ces conditions."
+        },
+        {
+          "heading": "Propriété intellectuelle",
+          "body": "Le nom, les textes et les visuels de 6billionforpeace appartiennent au mouvement. Le décompte agrégé et anonyme des signatures est public et peut être partagé librement."
+        },
+        {
+          "heading": "Limitation de responsabilité",
+          "body": "Nous fournissons ce site tel quel, de bonne foi, sans garantie. Nous ne sommes pas responsables des actions de tiers fondées sur le contenu de ce site."
+        },
+        {
+          "heading": "Modifications des conditions",
+          "body": "Ces conditions peuvent être mises à jour à mesure que le mouvement grandit. Les changements importants seront signalés sur cette page avec la date ci-dessus."
+        }
+      ],
+      "contact": "Questions : 6billionforpeace@gmail.com"
+    }
   }
 }

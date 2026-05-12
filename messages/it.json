@@ -107,5 +107,75 @@
   "errors": {
     "rateLimit": "Troppe richieste. Attendi un momento e riprova.",
     "network": "Errore di rete. Verifica la connessione."
+  },
+  "legal": {
+    "backToHome": "← Torna alla home",
+    "updated": "Ultimo aggiornamento: 12 maggio 2026",
+    "privacy": {
+      "title": "Informativa sulla privacy",
+      "intro": "Questa pagina spiega quali dati raccogliamo quando firmi il manifesto e come li trattiamo. Applichiamo per impostazione il GDPR (UE) e la LGPD (Brasile): raccogliamo solo l'essenziale e non usiamo tracker di marketing.",
+      "sections": [
+        {
+          "heading": "Dati raccolti",
+          "body": "Quando firmi registriamo nome, email, paese, città (facoltativa), la lingua scelta e un timestamp. Nient'altro."
+        },
+        {
+          "heading": "Perché li raccogliamo",
+          "body": "I tuoi dati servono a contare la tua voce, mostrarla nel contatore e nella mappa in tempo reale, ed evitare firme duplicate. Non sono mai usati per marketing, profilazione o scopi commerciali."
+        },
+        {
+          "heading": "Indirizzo IP",
+          "body": "Il tuo IP non viene mai salvato. Per prevenire abusi conserviamo solo un hash SHA-256 unidirezionale combinato con un salt segreto — non è reversibile."
+        },
+        {
+          "heading": "Cookie",
+          "body": "Usiamo un cookie per ricordare la lingua scelta e un cookie di sessione Supabase solo quando un amministratore accede. Nessun tracker pubblicitario o di analisi."
+        },
+        {
+          "heading": "Terze parti",
+          "body": "Hosting: Vercel. Database: Supabase, su server proprio. Anti-bot: Cloudflare Turnstile. Mappa: MapLibre. Nessuno riceve dati personali oltre il tecnicamente necessario per servire la pagina."
+        },
+        {
+          "heading": "I tuoi diritti",
+          "body": "Puoi richiedere accesso, rettifica o cancellazione della tua firma in qualsiasi momento contattandoci. Le cancellazioni sono evase entro 30 giorni."
+        },
+        {
+          "heading": "Conservazione",
+          "body": "Le firme restano fino a quando il movimento esiste. Se il movimento termina, i dati vengono anonimizzati o eliminati."
+        }
+      ],
+      "contact": "Contatto: 6billionforpeace@gmail.com"
+    },
+    "terms": {
+      "title": "Termini di utilizzo",
+      "intro": "Firmando, ti unisci a un movimento globale e volontario per la pace, senza legami politici, religiosi o commerciali. Questi termini descrivono come partecipare.",
+      "sections": [
+        {
+          "heading": "Natura del movimento",
+          "body": "6billionforpeace è un'iniziativa civica pacifica e indipendente. Il suo unico scopo è unire le voci attorno a un messaggio: pace nel mondo."
+        },
+        {
+          "heading": "Chi può firmare",
+          "body": "Chiunque può firmare, indipendentemente da nazionalità, fede o provenienza. Chiediamo che le informazioni siano veritiere e che ogni persona firmi una sola volta."
+        },
+        {
+          "heading": "Uso accettabile",
+          "body": "Non inviare dati falsi, discorsi d'odio, contenuti illegali o materiale che promuova violenza. Possiamo rimuovere firme che violano questi termini."
+        },
+        {
+          "heading": "Proprietà intellettuale",
+          "body": "Nome, testi e visual di 6billionforpeace appartengono al movimento. Il conteggio aggregato e anonimo è informazione pubblica e può essere condiviso liberamente."
+        },
+        {
+          "heading": "Limitazione di responsabilità",
+          "body": "Forniamo il sito così com'è, in buona fede, senza garanzie. Non siamo responsabili per azioni di terzi basate sui contenuti."
+        },
+        {
+          "heading": "Modifiche",
+          "body": "Questi termini possono essere aggiornati man mano che il movimento cresce. Le modifiche rilevanti saranno segnalate in questa pagina con la data indicata sopra."
+        }
+      ],
+      "contact": "Domande: 6billionforpeace@gmail.com"
+    }
   }
 }
