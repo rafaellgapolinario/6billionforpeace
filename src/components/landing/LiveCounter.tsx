@@ -40,7 +40,7 @@ export function LiveCounter({ initialStats }: { initialStats?: Stats }) {
       .channel('stats-realtime')
       .on(
         'postgres_changes',
-        { event: 'UPDATE', schema: 'public', table: 'stats', filter: 'id=eq.1' },
+        { event: 'UPDATE', schema: 'bfp', table: 'stats', filter: 'id=eq.1' },
         (payload) => {
           const next = payload.new as Stats;
           setStats(next);

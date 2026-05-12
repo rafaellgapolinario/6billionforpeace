@@ -12,7 +12,7 @@ import { PrinciplesSection } from '@/components/landing/PrinciplesSection';
 import { VolunteersSection } from '@/components/landing/VolunteersSection';
 import { SignatureForm } from '@/components/landing/SignatureForm';
 import { LiveCounter } from '@/components/landing/LiveCounter';
-import { WorldMapPlaceholder } from '@/components/landing/WorldMapPlaceholder';
+import { WorldMap } from '@/components/landing/WorldMap';
 import { EverestSection } from '@/components/landing/EverestSection';
 import { Footer } from '@/components/landing/Footer';
 import { CookieBanner } from '@/components/landing/CookieBanner';
@@ -55,7 +55,7 @@ export default async function Home(props: { params: Promise<{ locale: string }> 
           <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-[1fr_1fr] lg:items-start">
             <div className="space-y-8">
               <LiveCounter initialStats={initialStats} />
-              <WorldMapPlaceholder />
+              <WorldMap initialStats={initialStats} />
             </div>
             <SignatureForm initialCountry={ipCountry || undefined} />
           </div>
