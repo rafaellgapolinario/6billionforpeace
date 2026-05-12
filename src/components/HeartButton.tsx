@@ -2,8 +2,8 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 
 /**
- * Botão "Sign for peace" em formato de pequeno coração com gradiente branco→azul→verde brilhante.
- * Reutilizável em várias sections.
+ * Botão em FORMATO de coração (não retangular). Gradient branco → azul → verde brilhante.
+ * Texto em 2 linhas dentro do coração.
  */
 export function HeartButton({
   href = '#sign',
@@ -16,31 +16,47 @@ export function HeartButton({
 }) {
   const isExternal = href.startsWith('http') || href.startsWith('mailto:');
   const Component = isExternal ? 'a' : Link;
+
+  // Texto vem como 1 string tipo "Sign for peace" — quebra em 2 linhas pra caber no coração
+  const text = typeof children === 'string' ? children : '';
+  const words = text.split(' ');
+  const line1 = words.slice(0, Math.ceil(words.length / 2)).join(' ');
+  const line2 = words.slice(Math.ceil(words.length / 2)).join(' ');
+
   return (
     <Component
       href={href}
       {...(isExternal ? { target: '_blank', rel: 'noopener' } : {})}
       className={cn(
-        'group relative inline-flex items-center gap-3 px-7 py-3.5 text-sm font-semibold uppercase tracking-wider text-navy-900 transition-transform hover:-translate-y-0.5',
+        'group relative inline-block transition-transform hover:-translate-y-1 hover:scale-105',
         className,
       )}
+      aria-label={text}
     >
-      <span
-        className="absolute inset-0 rounded-full shadow-lg shadow-cyan-500/30"
-        style={{
-          background:
-            'linear-gradient(135deg, #ffffff 0%, #80E0FF 45%, #00BFFF 70%, #34D399 100%)',
-        }}
-        aria-hidden
-      />
       <svg
-        viewBox="0 0 24 24"
-        className="relative h-5 w-5 fill-navy-900"
+        viewBox="0 0 220 200"
+        className="h-36 w-40 drop-shadow-[0_10px_24px_rgba(0,0,0,0.2)] sm:h-44 sm:w-48"
         aria-hidden
       >
-        <path d="M12 20.4s-7-4.3-7-10.5A4.5 4.5 0 0 1 12 6a4.5 4.5 0 0 1 7 3.9c0 6.2-7 10.5-7 10.5z" />
+        <defs>
+          <linearGradient id="heart-btn-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stopColor="#ffffff" />
+            <stop offset="35%" stopColor="#80E0FF" />
+            <stop offset="65%" stopColor="#00BFFF" />
+            <stop offset="100%" stopColor="#34D399" />
+          </linearGradient>
+        </defs>
+        <path
+          d="M110 184c-9-7-22-19-35-33-13-13-23-26-31-39-7-13-11-25-11-35 0-13 4-23 13-31 8-8 19-12 31-12 7 0 15 2 21 5 6 4 11 9 12 14 1-5 6-10 12-14 6-3 14-5 21-5 12 0 23 4 31 12 9 8 13 18 13 31 0 10-4 22-11 35-8 13-18 26-31 39-13 14-26 26-35 33z"
+          fill="url(#heart-btn-grad)"
+          stroke="#ffffff"
+          strokeWidth="2"
+        />
       </svg>
-      <span className="relative">{children}</span>
+      <span className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center pb-3 text-center font-bold uppercase tracking-wider text-navy-900">
+        <span className="text-sm sm:text-base">{line1}</span>
+        <span className="text-sm sm:text-base">{line2}</span>
+      </span>
     </Component>
   );
 }
