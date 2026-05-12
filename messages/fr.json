@@ -69,7 +69,7 @@
     "successTitle": "Merci pour votre voix.",
     "successBody": "Votre signature a été enregistrée. Partagez le mouvement.",
     "errorGeneric": "Une erreur est survenue. Réessayez.",
-    "errorDuplicate": "Cet e-mail a déjà signé. Merci.",
+    "errorDuplicate": "Vous avez déjà signé cette pétition. Merci beaucoup pour votre participation !",
     "errorCaptcha": "Échec de la vérification anti-bot. Réessayez.",
     "errorRequired": "Ce champ est obligatoire.",
     "errorEmail": "Veuillez fournir un e-mail valide.",

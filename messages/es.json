@@ -69,7 +69,7 @@
     "successTitle": "Gracias por tu voz.",
     "successBody": "Tu firma ha sido registrada. Comparte el movimiento.",
     "errorGeneric": "Algo salió mal. Inténtalo de nuevo.",
-    "errorDuplicate": "Este correo ya ha firmado. Gracias.",
+    "errorDuplicate": "Ya has firmado esta petición. ¡Muchas gracias por tu participación!",
     "errorCaptcha": "Falló la verificación anti-bot. Inténtalo de nuevo.",
     "errorRequired": "Este campo es obligatorio.",
     "errorEmail": "Introduce un correo válido.",

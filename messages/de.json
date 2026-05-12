@@ -69,7 +69,7 @@
     "successTitle": "Danke für deine Stimme.",
     "successBody": "Deine Unterschrift wurde registriert. Teile die Bewegung.",
     "errorGeneric": "Etwas ist schiefgelaufen. Bitte erneut versuchen.",
-    "errorDuplicate": "Diese E-Mail hat bereits unterschrieben. Danke.",
+    "errorDuplicate": "Sie haben diese Petition bereits unterschrieben. Vielen Dank für Ihre Teilnahme!",
     "errorCaptcha": "Bot-Prüfung fehlgeschlagen. Bitte erneut versuchen.",
     "errorRequired": "Dieses Feld ist erforderlich.",
     "errorEmail": "Bitte gültige E-Mail eingeben.",

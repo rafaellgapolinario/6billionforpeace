@@ -69,7 +69,7 @@
     "successTitle": "感谢您的声音。",
     "successBody": "您的签名已被记录。请分享这场运动。",
     "errorGeneric": "出了点问题。请重试。",
-    "errorDuplicate": "此邮箱已签名。谢谢。",
+    "errorDuplicate": "您已签署此请愿书。非常感谢您的参与！",
     "errorCaptcha": "反机器人验证失败。请重试。",
     "errorRequired": "此字段为必填项。",
     "errorEmail": "请提供有效的电子邮件。",

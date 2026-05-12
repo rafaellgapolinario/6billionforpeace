@@ -69,7 +69,7 @@
     "successTitle": "Thank you for your voice.",
     "successBody": "Your signature has been added. Share the movement.",
     "errorGeneric": "Something went wrong. Please try again.",
-    "errorDuplicate": "This e-mail has already signed. Thank you.",
+    "errorDuplicate": "You have already signed this petition. Thank you so much for your participation!",
     "errorCaptcha": "Captcha verification failed. Please try again.",
     "errorRequired": "This field is required.",
     "errorEmail": "Please provide a valid e-mail.",

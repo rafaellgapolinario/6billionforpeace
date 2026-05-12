@@ -46,7 +46,7 @@ export async function generateMetadata(props: {
   return {
     title: t('title'),
     description: t('description'),
-    metadataBase: new URL('https://6billionforpeace.vercel.app'),
+    metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://6billionforpeace.net'),
     openGraph: {
       title: t('title'),
       description: t('description'),
