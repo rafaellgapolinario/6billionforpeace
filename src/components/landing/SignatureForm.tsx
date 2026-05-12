@@ -150,11 +150,16 @@ export function SignatureForm({
       const json = await res.json();
       if (!res.ok) {
         if (json?.error === 'duplicate') toast.warning(t('errorDuplicate'));
-        else if (json?.error === 'captcha') toast.error(t('errorCaptcha'));
-        else if (json?.error === 'rate_limit') toast.error(t('errorRateLimit'));
-        else if (json?.error === 'too_fast') toast.error(t('errorTooFast'));
-        else if (json?.error === 'disposable_email') toast.error(t('errorDisposable'));
+        else if (json?.error === 'captcha') toast.warning(t('errorCaptcha'));
+        else if (json?.error === 'rate_limit') toast.warning(t('errorRateLimit'));
+        else if (json?.error === 'too_fast') toast.warning(t('errorTooFast'));
+        else if (json?.error === 'disposable_email') toast.warning(t('errorDisposable'));
         else toast.error(t('errorGeneric'));
+        // Turnstile tokens são one-time — reseta o widget pra próxima tentativa
+        setTurnstileToken(null);
+        if (widgetIdRef.current && window.turnstile) {
+          window.turnstile.reset(widgetIdRef.current);
+        }
         return;
       }
       setDone(true);
