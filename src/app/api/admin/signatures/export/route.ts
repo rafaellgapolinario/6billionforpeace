@@ -1,5 +1,6 @@
 import { getAdminSession } from '@/lib/admin/auth';
 import { createSupabaseAdminClient } from '@/lib/supabase/admin';
+import { checkRateLimit } from '@/lib/rate-limit';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
@@ -18,6 +19,12 @@ export async function GET(req: Request) {
   const session = await getAdminSession();
   if (!session) {
     return new Response('unauthorized', { status: 401 });
+  }
+
+  // 5 exports/min — operação cara (até 100k linhas + stream).
+  const rl = checkRateLimit(`admin:export:${session.userId}`, 5, 60_000);
+  if (!rl.ok) {
+    return new Response('rate_limit', { status: 429 });
   }
 
   const url = new URL(req.url);

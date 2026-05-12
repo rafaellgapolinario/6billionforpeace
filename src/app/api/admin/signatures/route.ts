@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server';
 import { getAdminSession } from '@/lib/admin/auth';
 import { createSupabaseAdminClient } from '@/lib/supabase/admin';
+import { checkRateLimit } from '@/lib/rate-limit';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
@@ -11,6 +12,13 @@ export async function GET(req: Request) {
   const session = await getAdminSession();
   if (!session) {
     return NextResponse.json({ error: 'unauthorized' }, { status: 401 });
+  }
+
+  // 60 requests/min por admin — abre dashboard, pagina, filtra à vontade,
+  // mas scraping em loop é cortado.
+  const rl = checkRateLimit(`admin:list:${session.userId}`, 60, 60_000);
+  if (!rl.ok) {
+    return NextResponse.json({ error: 'rate_limit' }, { status: 429 });
   }
 
   const url = new URL(req.url);
