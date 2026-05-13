@@ -4,7 +4,7 @@ import { HeartButton } from '@/components/HeartButton';
 export function CallSection() {
   const t = useTranslations('call');
   return (
-    <section className="bg-white px-6 py-16">
+    <section className="bg-white px-6 pt-6 pb-16">
       <div
         className="mx-auto max-w-4xl rounded-3xl px-8 py-14 text-center text-white sm:px-14 sm:py-20"
         style={{

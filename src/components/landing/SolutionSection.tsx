@@ -6,7 +6,7 @@ export function SolutionSection() {
   const paragraphs = [t('p1'), t('p2'), t('p3'), t('p4')].filter(Boolean);
 
   return (
-    <section id="solution" className="bg-white py-24 sm:py-28">
+    <section id="solution" className="bg-white pt-20 pb-10 sm:pt-24 sm:pb-12">
       <div className="mx-auto max-w-3xl px-6 text-center">
         <h2 className="text-2xl font-semibold tracking-tight text-cyan-600 sm:text-3xl">
           {t('title')}

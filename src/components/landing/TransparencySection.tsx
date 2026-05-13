@@ -11,14 +11,14 @@ export function TransparencySection() {
   const pillars = t.raw('pillars') as Pillar[];
 
   return (
-    <section id="transparency" className="bg-surface px-6 py-24">
+    <section id="transparency" className="bg-surface px-6 pt-12 pb-24 sm:pt-16">
       <div className="mx-auto max-w-5xl">
         <div className="text-center">
           <h2 className="text-sm font-medium uppercase tracking-[0.2em] text-cyan-600">
             {t('title')}
           </h2>
-          <p className="mt-3 text-2xl font-semibold text-navy-900 sm:text-3xl">
-            {t('subtitle')}
+          <p className="mx-auto mt-3 max-w-md text-balance text-2xl font-semibold text-navy-900 sm:text-3xl">
+            How we keep this<br />movement clean
           </p>
         </div>
 

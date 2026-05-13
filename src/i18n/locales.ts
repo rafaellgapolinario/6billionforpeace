@@ -1,4 +1,4 @@
-export const locales = ['en', 'pt', 'es', 'fr', 'de', 'it', 'zh', 'ar'] as const;
+export const locales = ['en', 'pt', 'es', 'fr', 'ru', 'hi', 'zh', 'ar'] as const;
 export type Locale = (typeof locales)[number];
 
 export const defaultLocale: Locale = 'en';
@@ -11,8 +11,8 @@ export const localeMeta: Record<
   pt: { label: 'Portuguese', native: 'Português', dir: 'ltr', flag: '🇧🇷' },
   es: { label: 'Spanish',    native: 'Español',  dir: 'ltr', flag: '🇪🇸' },
   fr: { label: 'French',     native: 'Français', dir: 'ltr', flag: '🇫🇷' },
-  de: { label: 'German',     native: 'Deutsch',  dir: 'ltr', flag: '🇩🇪' },
-  it: { label: 'Italian',    native: 'Italiano', dir: 'ltr', flag: '🇮🇹' },
+  ru: { label: 'Russian',    native: 'Русский',  dir: 'ltr', flag: '🇷🇺' },
+  hi: { label: 'Hindi',      native: 'हिन्दी',     dir: 'ltr', flag: '🇮🇳' },
   zh: { label: 'Chinese',    native: '中文',      dir: 'ltr', flag: '🇨🇳' },
   ar: { label: 'Arabic',     native: 'العربية',  dir: 'rtl', flag: '🇸🇦' },
 };

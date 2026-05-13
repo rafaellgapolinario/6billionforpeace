@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { Menu, X } from 'lucide-react';
 import { Logo } from '@/components/Logo';
+import { LanguagePicker } from '@/components/LanguagePicker';
 import { cn } from '@/lib/utils';
 
 export function Header() {
@@ -37,14 +38,17 @@ export function Header() {
           ))}
         </nav>
 
-        <button
-          type="button"
-          onClick={() => setOpen((o) => !o)}
-          aria-label={open ? tHeader('menuClose') : tHeader('menuOpen')}
-          className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-white/15 text-white lg:hidden"
-        >
-          {open ? <X size={18} /> : <Menu size={18} />}
-        </button>
+        <div className="flex items-center gap-3">
+          <LanguagePicker variant="light" showFlags={false} />
+          <button
+            type="button"
+            onClick={() => setOpen((o) => !o)}
+            aria-label={open ? tHeader('menuClose') : tHeader('menuOpen')}
+            className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-white/15 text-white lg:hidden"
+          >
+            {open ? <X size={18} /> : <Menu size={18} />}
+          </button>
+        </div>
       </div>
 
       <div

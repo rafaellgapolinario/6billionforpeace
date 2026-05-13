@@ -28,7 +28,6 @@ export function ShareLinkBlock({ url }: { url?: string }) {
       toast.success(t('copied'));
       setTimeout(() => setCopied(false), 2200);
     } catch {
-      // fallback for very old browsers
       const ta = document.createElement('textarea');
       ta.value = resolved;
       ta.style.position = 'fixed';
@@ -45,7 +44,7 @@ export function ShareLinkBlock({ url }: { url?: string }) {
 
   return (
     <div className="mx-auto max-w-2xl rounded-3xl border border-cyan-200 bg-white p-6 text-center shadow-sm sm:p-8">
-      <h3 className="text-base font-semibold text-navy-900 sm:text-lg">
+      <h3 className="text-2xl font-bold tracking-tight text-cyan-600 sm:text-3xl">
         {t('title')}
       </h3>
       <p className="mx-auto mt-2 max-w-md text-sm text-navy-700">{t('body')}</p>

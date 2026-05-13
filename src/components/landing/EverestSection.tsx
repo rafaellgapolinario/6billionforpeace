@@ -4,30 +4,32 @@ import { Mountain } from 'lucide-react';
 export function EverestSection() {
   const t = useTranslations('everest');
   return (
-    <section className="bg-white px-6 py-16">
+    <section className="bg-white px-6 pt-4 pb-12">
       <div className="mx-auto grid max-w-5xl items-center gap-10 rounded-3xl bg-gradient-to-br from-cyan-300 via-cyan-400 to-cyan-500 px-8 py-14 text-navy-900 sm:grid-cols-[1fr_auto] sm:px-14 sm:py-20">
         <div>
-          <div className="mb-6 flex justify-start">
-            <svg viewBox="0 0 24 24" className="h-12 w-12 fill-white" aria-hidden>
-              <path d="M12 21s-7.5-4.6-7.5-11.2A4.8 4.8 0 0 1 12 5.6a4.8 4.8 0 0 1 7.5 4.2C19.5 16.4 12 21 12 21z" />
-            </svg>
-          </div>
           <p className="text-balance text-lg leading-relaxed sm:text-xl">
             {t('body')}
           </p>
-          <div className="mt-8 inline-flex items-center gap-3 rounded-full bg-white/40 px-4 py-2 backdrop-blur-sm">
-            <svg viewBox="0 0 32 32" className="h-5 w-7" aria-hidden>
-              <rect x="2" y="6" width="2" height="22" fill="#0A2540" />
-              <path d="M4 7 L26 9 L26 17 L4 15 Z" fill="white" stroke="#0A2540" strokeWidth="0.5" />
+          <div className="mt-8 flex items-center gap-4">
+            <svg viewBox="0 0 48 56" className="h-16 w-12" aria-hidden>
+              {/* Mastro */}
+              <rect x="4" y="6" width="3" height="48" fill="#0A2540" rx="1" />
+              {/* Bandeira branca */}
               <path
-                d="M14 11s-3-1.8-3-4.5A1.9 1.9 0 0 1 14 5.5a1.9 1.9 0 0 1 3 1A1.9 1.9 0 0 1 17 11z"
+                d="M7 8 L42 12 L42 28 L7 24 Z"
+                fill="white"
+                stroke="#0A2540"
+                strokeWidth="0.6"
+              />
+              {/* Coraçãozinho cyan no centro da bandeira */}
+              <path
+                d="M22 13.5 C19 13.5 17.5 15.5 17.5 17.5 C17.5 20.5 22 23 24.5 24.5 C27 23 31.5 20.5 31.5 17.5 C31.5 15.5 30 13.5 27 13.5 C25.5 13.5 24.6 14.3 24.5 15 C24.4 14.3 23.5 13.5 22 13.5 Z"
                 fill="#00BFFF"
-                transform="translate(0,1)"
               />
             </svg>
-            <span className="text-xs font-medium uppercase tracking-[0.2em] text-navy-800">
-              White flag
-            </span>
+            <p className="text-2xl font-bold tracking-tight text-navy-900 sm:text-3xl">
+              Dream of peace
+            </p>
           </div>
         </div>
 

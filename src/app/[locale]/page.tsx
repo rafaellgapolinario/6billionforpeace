@@ -71,7 +71,7 @@ export default async function Home(props: { params: Promise<{ locale: string }> 
 
         <EverestSection />
 
-        <section className="bg-white px-6 py-16">
+        <section className="bg-white px-6 pt-2 pb-16">
           <ShareLinkBlock />
         </section>
       </main>
