@@ -1,12 +1,14 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 /**
  * Overlay de confirmação pós-assinatura: blur leve no fundo + tela branca
  * com coração + mensagem. Some sozinho depois de ~3.5s e chama onDone.
  */
 export function ThankYouOverlay({ onDone }: { onDone: () => void }) {
+  const t = useTranslations('thankYou');
   const [leaving, setLeaving] = useState(false);
 
   useEffect(() => {
@@ -44,9 +46,9 @@ export function ThankYouOverlay({ onDone }: { onDone: () => void }) {
           <path d="M16 27.2c-1.3-1-3.2-2.7-5.1-4.8-1.9-2-3.4-4-4.5-5.9-1.1-2-1.7-3.7-1.7-5.3 0-1.9.6-3.4 1.9-4.6 1.2-1.2 2.8-1.8 4.6-1.8 1.1 0 2.2.3 3.1.8.9.5 1.6 1.2 1.7 1.9.1-.7.8-1.4 1.7-1.9.9-.5 2-.8 3.1-.8 1.8 0 3.3.6 4.6 1.8 1.2 1.2 1.9 2.8 1.9 4.6 0 1.6-.6 3.3-1.7 5.3-1.1 1.9-2.6 3.9-4.5 5.9-1.9 2-3.8 3.8-5.1 4.8z" />
         </svg>
         <p className="mt-8 text-balance text-xl font-medium leading-relaxed text-navy-900 sm:text-2xl">
-          Thank you. You are now part of peace itself.
+          {t('title')}
           <br />
-          This is just the beginning.
+          {t('body')}
         </p>
       </div>
     </div>

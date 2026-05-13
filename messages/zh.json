@@ -288,5 +288,9 @@
   "humansForPeace": {
     "title": "Humans for peace",
     "body": "One movement. One purpose. Billions of voices choosing peace together."
+  },
+  "thankYou": {
+    "title": "谢谢。您现在已是和平的一部分。",
+    "body": "这只是开始。"
   }
 }

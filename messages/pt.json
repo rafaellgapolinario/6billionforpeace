@@ -288,5 +288,9 @@
     "body": "Obrigado por assinar pela paz, {name}.\n\nSua assinatura foi registrada em 6billionforpeace.com. Você agora faz parte de um movimento global e voluntário pra unir 6 bilhões de vozes em torno de um único objetivo: a paz no mundo.\n\nCompartilhe o movimento pra mais pessoas se juntarem.",
     "cta": "Voltar ao movimento",
     "footer": "6billionforpeace — Movimento voluntário e independente pela paz mundial."
+  },
+  "thankYou": {
+    "title": "Obrigado. Você agora faz parte da própria paz.",
+    "body": "Isto é apenas o começo."
   }
 }
