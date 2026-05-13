@@ -19,13 +19,13 @@ const PEACE_WORDS = [
 
 export function HeroCompact() {
   return (
-    <section className="relative isolate overflow-hidden text-white" dir="ltr">
+    <section className="relative isolate overflow-hidden bg-navy-900 text-white" dir="ltr">
       <div
         aria-hidden
-        className="absolute inset-0"
+        className="pointer-events-none absolute inset-0"
         style={{
           background:
-            'linear-gradient(135deg, #0098D8 0%, #1E90FF 50%, #0F3057 100%)',
+            'radial-gradient(ellipse at center, rgba(0,191,255,0.18) 0%, rgba(10,37,64,0.0) 60%)',
         }}
       />
 
