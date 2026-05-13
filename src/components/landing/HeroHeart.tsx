@@ -30,7 +30,8 @@ export function HeroHeart() {
         aria-hidden
         className="absolute inset-0"
         style={{
-          background: 'linear-gradient(135deg, #00BFFF 0%, #0098D8 100%)',
+          background:
+            'linear-gradient(135deg, #0098D8 0%, #1E90FF 50%, #0F3057 100%)',
         }}
       />
 
