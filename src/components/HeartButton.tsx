@@ -49,9 +49,9 @@ export function HeartButton({
           strokeWidth="2.5"
         />
       </svg>
-      <span className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center pb-1.5 text-center font-bold uppercase tracking-wide leading-tight text-navy-900">
-        <span className="text-[10px] sm:text-xs">{line1}</span>
-        <span className="text-[10px] sm:text-xs">{line2}</span>
+      <span className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center pb-1.5 text-center font-bold uppercase leading-tight tracking-tight text-navy-900">
+        <span className="text-[8px] sm:text-[10px]">{line1}</span>
+        <span className="text-[8px] sm:text-[10px]">{line2}</span>
       </span>
     </Component>
   );
