@@ -25,7 +25,7 @@ export function HeroCompact() {
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            'radial-gradient(ellipse at center, rgba(0,191,255,0.18) 0%, rgba(10,37,64,0.0) 60%)',
+            'radial-gradient(ellipse at center, rgba(0,191,255,0.18) 0%, rgba(10,37,64,0.0) 40%, rgba(30,70,110,0.40) 100%)',
         }}
       />
 
