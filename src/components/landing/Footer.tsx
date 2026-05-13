@@ -54,7 +54,7 @@ export function Footer() {
       </div>
 
       <div className="mx-auto mt-10 max-w-6xl border-t border-white/10 pt-6 text-center text-xs text-white/50">
-        © {new Date().getFullYear()} 6billionforpeace
+        © {new Date().getFullYear()} 6billionforpeace · {t('rightsReserved')}
       </div>
     </footer>
   );
