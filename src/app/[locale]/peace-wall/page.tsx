@@ -1,7 +1,7 @@
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { hasLocale } from 'next-intl';
 import { routing } from '@/i18n/routing';
-import { Mail, Construction, Quote } from 'lucide-react';
+import { Mail, Quote } from 'lucide-react';
 import { PageShell } from '@/components/landing/PageShell';
 
 export async function generateMetadata({
@@ -31,6 +31,9 @@ const SHORT_QUOTES = [
   'One planet. One humanity.',
   'The solution is peace.',
   'Together we build peace.',
+  'Bridges, not walls.',
+  'Compassion knows no border.',
+  'Where there is peace, there is life.',
 ];
 
 const MULTI_LANG_QUOTES = [
@@ -156,19 +159,6 @@ export default async function PeaceWallPage({
               </div>
             ))}
 
-            {[0, 1, 2].map((i) => (
-              <div
-                key={`construction-${i}`}
-                className={`mb-6 inline-block w-full rounded-2xl border-2 border-dashed border-navy-200 bg-white/50 p-6 text-center text-navy-400 break-inside-avoid ${
-                  ROTATIONS[i % ROTATIONS.length]
-                }`}
-              >
-                <Construction className="mx-auto h-6 w-6 opacity-50" strokeWidth={1.5} />
-                <p className="mt-2 text-xs font-semibold uppercase tracking-[0.2em] opacity-60">
-                  {t('construction')}
-                </p>
-              </div>
-            ))}
           </div>
         </div>
       </section>
