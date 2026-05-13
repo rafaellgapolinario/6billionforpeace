@@ -7,8 +7,8 @@ export function Footer() {
   const t = useTranslations('footer');
   const links = [
     { href: '#top',              label: t('home'),         external: false },
-    { href: '#participate',      label: t('participate'),  external: false },
-    { href: '#transparency',     label: t('transparency'), external: false },
+    { href: '/participation',    label: t('participate'),  external: false },
+    { href: '/transparency',     label: t('transparency'), external: false },
     { href: '/donations',        label: t('donations'),    external: false },
     { href: '/peace-wall',       label: t('peaceWall'),    external: false },
     { href: '/privacy',          label: t('privacy'),      external: false },
