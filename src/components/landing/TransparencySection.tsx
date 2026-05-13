@@ -18,7 +18,7 @@ export function TransparencySection() {
             {t('title')}
           </h2>
           <p className="mx-auto mt-3 max-w-md text-balance text-2xl font-semibold text-navy-900 sm:text-3xl">
-            How we keep this<br />movement clean
+            {t('subtitle')}
           </p>
         </div>
 
