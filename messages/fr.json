@@ -84,7 +84,7 @@
     "shareCta": "Partager",
     "copyCta": "Copier le lien",
     "copyDone": "Lien copié",
-    "shareText": "Je viens de signer pour la paix sur 6billionforpeace.com — unir 6 milliards de voix autour d'un seul objectif : la paix dans le monde.",
+    "shareText": "Je viens de signer pour la paix sur 6billionforpeace.net — unir 6 milliards de voix autour d'un seul objectif : la paix dans le monde.",
     "errorNoDigits": "Veuillez saisir uniquement votre nom (sans numéros de document).",
     "supportTreaty": "Je soutiens un Traité Mondial pour la Paix.",
     "supportTreatyRequired": "Vous devez accepter le Traité pour la Paix pour signer.",
@@ -246,7 +246,7 @@
   },
   "transparency": {
     "title": "Transparence",
-    "subtitle": "Comment nous gardons ce mouvement propre.",
+    "subtitle": "Comment nous gardons ce mouvement propre",
     "pillars": [
       {
         "title": "Aucune affiliation",
@@ -281,7 +281,7 @@
   "email": {
     "subject": "Merci d'avoir signé — 6billionforpeace",
     "heading": "Votre voix est comptée",
-    "body": "Merci d'avoir signé pour la paix, {name}.\n\nVotre signature a été enregistrée sur 6billionforpeace.com. Vous faites désormais partie d'un mouvement mondial et bénévole pour unir 6 milliards de voix autour d'un seul objectif : la paix dans le monde.\n\nPartagez le mouvement pour que plus de personnes nous rejoignent.",
+    "body": "Merci d'avoir signé pour la paix, {name}.\n\nVotre signature a été enregistrée sur 6billionforpeace.net. Vous faites désormais partie d'un mouvement mondial et bénévole pour unir 6 milliards de voix autour d'un seul objectif : la paix dans le monde.\n\nPartagez le mouvement pour que plus de personnes nous rejoignent.",
     "cta": "Retour au mouvement",
     "footer": "6billionforpeace — Mouvement bénévole et indépendant pour la paix dans le monde."
   },

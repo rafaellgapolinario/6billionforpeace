@@ -21,7 +21,7 @@
   },
   "solution": {
     "title": "A solução é a paz",
-    "p1": "Ao longo da história, a humanidade viveu conflitos acreditando que a guerra poderia trazer paz.",
+    "p1": "Ao longo da história, a humanidade viveu conflitos acreditando que a guerra poderia trazer a paz.",
     "p2": "Estamos cansados do sofrimento e da destruição causados pela violência.",
     "p3": "Não queremos mais depender apenas de políticos, religiões, empresas ou instituições.",
     "p4": "É hora de unir bilhões de pessoas em torno de um único objetivo: a paz no mundo.",
@@ -84,7 +84,7 @@
     "shareCta": "Compartilhar",
     "copyCta": "Copiar link",
     "copyDone": "Link copiado",
-    "shareText": "Acabei de assinar pela paz em 6billionforpeace.com — unindo 6 bilhões de vozes em torno de um único objetivo: a paz no mundo.",
+    "shareText": "Acabei de assinar pela paz em 6billionforpeace.net — unindo bilhões de vozes em torno de um único objetivo: a paz no mundo.",
     "errorNoDigits": "Informe apenas seu nome (sem CPF ou números de documento).",
     "supportTreaty": "Eu apoio um Tratado Mundial de Paz.",
     "supportTreatyRequired": "Para assinar, é necessário concordar com o Tratado pela Paz.",
@@ -250,7 +250,7 @@
   },
   "transparency": {
     "title": "Transparência",
-    "subtitle": "Como mantemos este movimento limpo.",
+    "subtitle": "Como mantemos este movimento limpo",
     "pillars": [
       {
         "title": "Sem filiação",
@@ -285,7 +285,7 @@
   "email": {
     "subject": "Obrigado por assinar — 6billionforpeace",
     "heading": "Sua voz foi contada",
-    "body": "Obrigado por assinar pela paz, {name}.\n\nSua assinatura foi registrada em 6billionforpeace.com. Você agora faz parte de um movimento global e voluntário pra unir 6 bilhões de vozes em torno de um único objetivo: a paz no mundo.\n\nCompartilhe o movimento pra mais pessoas se juntarem.",
+    "body": "Obrigado por assinar pela paz, {name}.\n\nSua assinatura foi registrada em 6billionforpeace.net. Você agora faz parte de um movimento global e voluntário para unir bilhões de vozes em torno de um único objetivo: a paz no mundo.\n\nCompartilhe o movimento para que mais pessoas se juntem.",
     "cta": "Voltar ao movimento",
     "footer": "6billionforpeace — Movimento voluntário e independente pela paz mundial."
   },

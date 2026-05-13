@@ -84,7 +84,7 @@
     "shareCta": "分享",
     "copyCta": "复制链接",
     "copyDone": "链接已复制",
-    "shareText": "我刚刚在 6billionforpeace.com 为和平签名 — 让 60 亿人的声音汇聚于同一目标:世界和平。",
+    "shareText": "我刚刚在 6billionforpeace.net 为和平签名 — 让 60 亿人的声音汇聚于同一目标:世界和平。",
     "errorNoDigits": "请只填写您的姓名(不要填写证件号码)。",
     "supportTreaty": "我支持《世界和平条约》。",
     "supportTreatyRequired": "请同意《和平条约》后再签名。",
@@ -281,7 +281,7 @@
   "email": {
     "subject": "感谢您的签名 — 6billionforpeace",
     "heading": "您的声音已计入",
-    "body": "感谢您为和平签名,{name}。\n\n您的签名已记录在 6billionforpeace.com。您现在是这场全球自愿运动的一员,致力于让 60 亿人的声音汇聚于同一目标:世界和平。\n\n请分享这场运动,让更多人加入。",
+    "body": "感谢您为和平签名,{name}。\n\n您的签名已记录在 6billionforpeace.net。您现在是这场全球自愿运动的一员,致力于让 60 亿人的声音汇聚于同一目标:世界和平。\n\n请分享这场运动,让更多人加入。",
     "cta": "回到运动",
     "footer": "6billionforpeace — 自愿且独立的世界和平运动。"
   },

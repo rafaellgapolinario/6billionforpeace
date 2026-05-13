@@ -84,7 +84,7 @@
     "shareCta": "Compartir",
     "copyCta": "Copiar enlace",
     "copyDone": "Enlace copiado",
-    "shareText": "Acabo de firmar por la paz en 6billionforpeace.com — unir 6 mil millones de voces con un único objetivo: la paz en el mundo.",
+    "shareText": "Acabo de firmar por la paz en 6billionforpeace.net — unir 6 mil millones de voces con un único objetivo: la paz en el mundo.",
     "errorNoDigits": "Introduce solo tu nombre (sin números de documento).",
     "supportTreaty": "Apoyo un Tratado Mundial de Paz.",
     "supportTreatyRequired": "Para firmar, debes aceptar el Tratado por la Paz.",
@@ -246,7 +246,7 @@
   },
   "transparency": {
     "title": "Transparencia",
-    "subtitle": "Cómo mantenemos limpio este movimiento.",
+    "subtitle": "Cómo mantenemos limpio este movimiento",
     "pillars": [
       {
         "title": "Sin filiación",
@@ -281,7 +281,7 @@
   "email": {
     "subject": "Gracias por firmar — 6billionforpeace",
     "heading": "Tu voz ha sido contada",
-    "body": "Gracias por firmar por la paz, {name}.\n\nTu firma ha sido registrada en 6billionforpeace.com. Ahora formas parte de un movimiento global y voluntario para unir 6 mil millones de voces alrededor de un único objetivo: la paz en el mundo.\n\nComparte el movimiento para que más personas se sumen.",
+    "body": "Gracias por firmar por la paz, {name}.\n\nTu firma ha sido registrada en 6billionforpeace.net. Ahora formas parte de un movimiento global y voluntario para unir 6 mil millones de voces alrededor de un único objetivo: la paz en el mundo.\n\nComparte el movimiento para que más personas se sumen.",
     "cta": "Volver al movimiento",
     "footer": "6billionforpeace — Movimiento voluntario e independiente por la paz mundial."
   },
