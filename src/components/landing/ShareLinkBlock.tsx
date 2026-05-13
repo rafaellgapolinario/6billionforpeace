@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { Copy, Check } from 'lucide-react';
+import { Copy, Check, Heart } from 'lucide-react';
 import { toast } from 'sonner';
 
 /**
@@ -44,7 +44,11 @@ export function ShareLinkBlock({ url }: { url?: string }) {
 
   return (
     <div className="mx-auto max-w-2xl rounded-3xl border border-cyan-200 bg-white p-6 text-center shadow-sm sm:p-8">
-      <h3 className="text-2xl font-bold tracking-tight text-cyan-600 sm:text-3xl">
+      <h3 className="inline-flex items-center gap-3 text-2xl font-bold tracking-tight text-cyan-600 sm:text-3xl">
+        <Heart
+          className="heart-pulse h-6 w-6 fill-cyan-500 text-cyan-500 sm:h-8 sm:w-8"
+          strokeWidth={0}
+        />
         {t('title')}
       </h3>
       <p className="mx-auto mt-2 max-w-md text-sm text-navy-700">{t('body')}</p>
