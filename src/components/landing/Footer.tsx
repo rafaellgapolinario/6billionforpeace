@@ -6,7 +6,7 @@ import { LanguagePicker } from '@/components/LanguagePicker';
 export function Footer() {
   const t = useTranslations('footer');
   const links = [
-    { href: '#top',              label: t('home'),         external: false },
+    { href: '/',                 label: t('home'),         external: false },
     { href: '/participation',    label: t('participate'),  external: false },
     { href: '/transparency',     label: t('transparency'), external: false },
     { href: '/donations',        label: t('donations'),    external: false },

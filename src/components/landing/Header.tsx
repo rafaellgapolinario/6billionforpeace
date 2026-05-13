@@ -14,10 +14,10 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   const navItems = [
-    { href: '#solution', label: t('solution') },
-    { href: '#principles', label: t('principles') },
-    { href: '#participate', label: t('participate') },
-    { href: '#transparency', label: t('transparency') },
+    { href: '/#solution',     label: t('solution') },
+    { href: '/#principles',   label: t('principles') },
+    { href: '/#participate',  label: t('participate') },
+    { href: '/#transparency', label: t('transparency') },
   ];
 
   return (
@@ -29,13 +29,13 @@ export function Header() {
 
         <nav className="hidden items-center gap-7 lg:flex">
           {navItems.map((it) => (
-            <a
+            <Link
               key={it.href}
               href={it.href}
               className="text-sm font-medium text-white/80 transition-colors hover:text-white"
             >
               {it.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -60,14 +60,14 @@ export function Header() {
       >
         <nav className="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-3 sm:px-6">
           {navItems.map((it) => (
-            <a
+            <Link
               key={it.href}
               href={it.href}
               onClick={() => setOpen(false)}
               className="rounded-lg px-3 py-3 text-base font-medium text-white/85 hover:bg-white/5 hover:text-white"
             >
               {it.label}
-            </a>
+            </Link>
           ))}
         </nav>
       </div>
