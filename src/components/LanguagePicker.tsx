@@ -69,7 +69,7 @@ export function LanguagePicker({
                   aria-selected={lc === current}
                   onClick={() => change(lc)}
                   className="flex w-full items-center justify-between gap-3 px-3 py-2 text-sm text-navy-900 hover:bg-navy-50"
-                  dir={localeMeta[lc].dir}
+                  dir="ltr"
                 >
                   <span className="flex items-center gap-2">
                     {showFlags && (
