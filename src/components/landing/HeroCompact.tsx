@@ -19,7 +19,7 @@ const PEACE_WORDS = [
 
 export function HeroCompact() {
   return (
-    <section className="relative isolate overflow-hidden bg-navy-900 text-white" dir="ltr">
+    <section className="relative isolate overflow-hidden bg-navy-800 text-white" dir="ltr">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0"
