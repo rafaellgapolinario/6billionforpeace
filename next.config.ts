@@ -6,6 +6,8 @@ const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
 const csp = [
   "default-src 'self'",
   "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://challenges.cloudflare.com",
+  // maplibre-gl cria web worker via blob: pra renderização paralela do mapa
+  "worker-src 'self' blob:",
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
   "font-src 'self' https://fonts.gstatic.com data:",
   "img-src 'self' data: https: blob:",
