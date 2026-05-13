@@ -16,7 +16,7 @@ export function Header() {
   const navItems = [
     { href: '/#solution',     label: t('solution') },
     { href: '/#principles',   label: t('principles') },
-    { href: '/#participate',  label: t('participate') },
+    { href: '/#sign',         label: t('participate') },
     { href: '/#transparency', label: t('transparency') },
   ];
 
