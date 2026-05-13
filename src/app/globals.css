@@ -68,6 +68,21 @@ html[lang="zh"] body { font-family: var(--font-zh), var(--font-sans), system-ui,
 }
 .pin-pulse { animation: pin-pulse 1.8s ease-out 2; }
 
+/* ---------- thank-you overlay: heart entrance + single pulse ---------- */
+@keyframes thanks-heart-in {
+  0%   { opacity: 0; transform: scale(0.85); }
+  60%  { opacity: 1; transform: scale(1.05); }
+  80%  { transform: scale(0.98); }
+  100% { opacity: 1; transform: scale(1); }
+}
+.thanks-heart { animation: thanks-heart-in 1.1s ease-out forwards; transform-origin: center; }
+
+@keyframes thanks-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.thanks-fade { animation: thanks-fade-in 0.5s ease-out forwards; }
+
 /* ---------- heart button pulse (glow verde brilhante por fora) ---------- */
 @keyframes heart-btn-pulse {
   0%, 100% {

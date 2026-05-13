@@ -1,7 +1,8 @@
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { hasLocale } from 'next-intl';
 import { routing } from '@/i18n/routing';
-import { ComingSoonShell } from '@/components/landing/ComingSoonShell';
+import { PageShell } from '@/components/landing/PageShell';
+import { TransparencySection } from '@/components/landing/TransparencySection';
 
 export async function generateMetadata({
   params,
@@ -22,6 +23,9 @@ export default async function TransparencyPage({
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) return null;
   setRequestLocale(locale);
-  const t = await getTranslations('pages.transparency');
-  return <ComingSoonShell title={t('title')} lead={t('lead')} />;
+  return (
+    <PageShell>
+      <TransparencySection />
+    </PageShell>
+  );
 }

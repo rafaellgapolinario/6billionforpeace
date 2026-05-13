@@ -7,6 +7,7 @@ import { z } from 'zod';
 import { useLocale, useTranslations } from 'next-intl';
 import { toast } from 'sonner';
 import { Loader2, Heart, Share2, Copy, Check } from 'lucide-react';
+import { ThankYouOverlay } from './ThankYouOverlay';
 
 type CountryOption = { code: string; label: string };
 
@@ -59,6 +60,7 @@ export function SignatureForm({
   });
 
   const [done, setDone] = useState(false);
+  const [showThanks, setShowThanks] = useState(false);
   const [turnstileToken, setTurnstileToken] = useState<string | null>(null);
   const widgetIdRef = useRef<string | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -140,13 +142,13 @@ export function SignatureForm({
         }
         return;
       }
-      setDone(true);
+      // Show fullscreen thank-you overlay first; SuccessCard appears after it closes.
+      setShowThanks(true);
       reset();
       setTurnstileToken(null);
       if (widgetIdRef.current && window.turnstile) {
         window.turnstile.reset(widgetIdRef.current);
       }
-      toast.success(t('successTitle'), { description: t('successBody') });
     } catch {
       toast.error(t('errorGeneric'));
     }
@@ -154,6 +156,17 @@ export function SignatureForm({
 
   if (done) {
     return <SuccessCard t={t} onReset={() => setDone(false)} />;
+  }
+
+  if (showThanks) {
+    return (
+      <ThankYouOverlay
+        onDone={() => {
+          setShowThanks(false);
+          setDone(true);
+        }}
+      />
+    );
   }
 
   return (
