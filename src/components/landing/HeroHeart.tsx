@@ -23,7 +23,7 @@ export function HeroHeart() {
   return (
     <section
       id="top"
-      className="relative isolate overflow-hidden bg-navy-800 text-white"
+      className="relative isolate overflow-hidden bg-navy-900 text-white"
       dir="ltr"
     >
       <div
@@ -31,7 +31,7 @@ export function HeroHeart() {
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            'radial-gradient(ellipse at center, rgba(0,191,255,0.18) 0%, rgba(10,37,64,0.0) 40%, rgba(30,70,110,0.40) 100%)',
+            'radial-gradient(ellipse at center, rgba(0,191,255,0.18) 0%, rgba(10,37,64,0.0) 60%)',
         }}
       />
 
