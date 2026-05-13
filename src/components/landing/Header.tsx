@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { Menu, X } from 'lucide-react';
+import { Link } from '@/i18n/navigation';
 import { Logo } from '@/components/Logo';
 import { LanguagePicker } from '@/components/LanguagePicker';
 import { cn } from '@/lib/utils';
@@ -22,9 +23,9 @@ export function Header() {
   return (
     <header className="sticky top-0 z-30 border-b border-white/5 bg-navy-900/85 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <a href="#top" className="text-2xl">
+        <Link href="/" className="text-2xl" aria-label="6billionforpeace">
           <Logo variant="light" />
-        </a>
+        </Link>
 
         <nav className="hidden items-center gap-7 lg:flex">
           {navItems.map((it) => (
