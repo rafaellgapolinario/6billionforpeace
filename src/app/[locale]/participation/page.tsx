@@ -31,6 +31,9 @@ export default async function ParticipationPage({
   if (!hasLocale(routing.locales, locale)) return null;
   setRequestLocale(locale);
 
+  const t = await getTranslations('pages.participation');
+  const bullets = t.raw('bullets') as string[];
+
   const h = await headers();
   const ipCountry =
     h.get('x-vercel-ip-country') ?? h.get('cf-ipcountry') ?? '';
@@ -51,32 +54,26 @@ export default async function ParticipationPage({
       <section className="bg-white px-6 py-20 sm:py-24">
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="text-4xl font-bold tracking-tight text-navy-900 sm:text-5xl">
-            What It Means to Participate
+            {t('h1')}
           </h1>
           <p className="mx-auto mt-8 max-w-2xl text-lg leading-relaxed text-navy-700 sm:text-xl">
-            To participate is to make a conscious choice:
+            {t('intro')}
           </p>
           <ul className="mx-auto mt-6 max-w-xl space-y-3 text-left text-lg text-navy-800 sm:text-xl">
-            <li className="flex items-start gap-3">
-              <span className="mt-1 inline-block h-2 w-2 shrink-0 rounded-full bg-cyan-500" />
-              <span>To reject war</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="mt-1 inline-block h-2 w-2 shrink-0 rounded-full bg-cyan-500" />
-              <span>To affirm peace</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="mt-1 inline-block h-2 w-2 shrink-0 rounded-full bg-cyan-500" />
-              <span>To stand with humanity</span>
-            </li>
+            {bullets.map((b) => (
+              <li key={b} className="flex items-start gap-3">
+                <span className="mt-1 inline-block h-2 w-2 shrink-0 rounded-full bg-cyan-500" />
+                <span>{b}</span>
+              </li>
+            ))}
           </ul>
           <p className="mx-auto mt-10 max-w-2xl text-lg leading-relaxed text-navy-700 sm:text-xl">
-            Your participation is personal, meaningful, and global.
+            {t('personal')}
           </p>
           <p className="mt-4 text-lg leading-relaxed text-navy-700 sm:text-xl">
-            You are not joining an organization.
+            {t('notOrg')}
             <br />
-            You are standing with humanity.
+            {t('withHumanity')}
           </p>
         </div>
       </section>
@@ -84,7 +81,7 @@ export default async function ParticipationPage({
       <section id="sign" className="bg-surface px-6 py-20">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-navy-900 sm:text-4xl">
-            Make Your Voice Heard for Global Peace
+            {t('formTitle')}
           </h2>
         </div>
         <div className="mx-auto mt-12 max-w-2xl">

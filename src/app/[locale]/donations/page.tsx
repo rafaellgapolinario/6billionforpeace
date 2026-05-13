@@ -23,21 +23,21 @@ export default async function DonationsPage({
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) return null;
   setRequestLocale(locale);
+  const t = await getTranslations('pages.donations');
 
   return (
     <PageShell>
       <section className="bg-white px-6 py-20 sm:py-24">
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="text-4xl font-bold tracking-tight text-navy-900 sm:text-5xl">
-            Donations
+            {t('title')}
           </h1>
           <p className="mt-4 text-xl font-medium text-cyan-700 sm:text-2xl">
-            Support the Peace Movement
+            {t('subtitle')}
           </p>
 
           <p className="mx-auto mt-10 max-w-2xl text-base leading-relaxed text-navy-700 sm:text-lg">
-            To support the movement, send us an email and we will guide you through
-            the contribution process.
+            {t('intro')}
           </p>
 
           <a
@@ -49,21 +49,16 @@ export default async function DonationsPage({
           </a>
 
           <p className="mx-auto mt-12 max-w-2xl text-balance text-lg italic leading-relaxed text-navy-800 sm:text-xl">
-            &ldquo;This movement exists through people, not institutions,
-            governments, companies, or politics.&rdquo;
+            &ldquo;{t('quote')}&rdquo;
           </p>
         </div>
       </section>
 
       <section className="bg-surface px-6 py-16">
-        <div
-          className="mx-auto max-w-4xl rounded-3xl border-2 border-cyan-300 bg-white px-8 py-12 text-center shadow-lg shadow-cyan-500/10 sm:px-12 sm:py-14"
-        >
+        <div className="mx-auto max-w-4xl rounded-3xl border-2 border-cyan-300 bg-white px-8 py-12 text-center shadow-lg shadow-cyan-500/10 sm:px-12 sm:py-14">
           <Sparkles className="mx-auto h-10 w-10 text-cyan-500" strokeWidth={1.5} />
           <p className="mx-auto mt-6 max-w-2xl text-balance text-lg font-medium leading-relaxed text-navy-900 sm:text-xl">
-            We are building a fully transparent donation system designed to allow
-            real-time visibility of fund allocation and long-term traceability of
-            contributions.
+            {t('highlight')}
           </p>
         </div>
       </section>
@@ -77,8 +72,7 @@ export default async function DonationsPage({
           }}
         >
           <p className="mx-auto max-w-2xl text-balance text-lg leading-relaxed sm:text-xl">
-            Future initiatives supported by this movement include peace education,
-            humanitarian aid, and global environmental projects.
+            {t('future')}
           </p>
         </div>
       </section>

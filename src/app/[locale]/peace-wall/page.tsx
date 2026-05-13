@@ -15,7 +15,10 @@ export async function generateMetadata({
   return { title: `${t('title')} — 6billionforpeace` };
 }
 
-// Frases curtas em inglês — fixas, símbolos do movimento
+/**
+ * Frases curtas e multi-idioma ficam SEMPRE no idioma original
+ * (cliente: "Coloque estas frases soltas na lingua original").
+ */
 const SHORT_QUOTES = [
   'Every vision begins in imagination.',
   'A world without fear.',
@@ -30,7 +33,6 @@ const SHORT_QUOTES = [
   'Together we build peace.',
 ];
 
-// Frases multi-idioma (original + tradução PT)
 const MULTI_LANG_QUOTES = [
   {
     lang: 'pt',
@@ -64,7 +66,6 @@ const MULTI_LANG_QUOTES = [
   },
 ];
 
-// Posições/cores variadas pra dar dinâmica visual ao mural
 const QUOTE_STYLES = [
   'bg-cyan-50 border-cyan-200 text-navy-900',
   'bg-white border-navy-100 text-navy-800',
@@ -83,20 +84,20 @@ export default async function PeaceWallPage({
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) return null;
   setRequestLocale(locale);
+  const t = await getTranslations('pages.peaceWall');
 
   return (
     <PageShell>
       <section className="bg-white px-6 pt-20 pb-12 sm:pt-24">
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="text-4xl font-bold tracking-tight text-navy-900 sm:text-5xl">
-            Global Peace Mural
+            {t('title')}
           </h1>
           <p className="mt-6 text-2xl font-medium text-cyan-700 sm:text-3xl">
-            Imagine a world in peace
+            {t('tagline')}
           </p>
           <p className="mx-auto mt-4 max-w-2xl text-balance text-base leading-relaxed text-navy-700 sm:text-lg">
-            A collective space where humanity shares what becomes possible when peace
-            is real.
+            {t('subtitle')}
           </p>
         </div>
       </section>
@@ -104,8 +105,7 @@ export default async function PeaceWallPage({
       <section className="bg-white px-6 pb-12">
         <div className="mx-auto max-w-3xl rounded-3xl border-2 border-cyan-400 bg-gradient-to-br from-cyan-50 to-white px-8 py-10 text-center shadow-lg shadow-cyan-500/10 sm:px-12">
           <p className="mx-auto max-w-2xl text-balance text-lg leading-relaxed text-navy-800 sm:text-xl">
-            Your voice matters. If you wish, you can send a short message or photo
-            about peace. We may feature it in the Global Peace Mural.
+            {t('voiceTitle')}
           </p>
           <a
             href="mailto:mural@6billionforpeace.net"
@@ -117,7 +117,6 @@ export default async function PeaceWallPage({
         </div>
       </section>
 
-      {/* Mural com frases soltas em layout masonry */}
       <section className="bg-surface px-6 py-16">
         <div className="mx-auto max-w-6xl">
           <div className="columns-1 gap-6 sm:columns-2 lg:columns-3">
@@ -157,7 +156,6 @@ export default async function PeaceWallPage({
               </div>
             ))}
 
-            {/* placeholders "in construction" */}
             {[0, 1, 2].map((i) => (
               <div
                 key={`construction-${i}`}
@@ -167,7 +165,7 @@ export default async function PeaceWallPage({
               >
                 <Construction className="mx-auto h-6 w-6 opacity-50" strokeWidth={1.5} />
                 <p className="mt-2 text-xs font-semibold uppercase tracking-[0.2em] opacity-60">
-                  In construction
+                  {t('construction')}
                 </p>
               </div>
             ))}

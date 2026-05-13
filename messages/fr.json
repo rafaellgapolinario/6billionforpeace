@@ -128,7 +128,18 @@
   "pages": {
     "participation": {
       "title": "Participation",
-      "lead": "Comment rejoindre et amplifier ce mouvement."
+      "lead": "Comment rejoindre et amplifier ce mouvement.",
+      "h1": "What It Means to Participate",
+      "intro": "To participate is to make a conscious choice:",
+      "bullets": [
+        "To reject war",
+        "To affirm peace",
+        "To stand with humanity"
+      ],
+      "personal": "Your participation is personal, meaningful, and global.",
+      "notOrg": "You are not joining an organization.",
+      "withHumanity": "You are standing with humanity.",
+      "formTitle": "Make Your Voice Heard for Global Peace"
     },
     "transparency": {
       "title": "Transparence",
@@ -136,11 +147,20 @@
     },
     "donations": {
       "title": "Dons",
-      "lead": "Comment les contributions sont reçues et utilisées."
+      "lead": "Comment les contributions sont reçues et utilisées.",
+      "subtitle": "Support the Peace Movement",
+      "intro": "To support the movement, send us an email and we will guide you through the contribution process.",
+      "quote": "This movement exists through people — not institutions, governments, companies, or politics.",
+      "highlight": "We are building a fully transparent donation system designed to allow real-time visibility of fund allocation and long-term traceability of contributions.",
+      "future": "Future initiatives supported by this movement include peace education, humanitarian aid, and global environmental projects."
     },
     "peaceWall": {
       "title": "Mur de la paix",
-      "lead": "Une fresque mondiale de voix pour la paix."
+      "lead": "Une fresque mondiale de voix pour la paix.",
+      "tagline": "Imagine a world in peace",
+      "subtitle": "A collective space where humanity shares what becomes possible when peace is real.",
+      "voiceTitle": "Your voice matters. If you wish, send a short message or photo about peace. We may feature it in the Global Peace Mural.",
+      "construction": "In construction"
     }
   },
   "cookie": {
@@ -264,5 +284,9 @@
     "body": "Merci d'avoir signé pour la paix, {name}.\n\nVotre signature a été enregistrée sur 6billionforpeace.com. Vous faites désormais partie d'un mouvement mondial et bénévole pour unir 6 milliards de voix autour d'un seul objectif : la paix dans le monde.\n\nPartagez le mouvement pour que plus de personnes nous rejoignent.",
     "cta": "Retour au mouvement",
     "footer": "6billionforpeace — Mouvement bénévole et indépendant pour la paix dans le monde."
+  },
+  "humansForPeace": {
+    "title": "Humans for peace",
+    "body": "One movement. One purpose. Billions of voices choosing peace together."
   }
 }

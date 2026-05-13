@@ -128,7 +128,18 @@
   "pages": {
     "participation": {
       "title": "Participação",
-      "lead": "Como se juntar e amplificar este movimento."
+      "lead": "Como se juntar e amplificar este movimento.",
+      "h1": "O que significa participar",
+      "intro": "Participar é fazer uma escolha consciente:",
+      "bullets": [
+        "Rejeitar a guerra",
+        "Afirmar a paz",
+        "Estar ao lado da humanidade"
+      ],
+      "personal": "Sua participação é pessoal, significativa e global.",
+      "notOrg": "Você não está entrando em uma organização.",
+      "withHumanity": "Você está ao lado da humanidade.",
+      "formTitle": "Faça sua voz ser ouvida pela paz mundial"
     },
     "transparency": {
       "title": "Transparência",
@@ -136,12 +147,25 @@
     },
     "donations": {
       "title": "Doações",
-      "lead": "Como as contribuições são recebidas e utilizadas."
+      "lead": "Como as contribuições são recebidas e utilizadas.",
+      "subtitle": "Apoie o movimento pela paz",
+      "intro": "Para apoiar o movimento, envie um email e nós o guiaremos pelo processo de contribuição.",
+      "quote": "Este movimento existe através de pessoas — não de instituições, governos, empresas ou política.",
+      "highlight": "Estamos construindo um sistema de doação totalmente transparente, projetado para permitir visibilidade em tempo real da alocação de fundos e rastreabilidade de longo prazo das contribuições.",
+      "future": "Iniciativas futuras apoiadas por este movimento incluem educação pela paz, ajuda humanitária e projetos ambientais globais."
     },
     "peaceWall": {
-      "title": "Mural da paz",
-      "lead": "Um mural global de vozes pela paz."
+      "title": "Mural Global da Paz",
+      "lead": "Um mural global de vozes pela paz.",
+      "tagline": "Imagine um mundo em paz",
+      "subtitle": "Um espaço coletivo onde a humanidade compartilha o que se torna possível quando a paz é real.",
+      "voiceTitle": "Sua voz importa. Se quiser, envie uma mensagem curta ou foto sobre a paz. Podemos destacá-la no Mural Global da Paz.",
+      "construction": "Em construção"
     }
+  },
+  "humansForPeace": {
+    "title": "Humanos pela paz",
+    "body": "Um movimento. Um propósito. Bilhões de vozes escolhendo a paz juntas."
   },
   "cookie": {
     "title": "Respeitamos sua privacidade",
