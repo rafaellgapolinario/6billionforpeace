@@ -50,8 +50,8 @@ export function HeartButton({
         />
       </svg>
       <span className="pointer-events-none absolute inset-0 flex flex-col items-center justify-center pb-1.5 text-center font-bold uppercase leading-tight tracking-tight text-navy-900">
-        <span className="text-[8px] sm:text-[10px]">{line1}</span>
-        <span className="text-[8px] sm:text-[10px]">{line2}</span>
+        <span className="text-[9px]">{line1}</span>
+        <span className="text-[9px]">{line2}</span>
       </span>
     </Component>
   );
