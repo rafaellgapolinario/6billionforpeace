@@ -23,7 +23,7 @@ export function HeroHeart() {
   return (
     <section
       id="top"
-      className="relative isolate overflow-hidden bg-navy-800 text-white"
+      className="relative isolate overflow-hidden bg-navy-700 text-white"
       dir="ltr"
     >
       <div
