@@ -8,16 +8,18 @@ import { Logo } from '@/components/Logo';
 import { LanguagePicker } from '@/components/LanguagePicker';
 
 export function Header() {
-  const t = useTranslations('header.nav');
   const tHeader = useTranslations('header');
+  const tFooter = useTranslations('footer');
   const [open, setOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
   const navItems = [
-    { href: '/#solution',     label: t('solution') },
-    { href: '/#principles',   label: t('principles') },
-    { href: '/#sign',         label: t('participate') },
-    { href: '/#transparency', label: t('transparency') },
+    { href: '/',                  label: tFooter('home') },
+    { href: '/participation',     label: tFooter('participate') },
+    { href: '/transparency',      label: tFooter('transparency') },
+    { href: '/donations',         label: tFooter('donations') },
+    { href: '/peace-wall',        label: tFooter('peaceWall') },
+    { href: '/peace-declaration', label: tFooter('declaration') },
   ];
 
   // Fecha o popover ao clicar fora
