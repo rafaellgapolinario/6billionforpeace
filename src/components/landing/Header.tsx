@@ -21,40 +21,34 @@ export function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-30 border-b border-white/5 bg-navy-900/85 backdrop-blur-md">
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="text-2xl" aria-label="6billionforpeace">
-          <Logo variant="light" />
-        </Link>
-
-        <nav className="hidden items-center gap-7 lg:flex">
-          {navItems.map((it) => (
-            <Link
-              key={it.href}
-              href={it.href}
-              className="text-sm font-medium text-white/80 transition-colors hover:text-white"
-            >
-              {it.label}
-            </Link>
-          ))}
-        </nav>
-
-        <div className="flex items-center gap-3">
+    <header className="sticky top-0 z-30 border-b border-white/5 bg-navy-900">
+      <div className="mx-auto grid h-20 max-w-7xl grid-cols-3 items-center px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-start">
           <LanguagePicker variant="light" showFlags={false} />
+        </div>
+
+        <div className="flex justify-center">
+          <Link href="/" className="text-2xl" aria-label="6billionforpeace">
+            <Logo variant="light" size="md" />
+          </Link>
+        </div>
+
+        <div className="flex justify-end">
           <button
             type="button"
             onClick={() => setOpen((o) => !o)}
             aria-label={open ? tHeader('menuClose') : tHeader('menuOpen')}
-            className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-white/15 text-white lg:hidden"
+            aria-expanded={open}
+            className="inline-flex h-11 w-11 items-center justify-center rounded-md border border-white/15 text-white transition-colors hover:bg-white/5"
           >
-            {open ? <X size={18} /> : <Menu size={18} />}
+            {open ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>
       </div>
 
       <div
         className={cn(
-          'lg:hidden overflow-hidden border-t border-white/5 bg-navy-900 transition-[max-height] duration-300',
+          'overflow-hidden border-t border-white/5 bg-navy-900 transition-[max-height] duration-300',
           open ? 'max-h-72' : 'max-h-0',
         )}
       >
