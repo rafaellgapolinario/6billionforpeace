@@ -60,7 +60,8 @@
   "everest": {
     "body": "Au sommet du Mont Everest, un drapeau blanc portant le cœur de la paix sera hissé en symbole d'une humanité qui a choisi de vivre en paix.",
     "highlight": "",
-    "cta": ""
+    "cta": "",
+    "title": "Rêve de paix"
   },
   "form": {
     "title": "Signer pour la paix",
@@ -120,7 +121,9 @@
     "terms": "Conditions",
     "language": "Langue",
     "rightsReserved": "Tous droits réservés",
-    "declaration": "Global Civil Peace Declaration"
+    "declaration": "Global Civil Peace Declaration",
+    "inspired": "Inspiré par la bonté humaine, le courage, la foi et la compassion. La paix est quelque chose que nous construisons ensemble.",
+    "thanks": "Thanks Alice — Meggan — Sofia — Frida — Suri — Lua — Nadir — Marco — Juliana — Paris — Nádia — Julio. Part. Rafael (você amigo) — Samuel *Yeshua — Haroldo — Lee — Jiang — Keanu — Jim — Charlie — Ana and many others"
   },
   "shareLink": {
     "title": "Envoyer à un ami",

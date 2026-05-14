@@ -60,7 +60,8 @@
   "everest": {
     "body": "在珠穆朗玛峰之巅,一面承载和平之心的白旗将被升起,象征人类选择活在和平之中。",
     "highlight": "",
-    "cta": ""
+    "cta": "",
+    "title": "和平之梦"
   },
   "form": {
     "title": "为和平签名",
@@ -120,7 +121,9 @@
     "terms": "条款",
     "language": "语言",
     "rightsReserved": "保留所有权利",
-    "declaration": "Global Civil Peace Declaration"
+    "declaration": "Global Civil Peace Declaration",
+    "inspired": "受人类的善良、勇气、信念与同情心所启发。和平是我们共同建造的。",
+    "thanks": "Thanks Alice — Meggan — Sofia — Frida — Suri — Lua — Nadir — Marco — Juliana — Paris — Nádia — Julio. Part. Rafael (você amigo) — Samuel *Yeshua — Haroldo — Lee — Jiang — Keanu — Jim — Charlie — Ana and many others"
   },
   "shareLink": {
     "title": "分享给朋友",

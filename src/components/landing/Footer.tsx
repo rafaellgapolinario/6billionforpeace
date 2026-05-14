@@ -54,7 +54,12 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="mx-auto mt-10 max-w-6xl border-t border-white/10 pt-6 text-center text-xs text-white/50">
+      <div className="mx-auto mt-10 max-w-4xl space-y-3 text-center text-[11px] leading-relaxed text-white/60">
+        <p className="italic">{t('inspired')}</p>
+        <p>{t('thanks')}</p>
+      </div>
+
+      <div className="mx-auto mt-6 max-w-6xl border-t border-white/10 pt-6 text-center text-xs text-white/50">
         © {new Date().getFullYear()} 6billionforpeace · {t('rightsReserved')}
       </div>
     </footer>

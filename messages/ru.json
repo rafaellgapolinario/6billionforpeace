@@ -60,7 +60,8 @@
   "everest": {
     "body": "На вершине Эвереста поднимется белый флаг с сердцем мира — как символ человечества, выбравшего жить в мире.",
     "highlight": "",
-    "cta": ""
+    "cta": "",
+    "title": "Мечта о мире"
   },
   "form": {
     "title": "Подписать за мир",
@@ -126,7 +127,9 @@
     "terms": "Условия",
     "language": "Язык",
     "rightsReserved": "Все права защищены",
-    "declaration": "Global Civil Peace Declaration"
+    "declaration": "Global Civil Peace Declaration",
+    "inspired": "Вдохновлено человеческой добротой, мужеством, верой и состраданием. Мир — это то, что мы строим вместе.",
+    "thanks": "Thanks Alice — Meggan — Sofia — Frida — Suri — Lua — Nadir — Marco — Juliana — Paris — Nádia — Julio. Part. Rafael (você amigo) — Samuel *Yeshua — Haroldo — Lee — Jiang — Keanu — Jim — Charlie — Ana and many others"
   },
   "cookie": {
     "title": "Мы уважаем вашу приватность",

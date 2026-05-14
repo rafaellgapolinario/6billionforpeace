@@ -10,8 +10,8 @@ export function EverestSection() {
           <p className="text-balance text-lg leading-relaxed sm:text-xl">
             {t('body')}
           </p>
-          <div className="mt-8">
-            <svg viewBox="0 0 48 56" className="h-28 w-24 sm:h-36 sm:w-28" aria-hidden>
+          <div className="mt-8 flex items-center gap-5">
+            <svg viewBox="0 0 48 56" className="h-28 w-24 shrink-0 sm:h-36 sm:w-28" aria-hidden>
               {/* Mastro */}
               <rect x="4" y="6" width="3" height="48" fill="#0A2540" rx="1" />
               {/* Bandeira branca */}
@@ -27,6 +27,9 @@ export function EverestSection() {
                 fill="#00BFFF"
               />
             </svg>
+            <span className="text-2xl font-semibold leading-tight text-navy-900 sm:text-3xl">
+              {t('title')}
+            </span>
           </div>
         </div>
 

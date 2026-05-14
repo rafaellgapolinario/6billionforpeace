@@ -60,7 +60,8 @@
   "everest": {
     "body": "No topo do Monte Everest, uma bandeira branca carregando o coração da paz será erguida como símbolo de uma humanidade que escolheu viver em paz.",
     "highlight": "",
-    "cta": ""
+    "cta": "",
+    "title": "Sonho de paz"
   },
   "form": {
     "title": "Assine pela paz",
@@ -120,7 +121,9 @@
     "terms": "Termos",
     "language": "Idioma",
     "rightsReserved": "Todos os direitos reservados",
-    "declaration": "Declaração Civil Global pela Paz"
+    "declaration": "Declaração Civil Global pela Paz",
+    "inspired": "Inspirado pela bondade humana, coragem, fé e compaixão. A paz é algo que construímos juntos.",
+    "thanks": "Thanks Alice — Meggan — Sofia — Frida — Suri — Lua — Nadir — Marco — Juliana — Paris — Nádia — Julio. Part. Rafael (você amigo) — Samuel *Yeshua — Haroldo — Lee — Jiang — Keanu — Jim — Charlie — Ana and many others"
   },
   "shareLink": {
     "title": "Envie pra um amigo",
