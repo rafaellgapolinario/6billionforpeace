@@ -22,17 +22,13 @@ export function HeroHeart() {
   return (
     <section
       id="top"
-      className="relative isolate overflow-hidden bg-navy-700 text-white"
+      className="relative isolate overflow-hidden text-white"
+      style={{
+        background:
+          'linear-gradient(135deg, #00BFFF 0%, #1E90FF 50%, #0F3057 100%)',
+      }}
       dir="ltr"
     >
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0"
-        style={{
-          background:
-            'radial-gradient(ellipse at center, rgba(0,191,255,0.18) 0%, rgba(10,37,64,0.0) 60%)',
-        }}
-      />
 
       <div className="relative mx-auto flex min-h-[78vh] max-w-5xl flex-col items-center justify-center px-6 py-16 text-center sm:py-20">
         <div className="relative aspect-square w-[min(88vw,520px)]">
