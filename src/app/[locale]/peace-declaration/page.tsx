@@ -32,7 +32,7 @@ export default async function PeaceDeclarationPage({
           <h1 className="text-4xl font-bold tracking-tight text-navy-900 sm:text-5xl">
             {t('title')}
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-balance text-xl font-medium text-cyan-700 sm:text-2xl">
+          <p className="mx-auto mt-10 max-w-2xl text-balance text-xl font-medium text-cyan-700 sm:mt-12 sm:text-2xl">
             {t('subtitle')}
           </p>
         </div>
