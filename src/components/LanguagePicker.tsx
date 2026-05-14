@@ -65,7 +65,7 @@ export function LanguagePicker({
           <ul
             role="listbox"
             className={cn(
-              'absolute z-50 mt-2 w-56 max-w-[calc(100vw-2rem)] overflow-hidden rounded-xl border border-navy-100 bg-white py-1 shadow-2xl shadow-navy-900/10',
+              'absolute z-50 mt-2 w-56 max-w-[calc(100vw-2rem)] overflow-hidden rounded-xl border border-white/10 bg-navy-900 py-1 shadow-2xl shadow-black/40',
               compact ? 'left-0' : 'right-0',
             )}
           >
@@ -76,7 +76,7 @@ export function LanguagePicker({
                   role="option"
                   aria-selected={lc === current}
                   onClick={() => change(lc)}
-                  className="flex w-full items-center justify-between gap-3 px-3 py-2 text-sm text-navy-900 hover:bg-navy-50"
+                  className="flex w-full items-center justify-between gap-3 px-4 py-2.5 text-sm font-medium text-white/85 hover:bg-white/5 hover:text-white"
                   dir="ltr"
                 >
                   <span className="flex items-center gap-2">
@@ -85,9 +85,9 @@ export function LanguagePicker({
                         {localeMeta[lc].flag}
                       </span>
                     )}
-                    <span className="font-medium">{localeMeta[lc].native}</span>
+                    <span>{localeMeta[lc].native}</span>
                   </span>
-                  {lc === current && <Check size={14} className="text-cyan-600" />}
+                  {lc === current && <Check size={14} className="text-cyan-400" />}
                 </button>
               </li>
             ))}
