@@ -42,9 +42,9 @@ export default async function DonationsPage({
 
           <a
             href="mailto:6billionforpeace@gmail.com"
-            className="mt-6 inline-flex items-center gap-2 text-2xl font-bold text-cyan-600 underline-offset-4 hover:underline sm:text-3xl"
+            className="mt-6 inline-flex items-center gap-2 text-base font-semibold text-cyan-600 underline-offset-4 hover:underline sm:text-lg"
           >
-            <Mail className="h-6 w-6 sm:h-7 sm:w-7" strokeWidth={2} />
+            <Mail className="h-4 w-4 sm:h-5 sm:w-5" strokeWidth={2} />
             6billionforpeace@gmail.com
           </a>
 
