@@ -1,315 +1,315 @@
 {
   "meta": {
-    "title": "6billionforpeace — Time to unite 6 billion voices for peace",
-    "description": "A voluntary, independent global movement for world peace. Sign and add your voice to 6 billion others. No politics. No religion. No commerce. Only peace."
+    "title": "6billionforpeace — शांति के लिए 6 अरब आवाज़ें एकजुट करने का समय",
+    "description": "विश्व शांति के लिए एक स्वैच्छिक, स्वतंत्र वैश्विक आंदोलन। हस्ताक्षर करें और अपनी आवाज़ को 6 अरब अन्य लोगों के साथ जोड़ें। कोई राजनीति नहीं। कोई धर्म नहीं। कोई व्यापार नहीं। केवल शांति।"
   },
   "header": {
     "nav": {
-      "home": "Home",
-      "solution": "The solution",
-      "principles": "Principles",
-      "participate": "Participation",
-      "transparency": "Transparency"
+      "home": "मुख्य पृष्ठ",
+      "solution": "समाधान",
+      "principles": "सिद्धांत",
+      "participate": "भागीदारी",
+      "transparency": "पारदर्शिता"
     },
-    "languagePicker": "Choose language",
-    "menuOpen": "Open menu",
-    "menuClose": "Close menu"
+    "languagePicker": "भाषा चुनें",
+    "menuOpen": "मेनू खोलें",
+    "menuClose": "मेनू बंद करें"
   },
   "hero": {
-    "tagline": "We still have a choice",
-    "logoAlt": "6 billion for peace"
+    "tagline": "हमारे पास अब भी एक विकल्प है",
+    "logoAlt": "शांति के लिए 6 अरब"
   },
   "solution": {
-    "title": "The solution is peace",
-    "p1": "Throughout history, humanity has lived through conflicts believing that war could bring peace.",
-    "p2": "We are tired of the suffering and destruction caused by violence.",
-    "p3": "We no longer want to depend only on politicians, religions, companies, or institutions.",
-    "p4": "It is time to unite billions of people around one shared goal: peace in the world.",
+    "title": "समाधान शांति है",
+    "p1": "इतिहास भर में, मानवता यह विश्वास करते हुए संघर्षों से गुज़री है कि युद्ध शांति ला सकता है।",
+    "p2": "हम हिंसा से होने वाली पीड़ा और विनाश से थक चुके हैं।",
+    "p3": "अब हम केवल राजनेताओं, धर्मों, कंपनियों या संस्थानों पर निर्भर नहीं रहना चाहते।",
+    "p4": "अब समय है कि अरबों लोग एक साझा लक्ष्य के लिए एकजुट हों: विश्व में शांति।",
     "p5": "",
     "p6": "",
-    "cta": "Sign for peace"
+    "cta": "शांति के लिए हस्ताक्षर करें"
   },
   "call": {
-    "p1": "Join the largest peace movement in human history.",
-    "p2": "Peace will no longer be just a dream, a speech, a promise, or a distant hope.",
-    "p3": "Peace is the survival of humanity.",
-    "cta": "Sign for peace"
+    "p1": "मानव इतिहास के सबसे बड़े शांति आंदोलन में शामिल हों।",
+    "p2": "शांति अब केवल एक सपना, भाषण, वादा या दूर की आशा नहीं रहेगी।",
+    "p3": "शांति मानवता का अस्तित्व है।",
+    "cta": "शांति के लिए हस्ताक्षर करें"
   },
   "principles": {
-    "title": "Our principles",
-    "noIdeologies": "No ideologies.",
-    "noWar": "No war.",
-    "withoutWar": "No war.",
+    "title": "हमारे सिद्धांत",
+    "noIdeologies": "कोई विचारधारा नहीं।",
+    "noWar": "कोई युद्ध नहीं।",
+    "withoutWar": "कोई युद्ध नहीं।",
     "noRevolutions": "",
-    "sovereignty": "No interference in the internal laws or sovereignty of any nation.",
-    "requirementTitle": "There is only one requirement:",
-    "requirementBody": "the end of war.",
-    "maturity": "Humanity has matured enough to resolve conflicts without self-destruction. We know the horror of war. Now it is time to experience the joy of peace.",
-    "cta": "Sign for peace"
+    "sovereignty": "किसी भी राष्ट्र के आंतरिक कानूनों या संप्रभुता में कोई हस्तक्षेप नहीं।",
+    "requirementTitle": "केवल एक ही आवश्यकता है:",
+    "requirementBody": "युद्ध का अंत।",
+    "maturity": "मानवता अब इतनी परिपक्व हो चुकी है कि बिना आत्म-विनाश के संघर्षों को हल कर सके। हम युद्ध की भयावहता जानते हैं। अब समय है शांति के आनंद का अनुभव करने का।",
+    "cta": "शांति के लिए हस्ताक्षर करें"
   },
   "volunteers": {
-    "title": "Peace volunteers",
-    "subtitle": "Travel the world for peace",
-    "comingSoon": "Soon",
+    "title": "शांति स्वयंसेवक",
+    "subtitle": "शांति के लिए दुनिया की यात्रा करें",
+    "comingSoon": "जल्द ही",
     "body": "",
     "cta": ""
   },
   "everest": {
-    "body": "At the top of Mount Everest, a white flag carrying the heart of peace will rise as a symbol of a humanity that chose to live in peace.",
+    "body": "माउंट एवरेस्ट की चोटी पर, शांति का हृदय धारण किए एक श्वेत ध्वज लहराएगा — एक ऐसी मानवता का प्रतीक जिसने शांति में जीना चुना।",
     "highlight": "",
     "cta": ""
   },
   "form": {
-    "title": "Sign for peace",
-    "subtitle": "Add your voice. Free, anonymous to the public, secure.",
-    "name": "Full name",
-    "namePlaceholder": "Your name",
-    "email": "E-mail",
+    "title": "शांति के लिए हस्ताक्षर करें",
+    "subtitle": "अपनी आवाज़ जोड़ें। निःशुल्क, सार्वजनिक रूप से गुमनाम, सुरक्षित।",
+    "name": "पूरा नाम",
+    "namePlaceholder": "आपका नाम",
+    "email": "ईमेल",
     "emailPlaceholder": "you@example.com",
-    "country": "Country",
-    "countryPlaceholder": "Select your country",
-    "consent": "I agree with the collection of my data under the terms of the LGPD/GDPR privacy policy.",
-    "submit": "Sign for peace",
-    "submitting": "Signing…",
-    "successTitle": "Thank you for your voice.",
-    "successBody": "Your signature has been added. Share the movement.",
-    "errorGeneric": "Something went wrong. Please try again.",
-    "errorDuplicate": "You have already signed this petition. Thank you so much for your participation!",
-    "errorCaptcha": "Captcha verification failed. Please try again.",
-    "errorRequired": "This field is required.",
-    "errorEmail": "Please provide a valid e-mail.",
-    "share": "Share",
-    "shareTitle": "Share the movement",
-    "shareBody": "Help us reach more voices for peace.",
-    "shareCta": "Share",
-    "copyCta": "Copy link",
-    "copyDone": "Link copied",
-    "shareText": "I just signed for peace at 6billionforpeace.net — unite billions of voices for a single goal: peace in the world.",
-    "errorNoDigits": "Please enter only your name (no ID numbers).",
-    "supportTreaty": "I support a World Peace Treaty.",
-    "supportTreatyRequired": "You must agree with the Peace Treaty to sign.",
-    "errorRateLimit": "Too many attempts from this network. Please wait a few minutes.",
-    "errorTooFast": "Please take a moment to fill out the form.",
-    "errorDisposable": "Please use a permanent email address."
+    "country": "देश",
+    "countryPlaceholder": "अपना देश चुनें",
+    "consent": "मैं LGPD/GDPR गोपनीयता नीति के तहत अपने डेटा के संग्रह से सहमत हूँ।",
+    "submit": "शांति के लिए हस्ताक्षर करें",
+    "submitting": "हस्ताक्षर हो रहे हैं…",
+    "successTitle": "आपकी आवाज़ के लिए धन्यवाद।",
+    "successBody": "आपका हस्ताक्षर जुड़ गया है। इस आंदोलन को साझा करें।",
+    "errorGeneric": "कुछ गलत हो गया। कृपया पुनः प्रयास करें।",
+    "errorDuplicate": "आप पहले ही इस याचिका पर हस्ताक्षर कर चुके हैं। आपकी भागीदारी के लिए बहुत-बहुत धन्यवाद!",
+    "errorCaptcha": "कैप्चा सत्यापन विफल हुआ। कृपया पुनः प्रयास करें।",
+    "errorRequired": "यह फ़ील्ड आवश्यक है।",
+    "errorEmail": "कृपया एक मान्य ईमेल दर्ज करें।",
+    "share": "साझा करें",
+    "shareTitle": "इस आंदोलन को साझा करें",
+    "shareBody": "शांति के लिए और आवाज़ें जुटाने में हमारी मदद करें।",
+    "shareCta": "साझा करें",
+    "copyCta": "लिंक कॉपी करें",
+    "copyDone": "लिंक कॉपी किया गया",
+    "shareText": "मैंने अभी 6billionforpeace.net पर शांति के लिए हस्ताक्षर किए हैं — एक साझा लक्ष्य के लिए अरबों आवाज़ों को एकजुट करें: विश्व में शांति।",
+    "errorNoDigits": "कृपया केवल अपना नाम दर्ज करें (कोई पहचान संख्या नहीं)।",
+    "supportTreaty": "मैं विश्व शांति संधि का समर्थन करता/करती हूँ।",
+    "supportTreatyRequired": "हस्ताक्षर करने के लिए आपको शांति संधि से सहमत होना होगा।",
+    "errorRateLimit": "इस नेटवर्क से बहुत अधिक प्रयास। कृपया कुछ मिनट प्रतीक्षा करें।",
+    "errorTooFast": "कृपया फ़ॉर्म भरने के लिए थोड़ा समय लें।",
+    "errorDisposable": "कृपया स्थायी ईमेल पते का उपयोग करें।"
   },
   "shareLink": {
-    "title": "Send to a friend",
-    "body": "Copy the link and share with anyone — every voice counts.",
-    "copy": "Copy link",
-    "copied": "Link copied"
+    "title": "किसी मित्र को भेजें",
+    "body": "लिंक कॉपी करें और साझा करें — हर आवाज़ मायने रखती है।",
+    "copy": "लिंक कॉपी करें",
+    "copied": "लिंक कॉपी किया गया"
   },
   "counter": {
-    "label": "signatures from",
-    "countries": "{count, plural, one {# country} other {# countries}}",
-    "loading": "Loading counter…"
+    "label": "हस्ताक्षर, जिनमें से",
+    "countries": "{count, plural, one {# देश} other {# देश}}",
+    "loading": "काउंटर लोड हो रहा है…"
   },
   "map": {
-    "title": "Voices around the world",
-    "tooltip": "{country}: {count, plural, one {# signature} other {# signatures}}",
-    "loading": "Loading map…",
-    "signature": "signature",
-    "signatures": "signatures"
+    "title": "दुनिया भर से आवाज़ें",
+    "tooltip": "{country}: {count, plural, one {# हस्ताक्षर} other {# हस्ताक्षर}}",
+    "loading": "मानचित्र लोड हो रहा है…",
+    "signature": "हस्ताक्षर",
+    "signatures": "हस्ताक्षर"
   },
   "footer": {
-    "mission": "This is a free and independent project, with no distinctions or political, religious, commercial, or national affiliations. Its sole purpose is peace.",
-    "linksTitle": "Quick links",
-    "socialTitle": "Follow us",
-    "home": "Home",
-    "participate": "Participation",
-    "transparency": "Transparency",
-    "donations": "Donations",
-    "peaceWall": "Global Peace Mural",
-    "privacy": "Privacy policy",
-    "terms": "Terms",
-    "language": "Language",
+    "mission": "यह एक स्वतंत्र और मुक्त परियोजना है, बिना किसी राजनीतिक, धार्मिक, व्यावसायिक या राष्ट्रीय संबद्धता के। इसका एकमात्र उद्देश्य शांति है।",
+    "linksTitle": "त्वरित लिंक",
+    "socialTitle": "हमें फ़ॉलो करें",
+    "home": "मुख्य पृष्ठ",
+    "participate": "भागीदारी",
+    "transparency": "पारदर्शिता",
+    "donations": "दान",
+    "peaceWall": "वैश्विक शांति भित्ति",
+    "privacy": "गोपनीयता नीति",
+    "terms": "नियम",
+    "language": "भाषा",
     "rightsReserved": "सर्वाधिकार सुरक्षित",
     "declaration": "Global Civil Peace Declaration"
   },
   "cookie": {
-    "title": "We respect your privacy",
-    "body": "We use only the essential data needed to register your signature, in compliance with LGPD/GDPR. We do not use marketing trackers.",
-    "accept": "Accept",
-    "reject": "Reject",
-    "privacy": "Read the privacy policy"
+    "title": "हम आपकी गोपनीयता का सम्मान करते हैं",
+    "body": "हम केवल आपके हस्ताक्षर को पंजीकृत करने के लिए आवश्यक डेटा का उपयोग करते हैं, LGPD/GDPR के अनुपालन में। हम मार्केटिंग ट्रैकर्स का उपयोग नहीं करते।",
+    "accept": "स्वीकार करें",
+    "reject": "अस्वीकार करें",
+    "privacy": "गोपनीयता नीति पढ़ें"
   },
   "errors": {
-    "rateLimit": "Too many requests. Please wait a moment and try again.",
-    "network": "Network error. Please check your connection."
+    "rateLimit": "बहुत अधिक अनुरोध। कृपया थोड़ी देर प्रतीक्षा करें और पुनः प्रयास करें।",
+    "network": "नेटवर्क त्रुटि। कृपया अपना कनेक्शन जाँचें।"
   },
   "legal": {
-    "backToHome": "← Back to home",
-    "updated": "Last updated: 12 May 2026",
+    "backToHome": "← मुख्य पृष्ठ पर वापस",
+    "updated": "अंतिम अद्यतन: 12 मई 2026",
     "privacy": {
-      "title": "Privacy Policy",
-      "intro": "This page explains what data we collect when you sign the petition and how we handle it. We follow LGPD (Brazil) and GDPR (EU) by design: we collect only what is essential, and we do not run marketing trackers.",
+      "title": "गोपनीयता नीति",
+      "intro": "यह पृष्ठ बताता है कि जब आप याचिका पर हस्ताक्षर करते हैं तो हम कौन-सा डेटा एकत्र करते हैं और हम उसे कैसे संभालते हैं। हम डिज़ाइन से ही LGPD (ब्राज़ील) और GDPR (EU) का पालन करते हैं: केवल आवश्यक डेटा एकत्र करते हैं और कोई मार्केटिंग ट्रैकर नहीं चलाते।",
       "sections": [
         {
-          "heading": "Data we collect",
-          "body": "When you sign, we record your name, email, country, optional city, the language you signed in, and a timestamp. That is it."
+          "heading": "हम कौन-सा डेटा एकत्र करते हैं",
+          "body": "जब आप हस्ताक्षर करते हैं, तो हम आपका नाम, ईमेल, देश, वैकल्पिक शहर, हस्ताक्षर की भाषा और समय रिकॉर्ड करते हैं। बस इतना ही।"
         },
         {
-          "heading": "Why we collect it",
-          "body": "Your data is used to count your voice, display it on the live counter and map, and prevent duplicate signatures. It is never used for marketing, profiling, or any commercial purpose."
+          "heading": "हम इसे क्यों एकत्र करते हैं",
+          "body": "आपके डेटा का उपयोग आपकी आवाज़ गिनने, उसे लाइव काउंटर और मानचित्र पर दिखाने, और डुप्लिकेट हस्ताक्षरों को रोकने के लिए होता है। इसका उपयोग कभी भी मार्केटिंग, प्रोफ़ाइलिंग या किसी व्यावसायिक उद्देश्य के लिए नहीं किया जाता।"
         },
         {
-          "heading": "IP addresses",
-          "body": "Your IP address is never stored. To prevent abuse we keep only a one-way SHA-256 hash combined with a secret salt — it cannot be reversed back to your IP."
+          "heading": "IP पते",
+          "body": "आपका IP पता कभी संग्रहीत नहीं किया जाता। दुरुपयोग रोकने के लिए हम केवल एक गुप्त सॉल्ट के साथ एकतरफा SHA-256 हैश रखते हैं — इसे आपके IP में पुनः नहीं बदला जा सकता।"
         },
         {
-          "heading": "Cookies",
-          "body": "We use one cookie to remember the language you selected, and a Supabase session cookie only when an administrator logs in. There are no advertising or analytics trackers."
+          "heading": "कुकीज़",
+          "body": "हम आपके द्वारा चुनी गई भाषा याद रखने के लिए एक कुकी का उपयोग करते हैं, और एक Supabase सत्र कुकी केवल तब जब कोई व्यवस्थापक लॉग इन करता है। कोई विज्ञापन या एनालिटिक्स ट्रैकर नहीं हैं।"
         },
         {
-          "heading": "Third parties",
-          "body": "Hosting: Vercel. Database: Supabase, on our own server. Anti-bot: Cloudflare Turnstile. Map tiles: MapLibre. None of them receive your personal data beyond what is technically required to deliver the page."
+          "heading": "तीसरे पक्ष",
+          "body": "होस्टिंग: Vercel। डेटाबेस: Supabase, हमारे अपने सर्वर पर। एंटी-बॉट: Cloudflare Turnstile। मानचित्र टाइलें: MapLibre। उनमें से कोई भी आपका व्यक्तिगत डेटा उससे अधिक प्राप्त नहीं करता जो पृष्ठ देने के लिए तकनीकी रूप से आवश्यक हो।"
         },
         {
-          "heading": "Your rights",
-          "body": "You may request access to, correction of, or deletion of your signature at any time by contacting us. Deletions are processed within 30 days."
+          "heading": "आपके अधिकार",
+          "body": "आप किसी भी समय हमसे संपर्क करके अपने हस्ताक्षर तक पहुँच, सुधार या हटाने का अनुरोध कर सकते हैं। हटाने की प्रक्रिया 30 दिनों के भीतर पूरी की जाती है।"
         },
         {
-          "heading": "Retention",
-          "body": "Signatures are kept for the duration of the movement. If the movement ends, the data is anonymised or deleted."
+          "heading": "प्रतिधारण",
+          "body": "हस्ताक्षर आंदोलन की अवधि तक रखे जाते हैं। यदि आंदोलन समाप्त होता है, तो डेटा गुमनाम कर दिया जाता है या हटा दिया जाता है।"
         }
       ],
-      "contact": "Contact: 6billionforpeace@gmail.com"
+      "contact": "संपर्क: 6billionforpeace@gmail.com"
     },
     "terms": {
-      "title": "Terms of Use",
-      "intro": "By signing, you join a global, voluntary movement for peace, with no political, religious, or commercial ties. These terms describe how to participate and what to expect.",
+      "title": "उपयोग की शर्तें",
+      "intro": "हस्ताक्षर करके, आप शांति के लिए एक वैश्विक, स्वैच्छिक आंदोलन में शामिल होते हैं, बिना किसी राजनीतिक, धार्मिक या व्यावसायिक संबंध के। ये शर्तें बताती हैं कि कैसे भाग लें और क्या उम्मीद करें।",
       "sections": [
         {
-          "heading": "Nature of the movement",
-          "body": "6billionforpeace is a peaceful, independent civic initiative. Its only goal is to unite voices around a single message: peace in the world."
+          "heading": "आंदोलन की प्रकृति",
+          "body": "6billionforpeace एक शांतिपूर्ण, स्वतंत्र नागरिक पहल है। इसका एकमात्र लक्ष्य एक साझा संदेश के इर्द-गिर्द आवाज़ों को एकजुट करना है: विश्व में शांति।"
         },
         {
-          "heading": "Who can sign",
-          "body": "Anyone may sign, regardless of nationality, faith, or background. We ask that the information you provide be accurate and that you sign only once per person."
+          "heading": "कौन हस्ताक्षर कर सकता है",
+          "body": "कोई भी हस्ताक्षर कर सकता है, राष्ट्रीयता, आस्था या पृष्ठभूमि की परवाह किए बिना। हम अनुरोध करते हैं कि आप जो जानकारी प्रदान करें वह सटीक हो और आप प्रति व्यक्ति केवल एक बार हस्ताक्षर करें।"
         },
         {
-          "heading": "Acceptable use",
-          "body": "Do not submit false data, hate speech, illegal content, or anything that promotes violence. We may remove signatures that violate these terms."
+          "heading": "स्वीकार्य उपयोग",
+          "body": "गलत डेटा, घृणा भाषण, अवैध सामग्री या हिंसा को बढ़ावा देने वाली कोई भी सामग्री प्रस्तुत न करें। हम इन शर्तों का उल्लंघन करने वाले हस्ताक्षरों को हटा सकते हैं।"
         },
         {
-          "heading": "Intellectual property",
-          "body": "The 6billionforpeace name, copy and visuals belong to the movement. The aggregated, anonymous signature count is public information and may be shared freely."
+          "heading": "बौद्धिक संपदा",
+          "body": "6billionforpeace नाम, टेक्स्ट और विज़ुअल आंदोलन के हैं। एकत्रित, गुमनाम हस्ताक्षर गणना सार्वजनिक जानकारी है और इसे स्वतंत्र रूप से साझा किया जा सकता है।"
         },
         {
-          "heading": "Limitation of liability",
-          "body": "We provide this site as-is, in good faith, with no warranties. We are not liable for actions taken by third parties based on the contents of this site."
+          "heading": "देयता की सीमा",
+          "body": "हम यह साइट जैसी है वैसी, सद्भावना से, बिना किसी वारंटी के प्रदान करते हैं। इस साइट की सामग्री के आधार पर तीसरे पक्षों द्वारा की गई कार्रवाइयों के लिए हम उत्तरदायी नहीं हैं।"
         },
         {
-          "heading": "Changes to these terms",
-          "body": "We may update these terms as the movement grows. Material changes will be flagged on this page along with the updated date above."
+          "heading": "इन शर्तों में परिवर्तन",
+          "body": "जैसे-जैसे आंदोलन बढ़ता है हम इन शर्तों को अद्यतन कर सकते हैं। महत्वपूर्ण परिवर्तनों को इस पृष्ठ पर ऊपर दी गई अद्यतन तिथि के साथ चिह्नित किया जाएगा।"
         }
       ],
-      "contact": "Questions: 6billionforpeace@gmail.com"
+      "contact": "प्रश्न: 6billionforpeace@gmail.com"
     }
   },
   "transparency": {
-    "title": "Transparency",
-    "subtitle": "How we keep this movement clean",
+    "title": "पारदर्शिता",
+    "subtitle": "हम इस आंदोलन को कैसे स्वच्छ रखते हैं",
     "pillars": [
       {
-        "title": "No affiliation",
-        "body": "No political, religious, or commercial ties. Just one shared message: peace in the world."
+        "title": "कोई संबद्धता नहीं",
+        "body": "कोई राजनीतिक, धार्मिक या व्यावसायिक संबंध नहीं। केवल एक साझा संदेश: विश्व में शांति।"
       },
       {
-        "title": "No trackers",
-        "body": "No advertising or analytics scripts. We do not profile you. We do not sell data."
+        "title": "कोई ट्रैकर नहीं",
+        "body": "कोई विज्ञापन या एनालिटिक्स स्क्रिप्ट नहीं। हम आपकी प्रोफ़ाइल नहीं बनाते। हम डेटा नहीं बेचते।"
       },
       {
-        "title": "IP never stored",
-        "body": "We only keep a one-way SHA-256 hash with a secret salt to prevent abuse. It cannot be reversed."
+        "title": "IP कभी संग्रहीत नहीं",
+        "body": "हम दुरुपयोग रोकने के लिए केवल गुप्त सॉल्ट के साथ एकतरफा SHA-256 हैश रखते हैं। इसे पुनः नहीं बदला जा सकता।"
       },
       {
-        "title": "Independent infrastructure",
-        "body": "Database on our own server. Map by MapLibre. Anti-bot by Cloudflare Turnstile. You can read the full policy below."
+        "title": "स्वतंत्र अवसंरचना",
+        "body": "डेटाबेस हमारे अपने सर्वर पर। मानचित्र MapLibre द्वारा। एंटी-बॉट Cloudflare Turnstile द्वारा। आप नीचे पूरी नीति पढ़ सकते हैं।"
       }
     ],
-    "privacyLink": "Read the privacy policy",
-    "termsLink": "Read the terms"
+    "privacyLink": "गोपनीयता नीति पढ़ें",
+    "termsLink": "नियम पढ़ें"
   },
   "nav": {
-    "backToTop": "Back to top"
+    "backToTop": "ऊपर जाएँ"
   },
   "confirmed": {
-    "title": "Your voice is counted.",
-    "body": "Thank you for confirming. You are now part of the movement.",
-    "cta": "Back to home",
-    "invalidTitle": "Link expired or invalid",
-    "invalidBody": "We could not confirm your signature. The link may have already been used or has expired."
+    "title": "आपकी आवाज़ गिनी गई है।",
+    "body": "पुष्टि के लिए धन्यवाद। अब आप आंदोलन का हिस्सा हैं।",
+    "cta": "मुख्य पृष्ठ पर वापस",
+    "invalidTitle": "लिंक समाप्त या अमान्य",
+    "invalidBody": "हम आपके हस्ताक्षर की पुष्टि नहीं कर सके। लिंक पहले से उपयोग किया गया हो या समाप्त हो गया हो।"
   },
   "email": {
-    "subject": "Thank you for signing — 6billionforpeace",
-    "heading": "Your voice is counted",
-    "body": "Thank you for signing for peace, {name}.\n\nYour signature has been registered on 6billionforpeace.net. You are now part of a global, voluntary movement to unite billions of voices around a single goal: peace in the world.\n\nShare the movement so more people can join.",
-    "cta": "Back to the movement",
-    "footer": "6billionforpeace — A voluntary, independent movement for world peace."
+    "subject": "हस्ताक्षर के लिए धन्यवाद — 6billionforpeace",
+    "heading": "आपकी आवाज़ गिनी गई है",
+    "body": "शांति के लिए हस्ताक्षर करने हेतु धन्यवाद, {name}।\n\nआपका हस्ताक्षर 6billionforpeace.net पर पंजीकृत हो गया है। अब आप एक वैश्विक, स्वैच्छिक आंदोलन का हिस्सा हैं जो अरबों आवाज़ों को एक साझा लक्ष्य के लिए एकजुट करता है: विश्व में शांति।\n\nइस आंदोलन को साझा करें ताकि और लोग जुड़ सकें।",
+    "cta": "आंदोलन में वापस",
+    "footer": "6billionforpeace — विश्व शांति के लिए एक स्वैच्छिक, स्वतंत्र आंदोलन।"
   },
   "comingSoon": {
-    "label": "Coming soon",
-    "body": "This page is being prepared. Check back soon."
+    "label": "जल्द ही",
+    "body": "यह पृष्ठ तैयार किया जा रहा है। जल्द ही पुनः देखें।"
   },
   "pages": {
     "participation": {
-      "title": "Participation",
-      "lead": "How to join and amplify this movement.",
-      "h1": "What It Means to Participate",
-      "intro": "To participate is to make a conscious choice:",
+      "title": "भागीदारी",
+      "lead": "इस आंदोलन में कैसे शामिल हों और इसे और मज़बूत करें।",
+      "h1": "भाग लेने का अर्थ क्या है",
+      "intro": "भाग लेना एक सचेत चुनाव करना है:",
       "bullets": [
-        "To reject war",
-        "To affirm peace",
-        "To stand with humanity"
+        "युद्ध को अस्वीकार करना",
+        "शांति की पुष्टि करना",
+        "मानवता के साथ खड़े होना"
       ],
-      "personal": "Your participation is personal, meaningful, and global.",
-      "notOrg": "You are not joining an organization.",
-      "withHumanity": "You are standing with humanity.",
-      "formTitle": "Make Your Voice Heard for Global Peace"
+      "personal": "आपकी भागीदारी व्यक्तिगत, सार्थक और वैश्विक है।",
+      "notOrg": "आप किसी संगठन में शामिल नहीं हो रहे हैं।",
+      "withHumanity": "आप मानवता के साथ खड़े हैं।",
+      "formTitle": "वैश्विक शांति के लिए अपनी आवाज़ बुलंद करें"
     },
     "transparency": {
-      "title": "Transparency",
-      "lead": "How we keep this initiative free, independent and trustworthy."
+      "title": "पारदर्शिता",
+      "lead": "हम इस पहल को स्वतंत्र, मुक्त और भरोसेमंद कैसे रखते हैं।"
     },
     "donations": {
-      "title": "Donations",
-      "lead": "How contributions are received and used.",
-      "subtitle": "Support the Peace Movement",
-      "intro": "To support the movement, send us an email and we will guide you through the contribution process.",
-      "quote": "This movement exists through people, not institutions, governments, companies, or politics.",
-      "highlight": "We are building a fully transparent donation system designed to allow real-time visibility of fund allocation and long-term traceability of contributions.",
-      "future": "Future initiatives supported by this movement include peace education, humanitarian aid, and global environmental projects."
+      "title": "दान",
+      "lead": "योगदान कैसे प्राप्त और उपयोग किए जाते हैं।",
+      "subtitle": "शांति आंदोलन का समर्थन करें",
+      "intro": "इस आंदोलन का समर्थन करने के लिए, हमें एक ईमेल भेजें और हम आपको योगदान की प्रक्रिया में मार्गदर्शन देंगे।",
+      "quote": "यह आंदोलन लोगों के माध्यम से अस्तित्व में है, न कि संस्थानों, सरकारों, कंपनियों या राजनीति के माध्यम से।",
+      "highlight": "हम एक पूरी तरह से पारदर्शी दान प्रणाली बना रहे हैं, जो धन के आवंटन की वास्तविक समय में दृश्यता और योगदान की दीर्घकालिक ट्रैकिंग की अनुमति देगी।",
+      "future": "इस आंदोलन द्वारा समर्थित भविष्य की पहलों में शांति शिक्षा, मानवीय सहायता और वैश्विक पर्यावरणीय परियोजनाएँ शामिल हैं।"
     },
     "peaceWall": {
-      "title": "Peace wall",
-      "lead": "A global mural of voices for peace.",
-      "tagline": "Imagine a world in peace",
-      "subtitle": "A collective space where humanity shares what becomes possible when peace is real.",
-      "voiceTitle": "Your voice matters. If you wish, send a short message or photo about peace. We may feature it in the Global Peace Mural.",
-      "construction": "In construction"
+      "title": "वैश्विक शांति भित्ति",
+      "lead": "शांति के लिए आवाज़ों की एक वैश्विक भित्ति।",
+      "tagline": "एक ऐसी दुनिया की कल्पना करें जो शांति में हो",
+      "subtitle": "एक सामूहिक स्थान जहाँ मानवता साझा करती है कि जब शांति वास्तविक होती है तो क्या संभव हो जाता है।",
+      "voiceTitle": "आपकी आवाज़ मायने रखती है। यदि आप चाहें, तो शांति के बारे में एक छोटा संदेश या फ़ोटो भेजें। हम इसे वैश्विक शांति भित्ति पर प्रदर्शित कर सकते हैं।",
+      "construction": "निर्माणाधीन"
     },
     "declaration": {
-      "title": "Global Civil Peace Declaration",
-      "subtitle": "“6 Billion for Peace” is more than a symbolic movement.",
+      "title": "वैश्विक नागरिक शांति घोषणा",
+      "subtitle": "«6 Billion for Peace» केवल एक प्रतीकात्मक आंदोलन से कहीं अधिक है।",
       "paragraphs": [
-        "We are a civic grassroots initiative dedicated to the recognition of peace, human dignity, freedom of conscience, and the protection of life as fundamental human rights.",
-        "The movement seeks to build an unprecedented civil declaration in history and present it to all international courts and the governments of the 195 countries of the world.",
-        "Our mission is to encourage legal, non-violent, and democratic pathways through which individuals may publicly and legally affirm their commitment to peace and to the protection of human life.",
-        "Following global mobilization, participants may receive support to voluntarily seek legal recognition as “Citizens of Peace” within their respective national legal systems, always with full respect for the laws and democratic processes of each country.",
-        "This initiative supports dialogue, diplomacy, human rights, and the peaceful evolution of the international community, especially in a time of growing global instability and increasing urgency for the human right to live in peace, with clarity of purpose.",
-        "Our intention is clear: to transform peace into a global civil voice — democratic, legal, and sustained by billions of human beings — with the shared goal of resolving conflicts without destroying human life, especially that of children, or the planet we inhabit.",
-        "We are here to strengthen humanity, protect future generations, and preserve life on Earth. Our actions are always ethical, transparent, focused on the common good, with no distinction between people, strengthening respect for humanity, international cooperation, and global responsibility among all nations.",
-        "Peace is our first and most important step forward. We will not wait any longer. We will build peace — now, together."
+        "हम एक नागरिक जमीनी पहल हैं, जो शांति, मानवीय गरिमा, अंतःकरण की स्वतंत्रता और जीवन की सुरक्षा को मौलिक मानवाधिकारों के रूप में मान्यता देने के लिए समर्पित है।",
+        "यह आंदोलन इतिहास में एक अभूतपूर्व नागरिक घोषणा का निर्माण करने और इसे विश्व के 195 देशों की सरकारों तथा सभी अंतर्राष्ट्रीय न्यायालयों के समक्ष प्रस्तुत करने का प्रयास करता है।",
+        "हमारा मिशन कानूनी, अहिंसक और लोकतांत्रिक मार्गों को प्रोत्साहित करना है, जिनके माध्यम से प्रत्येक व्यक्ति शांति और मानव जीवन की सुरक्षा के प्रति अपनी प्रतिबद्धता को सार्वजनिक एवं कानूनी रूप से व्यक्त कर सके।",
+        "वैश्विक लामबंदी के बाद, प्रतिभागियों को अपनी-अपनी राष्ट्रीय कानूनी प्रणालियों के भीतर, प्रत्येक देश के कानूनों और लोकतांत्रिक प्रक्रियाओं के पूर्ण सम्मान के साथ, स्वेच्छा से «शांति के नागरिक» के रूप में कानूनी मान्यता प्राप्त करने में सहायता मिल सकती है।",
+        "यह पहल संवाद, कूटनीति, मानवाधिकार और अंतर्राष्ट्रीय समुदाय के शांतिपूर्ण विकास का समर्थन करती है, विशेष रूप से बढ़ती वैश्विक अस्थिरता और शांति में जीने के मानवाधिकार की बढ़ती तात्कालिकता के समय में, उद्देश्य की स्पष्टता के साथ।",
+        "हमारा इरादा स्पष्ट है: शांति को एक वैश्विक नागरिक आवाज़ में बदलना — लोकतांत्रिक, कानूनी, और अरबों मनुष्यों द्वारा सतत — जिसका साझा लक्ष्य है मानव जीवन, विशेषकर बच्चों के जीवन को, और उस ग्रह को जिस पर हम रहते हैं, नष्ट किए बिना संघर्षों का समाधान करना।",
+        "हम यहाँ मानवता को सशक्त करने, भावी पीढ़ियों की रक्षा करने और पृथ्वी पर जीवन को संरक्षित करने के लिए हैं। हमारे कार्य सदैव नैतिक, पारदर्शी, साझा कल्याण पर केंद्रित होते हैं, लोगों के बीच कोई भेद किए बिना, मानवता के प्रति सम्मान, अंतर्राष्ट्रीय सहयोग और सभी राष्ट्रों के बीच वैश्विक उत्तरदायित्व को मज़बूत करते हुए।",
+        "शांति हमारा पहला और सबसे महत्वपूर्ण कदम है। हम और प्रतीक्षा नहीं करेंगे। हम शांति बनाएंगे — अभी, एक साथ।"
       ],
-      "closing": "After all, we are only human beings living on a small planet."
+      "closing": "आख़िरकार, हम एक छोटे-से ग्रह पर रहने वाले केवल मनुष्य हैं।"
     }
   },
   "humansForPeace": {
-    "title": "Humans for peace",
-    "body": "One movement. One purpose. Billions of voices choosing peace together."
+    "title": "शांति के लिए मनुष्य",
+    "body": "एक आंदोलन। एक उद्देश्य। अरबों आवाज़ें एक साथ शांति चुन रही हैं।"
   },
   "thankYou": {
-    "title": "धन्यवाद। आप अब शांति का हिस्सा हैं।",
-    "body": "यह तो बस शुरुआत है।"
+    "title": "धन्यवाद। अब आप स्वयं शांति का हिस्सा हैं।",
+    "body": "यह तो केवल आरंभ है।"
   }
 }

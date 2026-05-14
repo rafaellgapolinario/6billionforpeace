@@ -1,312 +1,312 @@
 {
   "meta": {
-    "title": "6billionforpeace — Time to unite 6 billion voices for peace",
-    "description": "A voluntary, independent global movement for world peace. Sign and add your voice to 6 billion others. No politics. No religion. No commerce. Only peace."
+    "title": "6billionforpeace — Время объединить 6 миллиардов голосов за мир",
+    "description": "Добровольное независимое всемирное движение за мир во всём мире. Подпишите и присоедините свой голос к ещё 6 миллиардам. Без политики. Без религии. Без коммерции. Только мир."
   },
   "header": {
     "nav": {
-      "home": "Home",
-      "solution": "The solution",
-      "principles": "Principles",
-      "participate": "Participation",
-      "transparency": "Transparency"
+      "home": "Главная",
+      "solution": "Решение",
+      "principles": "Принципы",
+      "participate": "Участие",
+      "transparency": "Прозрачность"
     },
-    "languagePicker": "Choose language",
-    "menuOpen": "Open menu",
-    "menuClose": "Close menu"
+    "languagePicker": "Выбрать язык",
+    "menuOpen": "Открыть меню",
+    "menuClose": "Закрыть меню"
   },
   "hero": {
-    "tagline": "We still have a choice",
-    "logoAlt": "6 billion for peace"
+    "tagline": "У нас ещё есть выбор",
+    "logoAlt": "6 миллиардов за мир"
   },
   "solution": {
-    "title": "The solution is peace",
-    "p1": "Throughout history, humanity has lived through conflicts believing that war could bring peace.",
-    "p2": "We are tired of the suffering and destruction caused by violence.",
-    "p3": "We no longer want to depend only on politicians, religions, companies, or institutions.",
-    "p4": "It is time to unite billions of people around one shared goal: peace in the world.",
+    "title": "Решение — это мир",
+    "p1": "На протяжении всей истории человечество жило в конфликтах, веря, что война может принести мир.",
+    "p2": "Мы устали от страданий и разрушений, вызванных насилием.",
+    "p3": "Мы больше не хотим зависеть только от политиков, религий, корпораций или институтов.",
+    "p4": "Пришло время объединить миллиарды людей вокруг одной общей цели: мира во всём мире.",
     "p5": "",
     "p6": "",
-    "cta": "Sign for peace"
+    "cta": "Подписать за мир"
   },
   "call": {
-    "p1": "Join the largest peace movement in human history.",
-    "p2": "Peace will no longer be just a dream, a speech, a promise, or a distant hope.",
-    "p3": "Peace is the survival of humanity.",
-    "cta": "Sign for peace"
+    "p1": "Присоединяйтесь к крупнейшему мирному движению в истории человечества.",
+    "p2": "Мир больше не будет лишь мечтой, речью, обещанием или далёкой надеждой.",
+    "p3": "Мир — это выживание человечества.",
+    "cta": "Подписать за мир"
   },
   "principles": {
-    "title": "Our principles",
-    "noIdeologies": "No ideologies.",
-    "noWar": "No war.",
-    "withoutWar": "No war.",
+    "title": "Наши принципы",
+    "noIdeologies": "Без идеологий.",
+    "noWar": "Без войны.",
+    "withoutWar": "Без войны.",
     "noRevolutions": "",
-    "sovereignty": "No interference in the internal laws or sovereignty of any nation.",
-    "requirementTitle": "There is only one requirement:",
-    "requirementBody": "the end of war.",
-    "maturity": "Humanity has matured enough to resolve conflicts without self-destruction. We know the horror of war. Now it is time to experience the joy of peace.",
-    "cta": "Sign for peace"
+    "sovereignty": "Без вмешательства во внутренние законы или суверенитет любой страны.",
+    "requirementTitle": "Есть только одно требование:",
+    "requirementBody": "конец войны.",
+    "maturity": "Человечество достаточно повзрослело, чтобы разрешать конфликты без самоуничтожения. Мы знаем ужас войны. Теперь пора испытать радость мира.",
+    "cta": "Подписать за мир"
   },
   "volunteers": {
-    "title": "Peace volunteers",
-    "subtitle": "Travel the world for peace",
-    "comingSoon": "Soon",
+    "title": "Добровольцы мира",
+    "subtitle": "Путешествуйте по миру ради мира",
+    "comingSoon": "Скоро",
     "body": "",
     "cta": ""
   },
   "everest": {
-    "body": "At the top of Mount Everest, a white flag carrying the heart of peace will rise as a symbol of a humanity that chose to live in peace.",
+    "body": "На вершине Эвереста поднимется белый флаг с сердцем мира — как символ человечества, выбравшего жить в мире.",
     "highlight": "",
     "cta": ""
   },
   "form": {
-    "title": "Sign for peace",
-    "subtitle": "Add your voice. Free, anonymous to the public, secure.",
-    "name": "Full name",
-    "namePlaceholder": "Your name",
-    "email": "E-mail",
+    "title": "Подписать за мир",
+    "subtitle": "Добавьте свой голос. Бесплатно, публично анонимно, безопасно.",
+    "name": "Полное имя",
+    "namePlaceholder": "Ваше имя",
+    "email": "Электронная почта",
     "emailPlaceholder": "you@example.com",
-    "country": "Country",
-    "countryPlaceholder": "Select your country",
-    "consent": "I agree with the collection of my data under the terms of the LGPD/GDPR privacy policy.",
-    "submit": "Sign for peace",
-    "submitting": "Signing…",
-    "successTitle": "Thank you for your voice.",
-    "successBody": "Your signature has been added. Share the movement.",
-    "errorGeneric": "Something went wrong. Please try again.",
-    "errorDuplicate": "You have already signed this petition. Thank you so much for your participation!",
-    "errorCaptcha": "Captcha verification failed. Please try again.",
-    "errorRequired": "This field is required.",
-    "errorEmail": "Please provide a valid e-mail.",
-    "share": "Share",
-    "shareTitle": "Share the movement",
-    "shareBody": "Help us reach more voices for peace.",
-    "shareCta": "Share",
-    "copyCta": "Copy link",
-    "copyDone": "Link copied",
-    "shareText": "I just signed for peace at 6billionforpeace.net — unite billions of voices for a single goal: peace in the world.",
-    "errorNoDigits": "Please enter only your name (no ID numbers).",
-    "supportTreaty": "I support a World Peace Treaty.",
-    "supportTreatyRequired": "You must agree with the Peace Treaty to sign.",
-    "errorRateLimit": "Too many attempts from this network. Please wait a few minutes.",
-    "errorTooFast": "Please take a moment to fill out the form.",
-    "errorDisposable": "Please use a permanent email address."
+    "country": "Страна",
+    "countryPlaceholder": "Выберите вашу страну",
+    "consent": "Я согласен(на) на обработку моих данных в соответствии с политикой конфиденциальности LGPD/GDPR.",
+    "submit": "Подписать за мир",
+    "submitting": "Подписываем…",
+    "successTitle": "Спасибо за ваш голос.",
+    "successBody": "Ваша подпись добавлена. Поделитесь движением.",
+    "errorGeneric": "Что-то пошло не так. Пожалуйста, попробуйте ещё раз.",
+    "errorDuplicate": "Вы уже подписали эту петицию. Большое спасибо за участие!",
+    "errorCaptcha": "Проверка капчи не пройдена. Пожалуйста, попробуйте ещё раз.",
+    "errorRequired": "Это поле обязательно.",
+    "errorEmail": "Пожалуйста, введите действительный e-mail.",
+    "share": "Поделиться",
+    "shareTitle": "Поделиться движением",
+    "shareBody": "Помогите нам достичь большего числа голосов за мир.",
+    "shareCta": "Поделиться",
+    "copyCta": "Скопировать ссылку",
+    "copyDone": "Ссылка скопирована",
+    "shareText": "Я только что подписал(а) за мир на 6billionforpeace.net — объединим миллиарды голосов вокруг одной цели: мира во всём мире.",
+    "errorNoDigits": "Пожалуйста, введите только ваше имя (без цифр документа).",
+    "supportTreaty": "Я поддерживаю Всемирный договор о мире.",
+    "supportTreatyRequired": "Вы должны согласиться с Мирным договором, чтобы подписать.",
+    "errorRateLimit": "Слишком много попыток с этой сети. Пожалуйста, подождите несколько минут.",
+    "errorTooFast": "Пожалуйста, уделите время заполнению формы.",
+    "errorDisposable": "Пожалуйста, используйте постоянный адрес электронной почты."
   },
   "shareLink": {
-    "title": "Send to a friend",
-    "body": "Copy the link and share with anyone — every voice counts.",
-    "copy": "Copy link",
-    "copied": "Link copied"
+    "title": "Отправить другу",
+    "body": "Скопируйте ссылку и поделитесь — каждый голос важен.",
+    "copy": "Скопировать ссылку",
+    "copied": "Ссылка скопирована"
   },
   "counter": {
-    "label": "signatures from",
-    "countries": "{count, plural, one {# country} other {# countries}}",
-    "loading": "Loading counter…"
+    "label": "подписей из",
+    "countries": "{count, plural, one {# страна} few {# страны} many {# стран} other {# стран}}",
+    "loading": "Загружаем счётчик…"
   },
   "map": {
-    "title": "Voices around the world",
-    "tooltip": "{country}: {count, plural, one {# signature} other {# signatures}}",
-    "loading": "Loading map…",
-    "signature": "signature",
-    "signatures": "signatures"
+    "title": "Голоса по всему миру",
+    "tooltip": "{country}: {count, plural, one {# подпись} few {# подписи} many {# подписей} other {# подписей}}",
+    "loading": "Загружаем карту…",
+    "signature": "подпись",
+    "signatures": "подписей"
   },
   "footer": {
-    "mission": "This is a free and independent project, with no distinctions or political, religious, commercial, or national affiliations. Its sole purpose is peace.",
-    "linksTitle": "Quick links",
-    "socialTitle": "Follow us",
-    "home": "Home",
-    "participate": "Participation",
-    "transparency": "Transparency",
-    "donations": "Donations",
-    "peaceWall": "Global Peace Mural",
-    "privacy": "Privacy policy",
-    "terms": "Terms",
-    "language": "Language",
+    "mission": "Это свободный и независимый проект, без каких-либо политических, религиозных, коммерческих или национальных привязок. Его единственная цель — мир.",
+    "linksTitle": "Быстрые ссылки",
+    "socialTitle": "Подпишитесь",
+    "home": "Главная",
+    "participate": "Участие",
+    "transparency": "Прозрачность",
+    "donations": "Пожертвования",
+    "peaceWall": "Глобальная стена мира",
+    "privacy": "Политика конфиденциальности",
+    "terms": "Условия",
+    "language": "Язык",
     "rightsReserved": "Все права защищены",
     "declaration": "Global Civil Peace Declaration"
   },
   "cookie": {
-    "title": "We respect your privacy",
-    "body": "We use only the essential data needed to register your signature, in compliance with LGPD/GDPR. We do not use marketing trackers.",
-    "accept": "Accept",
-    "reject": "Reject",
-    "privacy": "Read the privacy policy"
+    "title": "Мы уважаем вашу приватность",
+    "body": "Мы используем только необходимые данные для регистрации вашей подписи в соответствии с LGPD/GDPR. Мы не используем маркетинговые трекеры.",
+    "accept": "Принять",
+    "reject": "Отклонить",
+    "privacy": "Прочитать политику конфиденциальности"
   },
   "errors": {
-    "rateLimit": "Too many requests. Please wait a moment and try again.",
-    "network": "Network error. Please check your connection."
+    "rateLimit": "Слишком много запросов. Подождите немного и попробуйте снова.",
+    "network": "Сетевая ошибка. Проверьте подключение."
   },
   "legal": {
-    "backToHome": "← Back to home",
-    "updated": "Last updated: 12 May 2026",
+    "backToHome": "← На главную",
+    "updated": "Последнее обновление: 12 мая 2026",
     "privacy": {
-      "title": "Privacy Policy",
-      "intro": "This page explains what data we collect when you sign the petition and how we handle it. We follow LGPD (Brazil) and GDPR (EU) by design: we collect only what is essential, and we do not run marketing trackers.",
+      "title": "Политика конфиденциальности",
+      "intro": "На этой странице объясняется, какие данные мы собираем при подписании петиции и как с ними обращаемся. Мы изначально соблюдаем LGPD (Бразилия) и GDPR (ЕС): собираем только необходимое и не используем маркетинговые трекеры.",
       "sections": [
         {
-          "heading": "Data we collect",
-          "body": "When you sign, we record your name, email, country, optional city, the language you signed in, and a timestamp. That is it."
+          "heading": "Какие данные мы собираем",
+          "body": "При подписании мы записываем ваше имя, e-mail, страну, при желании город, язык подписания и временную метку. И всё."
         },
         {
-          "heading": "Why we collect it",
-          "body": "Your data is used to count your voice, display it on the live counter and map, and prevent duplicate signatures. It is never used for marketing, profiling, or any commercial purpose."
+          "heading": "Зачем мы их собираем",
+          "body": "Ваши данные используются для учёта вашего голоса, отображения на живом счётчике и карте, а также для предотвращения дублирующих подписей. Они никогда не используются в маркетинговых, профилирующих или коммерческих целях."
         },
         {
-          "heading": "IP addresses",
-          "body": "Your IP address is never stored. To prevent abuse we keep only a one-way SHA-256 hash combined with a secret salt — it cannot be reversed back to your IP."
+          "heading": "IP-адреса",
+          "body": "Ваш IP-адрес никогда не сохраняется. Чтобы предотвратить злоупотребления, мы храним только односторонний хеш SHA-256, объединённый с секретной солью — его невозможно обратить в IP."
         },
         {
-          "heading": "Cookies",
-          "body": "We use one cookie to remember the language you selected, and a Supabase session cookie only when an administrator logs in. There are no advertising or analytics trackers."
+          "heading": "Cookie-файлы",
+          "body": "Мы используем один cookie, чтобы запомнить выбранный вами язык, и сессионный cookie Supabase только при входе администратора. Никаких рекламных или аналитических трекеров."
         },
         {
-          "heading": "Third parties",
-          "body": "Hosting: Vercel. Database: Supabase, on our own server. Anti-bot: Cloudflare Turnstile. Map tiles: MapLibre. None of them receive your personal data beyond what is technically required to deliver the page."
+          "heading": "Третьи стороны",
+          "body": "Хостинг: Vercel. База данных: Supabase на собственном сервере. Анти-бот: Cloudflare Turnstile. Картографические тайлы: MapLibre. Никто из них не получает ваши персональные данные сверх технически необходимого для отображения страницы."
         },
         {
-          "heading": "Your rights",
-          "body": "You may request access to, correction of, or deletion of your signature at any time by contacting us. Deletions are processed within 30 days."
+          "heading": "Ваши права",
+          "body": "Вы можете в любое время запросить доступ, исправление или удаление вашей подписи, связавшись с нами. Удаления обрабатываются в течение 30 дней."
         },
         {
-          "heading": "Retention",
-          "body": "Signatures are kept for the duration of the movement. If the movement ends, the data is anonymised or deleted."
+          "heading": "Срок хранения",
+          "body": "Подписи хранятся в течение всего периода движения. Если движение завершится, данные будут анонимизированы или удалены."
         }
       ],
-      "contact": "Contact: 6billionforpeace@gmail.com"
+      "contact": "Контакт: 6billionforpeace@gmail.com"
     },
     "terms": {
-      "title": "Terms of Use",
-      "intro": "By signing, you join a global, voluntary movement for peace, with no political, religious, or commercial ties. These terms describe how to participate and what to expect.",
+      "title": "Условия использования",
+      "intro": "Подписывая, вы присоединяетесь к глобальному добровольному движению за мир, без политических, религиозных или коммерческих связей. Эти условия описывают, как участвовать и чего ожидать.",
       "sections": [
         {
-          "heading": "Nature of the movement",
-          "body": "6billionforpeace is a peaceful, independent civic initiative. Its only goal is to unite voices around a single message: peace in the world."
+          "heading": "Природа движения",
+          "body": "6billionforpeace — мирная независимая гражданская инициатива. Её единственная цель — объединить голоса вокруг одного послания: мира во всём мире."
         },
         {
-          "heading": "Who can sign",
-          "body": "Anyone may sign, regardless of nationality, faith, or background. We ask that the information you provide be accurate and that you sign only once per person."
+          "heading": "Кто может подписать",
+          "body": "Подписать может любой, независимо от национальности, веры или происхождения. Мы просим, чтобы предоставляемая информация была точной и чтобы вы подписывали только один раз на человека."
         },
         {
-          "heading": "Acceptable use",
-          "body": "Do not submit false data, hate speech, illegal content, or anything that promotes violence. We may remove signatures that violate these terms."
+          "heading": "Допустимое использование",
+          "body": "Не отправляйте ложных данных, разжигания ненависти, незаконного контента или того, что пропагандирует насилие. Мы можем удалять подписи, нарушающие эти условия."
         },
         {
-          "heading": "Intellectual property",
-          "body": "The 6billionforpeace name, copy and visuals belong to the movement. The aggregated, anonymous signature count is public information and may be shared freely."
+          "heading": "Интеллектуальная собственность",
+          "body": "Название 6billionforpeace, тексты и визуальные элементы принадлежат движению. Агрегированное анонимное число подписей является общедоступной информацией и может свободно распространяться."
         },
         {
-          "heading": "Limitation of liability",
-          "body": "We provide this site as-is, in good faith, with no warranties. We are not liable for actions taken by third parties based on the contents of this site."
+          "heading": "Ограничение ответственности",
+          "body": "Мы предоставляем этот сайт как есть, добросовестно, без гарантий. Мы не несём ответственности за действия третьих сторон, основанные на содержании этого сайта."
         },
         {
-          "heading": "Changes to these terms",
-          "body": "We may update these terms as the movement grows. Material changes will be flagged on this page along with the updated date above."
+          "heading": "Изменения условий",
+          "body": "Мы можем обновлять эти условия по мере развития движения. О существенных изменениях будет указано на этой странице вместе с обновлённой датой выше."
         }
       ],
-      "contact": "Questions: 6billionforpeace@gmail.com"
+      "contact": "Вопросы: 6billionforpeace@gmail.com"
     }
   },
   "transparency": {
-    "title": "Transparency",
-    "subtitle": "How we keep this movement clean",
+    "title": "Прозрачность",
+    "subtitle": "Как мы сохраняем чистоту этого движения",
     "pillars": [
       {
-        "title": "No affiliation",
-        "body": "No political, religious, or commercial ties. Just one shared message: peace in the world."
+        "title": "Без аффилиаций",
+        "body": "Без политических, религиозных или коммерческих связей. Только одно общее послание: мир во всём мире."
       },
       {
-        "title": "No trackers",
-        "body": "No advertising or analytics scripts. We do not profile you. We do not sell data."
+        "title": "Без трекеров",
+        "body": "Никаких рекламных или аналитических скриптов. Мы не профилируем вас. Мы не продаём данные."
       },
       {
-        "title": "IP never stored",
-        "body": "We only keep a one-way SHA-256 hash with a secret salt to prevent abuse. It cannot be reversed."
+        "title": "IP никогда не сохраняется",
+        "body": "Мы храним только односторонний хеш SHA-256 с секретной солью для предотвращения злоупотреблений. Его невозможно обратить."
       },
       {
-        "title": "Independent infrastructure",
-        "body": "Database on our own server. Map by MapLibre. Anti-bot by Cloudflare Turnstile. You can read the full policy below."
+        "title": "Независимая инфраструктура",
+        "body": "База данных на собственном сервере. Карта от MapLibre. Анти-бот от Cloudflare Turnstile. Полную политику можно прочитать ниже."
       }
     ],
-    "privacyLink": "Read the privacy policy",
-    "termsLink": "Read the terms"
+    "privacyLink": "Прочитать политику конфиденциальности",
+    "termsLink": "Прочитать условия"
   },
   "nav": {
-    "backToTop": "Back to top"
+    "backToTop": "Наверх"
   },
   "confirmed": {
-    "title": "Your voice is counted.",
-    "body": "Thank you for confirming. You are now part of the movement.",
-    "cta": "Back to home",
-    "invalidTitle": "Link expired or invalid",
-    "invalidBody": "We could not confirm your signature. The link may have already been used or has expired."
+    "title": "Ваш голос учтён.",
+    "body": "Спасибо за подтверждение. Теперь вы часть движения.",
+    "cta": "На главную",
+    "invalidTitle": "Ссылка истекла или недействительна",
+    "invalidBody": "Мы не смогли подтвердить вашу подпись. Возможно, ссылка уже использована или просрочена."
   },
   "email": {
-    "subject": "Thank you for signing — 6billionforpeace",
-    "heading": "Your voice is counted",
-    "body": "Thank you for signing for peace, {name}.\n\nYour signature has been registered on 6billionforpeace.net. You are now part of a global, voluntary movement to unite billions of voices around a single goal: peace in the world.\n\nShare the movement so more people can join.",
-    "cta": "Back to the movement",
-    "footer": "6billionforpeace — A voluntary, independent movement for world peace."
+    "subject": "Спасибо за подпись — 6billionforpeace",
+    "heading": "Ваш голос учтён",
+    "body": "Спасибо, что подписали за мир, {name}.\n\nВаша подпись зарегистрирована на 6billionforpeace.net. Теперь вы — часть глобального добровольного движения, объединяющего миллиарды голосов вокруг одной цели: мира во всём мире.\n\nПоделитесь движением, чтобы больше людей могли присоединиться.",
+    "cta": "Вернуться к движению",
+    "footer": "6billionforpeace — Добровольное независимое движение за мир во всём мире."
   },
   "comingSoon": {
-    "label": "Coming soon",
-    "body": "This page is being prepared. Check back soon."
+    "label": "Скоро",
+    "body": "Эта страница готовится. Загляните позже."
   },
   "pages": {
     "participation": {
-      "title": "Participation",
-      "lead": "How to join and amplify this movement.",
-      "h1": "What It Means to Participate",
-      "intro": "To participate is to make a conscious choice:",
+      "title": "Участие",
+      "lead": "Как присоединиться и усилить это движение.",
+      "h1": "Что значит участвовать",
+      "intro": "Участвовать — значит сделать осознанный выбор:",
       "bullets": [
-        "To reject war",
-        "To affirm peace",
-        "To stand with humanity"
+        "Отвергнуть войну",
+        "Утвердить мир",
+        "Встать вместе с человечеством"
       ],
-      "personal": "Your participation is personal, meaningful, and global.",
-      "notOrg": "You are not joining an organization.",
-      "withHumanity": "You are standing with humanity.",
-      "formTitle": "Make Your Voice Heard for Global Peace"
+      "personal": "Ваше участие — личное, значимое и глобальное.",
+      "notOrg": "Вы не вступаете в организацию.",
+      "withHumanity": "Вы стоите вместе с человечеством.",
+      "formTitle": "Дайте своему голосу прозвучать за мир во всём мире"
     },
     "transparency": {
-      "title": "Transparency",
-      "lead": "How we keep this initiative free, independent and trustworthy."
+      "title": "Прозрачность",
+      "lead": "Как мы сохраняем эту инициативу свободной, независимой и заслуживающей доверия."
     },
     "donations": {
-      "title": "Donations",
-      "lead": "How contributions are received and used.",
-      "subtitle": "Support the Peace Movement",
-      "intro": "To support the movement, send us an email and we will guide you through the contribution process.",
-      "quote": "This movement exists through people, not institutions, governments, companies, or politics.",
-      "highlight": "We are building a fully transparent donation system designed to allow real-time visibility of fund allocation and long-term traceability of contributions.",
-      "future": "Future initiatives supported by this movement include peace education, humanitarian aid, and global environmental projects."
+      "title": "Пожертвования",
+      "lead": "Как принимаются и используются взносы.",
+      "subtitle": "Поддержите движение за мир",
+      "intro": "Чтобы поддержать движение, напишите нам письмо, и мы проведём вас через процесс взноса.",
+      "quote": "Это движение существует благодаря людям, а не институтам, правительствам, корпорациям или политике.",
+      "highlight": "Мы создаём полностью прозрачную систему пожертвований, разработанную для обеспечения видимости распределения средств в реальном времени и долгосрочной прослеживаемости взносов.",
+      "future": "Будущие инициативы, поддерживаемые этим движением, включают образование во имя мира, гуманитарную помощь и глобальные экологические проекты."
     },
     "peaceWall": {
-      "title": "Peace wall",
-      "lead": "A global mural of voices for peace.",
-      "tagline": "Imagine a world in peace",
-      "subtitle": "A collective space where humanity shares what becomes possible when peace is real.",
-      "voiceTitle": "Your voice matters. If you wish, send a short message or photo about peace. We may feature it in the Global Peace Mural.",
-      "construction": "In construction"
+      "title": "Глобальная стена мира",
+      "lead": "Глобальная стена голосов за мир.",
+      "tagline": "Представьте мир в мире",
+      "subtitle": "Совместное пространство, где человечество делится тем, что становится возможным, когда мир реален.",
+      "voiceTitle": "Ваш голос важен. Если хотите, отправьте короткое сообщение или фотографию о мире. Мы можем разместить это на Глобальной стене мира.",
+      "construction": "В разработке"
     },
     "declaration": {
-      "title": "Global Civil Peace Declaration",
-      "subtitle": "“6 Billion for Peace” is more than a symbolic movement.",
+      "title": "Глобальная гражданская декларация мира",
+      "subtitle": "«6 Billion for Peace» — это больше, чем символическое движение.",
       "paragraphs": [
-        "We are a civic grassroots initiative dedicated to the recognition of peace, human dignity, freedom of conscience, and the protection of life as fundamental human rights.",
-        "The movement seeks to build an unprecedented civil declaration in history and present it to all international courts and the governments of the 195 countries of the world.",
-        "Our mission is to encourage legal, non-violent, and democratic pathways through which individuals may publicly and legally affirm their commitment to peace and to the protection of human life.",
-        "Following global mobilization, participants may receive support to voluntarily seek legal recognition as “Citizens of Peace” within their respective national legal systems, always with full respect for the laws and democratic processes of each country.",
-        "This initiative supports dialogue, diplomacy, human rights, and the peaceful evolution of the international community, especially in a time of growing global instability and increasing urgency for the human right to live in peace, with clarity of purpose.",
-        "Our intention is clear: to transform peace into a global civil voice — democratic, legal, and sustained by billions of human beings — with the shared goal of resolving conflicts without destroying human life, especially that of children, or the planet we inhabit.",
-        "We are here to strengthen humanity, protect future generations, and preserve life on Earth. Our actions are always ethical, transparent, focused on the common good, with no distinction between people, strengthening respect for humanity, international cooperation, and global responsibility among all nations.",
-        "Peace is our first and most important step forward. We will not wait any longer. We will build peace — now, together."
+        "Мы — гражданская инициатива, посвящённая признанию мира, человеческого достоинства, свободы совести и защиты жизни как фундаментальных прав человека.",
+        "Движение стремится создать беспрецедентную в истории гражданскую декларацию и представить её во все международные суды и правительства 195 стран мира.",
+        "Наша миссия — поощрять законные, ненасильственные и демократические пути, благодаря которым каждый человек может публично и юридически подтвердить свою приверженность миру и защите человеческой жизни.",
+        "После глобальной мобилизации участники могут получить поддержку, чтобы добровольно добиваться юридического признания в качестве «Граждан мира» в рамках национальных правовых систем своих стран, всегда с полным уважением законов и демократических процессов каждой страны.",
+        "Эта инициатива поддерживает диалог, дипломатию, права человека и мирное развитие международного сообщества, особенно во времена растущей глобальной нестабильности и нарастающей необходимости признания права человека жить в мире — с ясностью цели.",
+        "Наше намерение ясно: превратить мир в глобальный гражданский голос — демократический, законный и поддерживаемый миллиардами людей — с общей целью разрешения конфликтов без уничтожения человеческих жизней, особенно детских, и планеты, на которой мы живём.",
+        "Мы здесь, чтобы укрепить человечество, защитить будущие поколения и сохранить жизнь на Земле. Наши действия всегда этичны, прозрачны и направлены на общее благо, без различия между людьми, укрепляя уважение к человечеству, международное сотрудничество и глобальную ответственность всех наций.",
+        "Мир — наш первый и самый важный шаг вперёд. Мы больше не будем ждать. Мы построим мир — сейчас, вместе."
       ],
-      "closing": "After all, we are only human beings living on a small planet."
+      "closing": "В конце концов, мы — лишь люди, живущие на маленькой планете."
     }
   },
   "humansForPeace": {
-    "title": "Humans for peace",
-    "body": "One movement. One purpose. Billions of voices choosing peace together."
+    "title": "Люди за мир",
+    "body": "Одно движение. Одна цель. Миллиарды голосов выбирают мир вместе."
   },
   "thankYou": {
     "title": "Спасибо. Теперь вы — часть самого мира.",
