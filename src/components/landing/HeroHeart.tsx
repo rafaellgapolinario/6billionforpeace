@@ -30,7 +30,7 @@ export function HeroHeart() {
       dir="ltr"
     >
 
-      <div className="relative mx-auto flex min-h-[78vh] max-w-5xl flex-col items-center justify-center px-6 py-16 text-center sm:py-20">
+      <div className="relative mx-auto flex min-h-[58vh] max-w-5xl flex-col items-center justify-center px-6 py-12 text-center sm:py-16">
         <div className="relative aspect-square w-[min(88vw,520px)]">
           <div className="absolute inset-0 flex items-center justify-center">
             <svg

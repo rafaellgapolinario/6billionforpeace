@@ -1,7 +1,9 @@
+import { useTranslations } from 'next-intl';
+
 /**
  * Versão compacta do hero pra páginas internas. Mesmo layout visual
- * da HeroHeart da home (cor, órbita das palavras, tamanho do coração)
- * mas menor e sem a tagline "We still have a choice".
+ * da HeroHeart da home (cor, órbita das palavras, tamanho do coração
+ * e a tagline "We still have a choice"), só com proporções reduzidas.
  */
 const PEACE_WORDS = [
   { word: 'Shlama' },
@@ -16,6 +18,7 @@ const PEACE_WORDS = [
 ] as const;
 
 export function HeroCompact() {
+  const t = useTranslations('hero');
   return (
     <section
       className="relative isolate overflow-hidden text-white"
@@ -57,6 +60,10 @@ export function HeroCompact() {
             );
           })}
         </div>
+
+        <h1 className="mt-8 max-w-3xl text-balance text-2xl font-semibold leading-tight text-white sm:text-4xl">
+          {t('tagline')}
+        </h1>
       </div>
     </section>
   );
