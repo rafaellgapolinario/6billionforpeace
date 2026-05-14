@@ -100,7 +100,9 @@
   "map": {
     "title": "来自世界各地的声音",
     "tooltip": "{country}: {count, plural, other {# 个签名}}",
-    "loading": "加载地图…"
+    "loading": "加载地图…",
+    "signature": "signature",
+    "signatures": "signatures"
   },
   "footer": {
     "mission": "这是一个自由独立的项目,没有任何区分,亦无政治、宗教、商业或国家归属。其唯一目的是和平。",

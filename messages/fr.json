@@ -100,7 +100,9 @@
   "map": {
     "title": "Voix du monde entier",
     "tooltip": "{country} : {count, plural, one {# signature} other {# signatures}}",
-    "loading": "Chargement de la carte…"
+    "loading": "Chargement de la carte…",
+    "signature": "signature",
+    "signatures": "signatures"
   },
   "footer": {
     "mission": "Ce projet est libre et indépendant, sans distinctions ni liens politiques, religieux, commerciaux ou nationaux. Son seul but est la paix.",

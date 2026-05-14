@@ -100,7 +100,9 @@
   "map": {
     "title": "Vozes ao redor do mundo",
     "tooltip": "{country}: {count, plural, one {# assinatura} other {# assinaturas}}",
-    "loading": "Carregando mapa…"
+    "loading": "Carregando mapa…",
+    "signature": "assinatura",
+    "signatures": "assinaturas"
   },
   "footer": {
     "mission": "Este é um projeto livre e independente, sem distinções ou vínculos políticos, religiosos, comerciais ou nacionais. Seu único propósito é a paz.",

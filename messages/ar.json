@@ -100,7 +100,9 @@
   "map": {
     "title": "أصوات حول العالم",
     "tooltip": "{country}: {count, plural, zero {لا توقيعات} one {توقيع واحد} two {توقيعان} few {# توقيعات} many {# توقيعاً} other {# توقيع}}",
-    "loading": "جارٍ تحميل الخريطة…"
+    "loading": "جارٍ تحميل الخريطة…",
+    "signature": "signature",
+    "signatures": "signatures"
   },
   "footer": {
     "mission": "هذا مشروع حرّ ومستقل، بلا تمييز أو ارتباطات سياسية أو دينية أو تجارية أو وطنية. غايته الوحيدة هي السلام.",

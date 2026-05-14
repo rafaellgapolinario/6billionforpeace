@@ -2,11 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { useTranslations } from 'next-intl';
-import maplibregl, {
-  type Map as MlMap,
-  type GeoJSONSource,
-} from 'maplibre-gl';
-import 'maplibre-gl/dist/maplibre-gl.css';
+import 'leaflet/dist/leaflet.css';
 import { createSupabaseBrowserClient } from '@/lib/supabase/client';
 import { getCountryCentroid } from '@/lib/country-centroids';
 
@@ -16,122 +12,85 @@ type Stats = {
   updated_at: string;
 };
 
-type PointFeature = {
-  type: 'Feature';
-  geometry: { type: 'Point'; coordinates: [number, number] };
-  properties: { code: string; count: number };
+type LeafletMap = {
+  remove: () => void;
+};
+type LayerGroup = {
+  clearLayers: () => void;
+  addLayer: (l: unknown) => unknown;
 };
 
-type PointFC = { type: 'FeatureCollection'; features: PointFeature[] };
-
-function byCountryToFC(byCountry: Record<string, number>): PointFC {
-  const features: PointFeature[] = [];
-  for (const [code, count] of Object.entries(byCountry)) {
-    const centroid = getCountryCentroid(code);
-    if (!centroid) continue;
-    features.push({
-      type: 'Feature',
-      geometry: { type: 'Point', coordinates: centroid },
-      properties: { code, count },
-    });
-  }
-  return { type: 'FeatureCollection', features };
-}
-
-function pulsePin(map: MlMap, lngLat: [number, number]) {
-  const el = document.createElement('div');
-  el.className = 'pin-pulse';
-  el.style.cssText =
-    'width:14px;height:14px;border-radius:9999px;background:#00BFFF;border:2px solid #fff;box-shadow:0 0 0 0 rgba(0,191,255,.55);';
-  const marker = new maplibregl.Marker({ element: el })
-    .setLngLat(lngLat)
-    .addTo(map);
-  setTimeout(() => marker.remove(), 3800);
+function radiusFor(count: number) {
+  return Math.min(17, (10 + count * 2) / 2);
 }
 
 export function WorldMap({ initialStats }: { initialStats?: Stats }) {
   const t = useTranslations('map');
   const containerRef = useRef<HTMLDivElement>(null);
-  const mapRef = useRef<MlMap | null>(null);
+  const mapRef = useRef<LeafletMap | null>(null);
+  const markersRef = useRef<LayerGroup | null>(null);
+  const leafletRef = useRef<typeof import('leaflet') | null>(null);
   const lastByCountry = useRef<Record<string, number>>(
     initialStats?.by_country ?? {},
   );
   const [ready, setReady] = useState(false);
 
+  function drawMarkers(byCountry: Record<string, number>) {
+    const L = leafletRef.current;
+    const group = markersRef.current;
+    if (!L || !group) return;
+    group.clearLayers();
+    for (const [code, count] of Object.entries(byCountry)) {
+      const centroid = getCountryCentroid(code);
+      if (!centroid) continue;
+      const [lng, lat] = centroid;
+      const marker = L.circleMarker([lat, lng], {
+        radius: radiusFor(count),
+        weight: 2,
+        fillOpacity: 0.72,
+      }).bindPopup(
+        `<strong>${code}</strong><br>${count} ${count === 1 ? t('signature') : t('signatures')}`,
+      );
+      group.addLayer(marker);
+    }
+  }
+
   useEffect(() => {
     if (!containerRef.current) return;
-    const styleUrl =
-      process.env.NEXT_PUBLIC_MAPLIBRE_STYLE ??
-      'https://demotiles.maplibre.org/style.json';
+    let cancelled = false;
 
-    const map = new maplibregl.Map({
-      container: containerRef.current,
-      style: styleUrl,
-      center: [10, 20],
-      zoom: 1.1,
-      minZoom: 0.6,
-      maxZoom: 6,
-      attributionControl: false,
-    });
-    map.addControl(
-      new maplibregl.AttributionControl({ compact: true }),
-      'bottom-right',
-    );
-    mapRef.current = map;
+    (async () => {
+      const L = (await import('leaflet')).default;
+      if (cancelled || !containerRef.current) return;
+      leafletRef.current = L;
 
-    map.on('load', () => {
-      map.addSource('signatures', {
-        type: 'geojson',
-        data: byCountryToFC(lastByCountry.current) as never,
-      });
-      map.addLayer({
-        id: 'signatures-glow',
-        type: 'circle',
-        source: 'signatures',
-        paint: {
-          'circle-radius': [
-            'interpolate',
-            ['linear'],
-            ['get', 'count'],
-            1, 10,
-            10, 16,
-            100, 24,
-            1000, 32,
-            10000, 42,
-          ],
-          'circle-color': '#00BFFF',
-          'circle-opacity': 0.18,
-          'circle-blur': 0.6,
-        },
-      });
-      map.addLayer({
-        id: 'signatures-core',
-        type: 'circle',
-        source: 'signatures',
-        paint: {
-          'circle-radius': [
-            'interpolate',
-            ['linear'],
-            ['get', 'count'],
-            1, 4,
-            10, 5,
-            100, 6,
-            1000, 8,
-            10000, 10,
-          ],
-          'circle-color': '#00BFFF',
-          'circle-stroke-color': '#ffffff',
-          'circle-stroke-width': 1,
-          'circle-opacity': 0.95,
-        },
-      });
+      const map = L.map(containerRef.current, {
+        scrollWheelZoom: false,
+        zoomControl: true,
+        attributionControl: true,
+      }).setView([18, 0], 2);
+
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 8,
+        attribution: '&copy; OpenStreetMap',
+      }).addTo(map);
+
+      const group = L.layerGroup().addTo(map);
+      mapRef.current = map as unknown as LeafletMap;
+      markersRef.current = group as unknown as LayerGroup;
+
+      drawMarkers(lastByCountry.current);
       setReady(true);
-    });
+    })();
 
     return () => {
-      map.remove();
+      cancelled = true;
+      mapRef.current?.remove();
       mapRef.current = null;
+      markersRef.current = null;
+      leafletRef.current = null;
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
@@ -143,27 +102,9 @@ export function WorldMap({ initialStats }: { initialStats?: Stats }) {
         { event: 'UPDATE', schema: 'bfp', table: 'stats', filter: 'id=eq.1' },
         (payload) => {
           const next = payload.new as Stats;
-          const prev = lastByCountry.current;
           const nextBC = next.by_country ?? {};
-
-          let pulseCountry: string | null = null;
-          for (const code of Object.keys(nextBC)) {
-            if ((nextBC[code] ?? 0) > (prev[code] ?? 0)) {
-              pulseCountry = code;
-              break;
-            }
-          }
           lastByCountry.current = nextBC;
-
-          const src = mapRef.current?.getSource('signatures') as
-            | GeoJSONSource
-            | undefined;
-          src?.setData(byCountryToFC(nextBC) as never);
-
-          if (pulseCountry && mapRef.current) {
-            const centroid = getCountryCentroid(pulseCountry);
-            if (centroid) pulsePin(mapRef.current, centroid);
-          }
+          drawMarkers(nextBC);
         },
       )
       .subscribe();
@@ -171,6 +112,7 @@ export function WorldMap({ initialStats }: { initialStats?: Stats }) {
     return () => {
       supabase.removeChannel(channel);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -179,14 +121,14 @@ export function WorldMap({ initialStats }: { initialStats?: Stats }) {
         <h2 className="text-center text-sm font-medium uppercase tracking-[0.2em] text-cyan-600">
           {t('title')}
         </h2>
-        <div className="relative mt-8 overflow-hidden rounded-2xl border border-navy-100 bg-navy-900">
+        <div className="relative mt-8 overflow-hidden rounded-2xl border border-navy-100 bg-gray-100">
           <div
             ref={containerRef}
             className="aspect-[16/9] w-full"
             aria-label={t('title')}
           />
           {!ready && (
-            <div className="pointer-events-none absolute inset-0 flex items-center justify-center text-sm text-white/40">
+            <div className="pointer-events-none absolute inset-0 flex items-center justify-center text-sm text-navy-500">
               {t('loading')}
             </div>
           )}

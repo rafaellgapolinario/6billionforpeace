@@ -106,7 +106,9 @@
   "map": {
     "title": "Voices around the world",
     "tooltip": "{country}: {count, plural, one {# signature} other {# signatures}}",
-    "loading": "Loading map…"
+    "loading": "Loading map…",
+    "signature": "signature",
+    "signatures": "signatures"
   },
   "footer": {
     "mission": "This is a free and independent project, with no distinctions or political, religious, commercial, or national affiliations. Its sole purpose is peace.",
