@@ -70,21 +70,25 @@ export function LiveCounter({ initialStats }: { initialStats?: Stats }) {
   const countries = Object.keys(stats.by_country ?? {}).length;
 
   return (
-    <div className="text-center">
-      <div className="font-script text-6xl text-cyan-500 sm:text-7xl">
-        {formatNumber(countries, locale)}
-      </div>
-      <div className="mt-1 text-lg font-medium text-navy-700 sm:text-xl">
-        {t('countries', { count: countries })}
+    <div className="space-y-2 text-center">
+      <div className="flex items-baseline justify-center gap-3">
+        <span
+          className={`font-script text-4xl text-cyan-500 sm:text-5xl ${bump ? 'count-bump' : ''}`}
+        >
+          {formatNumber(total, locale)}
+        </span>
+        <span className="text-lg font-medium text-navy-700 sm:text-xl">
+          {t('label')}
+        </span>
       </div>
 
-      <div
-        className={`mt-6 font-script text-6xl text-cyan-500 sm:text-7xl ${bump ? 'count-bump' : ''}`}
-      >
-        {formatNumber(total, locale)}
-      </div>
-      <div className="mt-1 text-lg font-medium text-navy-700 sm:text-xl">
-        {t('label')}
+      <div className="flex items-baseline justify-center gap-3">
+        <span className="font-script text-4xl text-cyan-500 sm:text-5xl">
+          {formatNumber(countries, locale)}
+        </span>
+        <span className="text-lg font-medium text-navy-700 sm:text-xl">
+          {t('countries', { count: countries })}
+        </span>
       </div>
     </div>
   );
