@@ -37,15 +37,18 @@
   },
   "principles": {
     "title": "Our principles",
-    "noIdeologies": "No ideologies.",
-    "noWar": "No war.",
-    "withoutWar": "No war.",
+    "noIdeologies": "No ideologies",
+    "noWar": "No war",
+    "withoutWar": "No war",
     "noRevolutions": "",
     "sovereignty": "No interference in the internal laws or sovereignty of any nation.",
     "requirementTitle": "There is only one requirement:",
     "requirementBody": "the end of war.",
     "maturity": "Humanity has matured enough to resolve conflicts without self-destruction. We know the horror of war. Now it is time to experience the joy of peace.",
-    "cta": "Sign for peace"
+    "cta": "Sign for peace",
+    "subtitle": "Built on dignity, human solidarity, respect, and transparency.",
+    "everyLifeTitle": "Every life matters",
+    "everyLifeBody": "Regardless of nationality, sex, ethnicity, or religion. Above all, we must protect the lives of children."
   },
   "volunteers": {
     "title": "Peace volunteers",
@@ -62,7 +65,7 @@
   "form": {
     "title": "Sign for peace",
     "subtitle": "Add your voice. Free, anonymous to the public, secure.",
-    "name": "Full name",
+    "name": "Name",
     "namePlaceholder": "Your name",
     "email": "E-mail",
     "emailPlaceholder": "you@example.com",
@@ -99,7 +102,7 @@
     "copied": "Link copied"
   },
   "counter": {
-    "label": "signatures from",
+    "label": "signatures",
     "countries": "{count, plural, one {# country} other {# countries}}",
     "loading": "Loading counter…"
   },

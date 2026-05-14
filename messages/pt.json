@@ -37,15 +37,18 @@
   },
   "principles": {
     "title": "Nossos princípios",
-    "noIdeologies": "Sem ideologias.",
-    "noWar": "Sem guerra.",
-    "withoutWar": "Sem guerra.",
+    "noIdeologies": "Sem ideologias",
+    "noWar": "Sem guerra",
+    "withoutWar": "Sem guerra",
     "noRevolutions": "",
     "sovereignty": "Sem interferência nas leis internas ou na soberania de qualquer nação.",
     "requirementTitle": "Existe apenas uma exigência:",
     "requirementBody": "o fim da guerra.",
     "maturity": "A humanidade amadureceu o suficiente para resolver conflitos sem se autodestruir. Conhecemos o horror da guerra. Agora é hora de experimentar a alegria da paz.",
-    "cta": "Assinar pela paz"
+    "cta": "Assinar pela paz",
+    "subtitle": "Construído sobre dignidade, solidariedade humana, respeito e transparência.",
+    "everyLifeTitle": "Toda vida importa",
+    "everyLifeBody": "Independentemente de nacionalidade, sexo, etnia ou religião. Acima de tudo, devemos proteger a vida das crianças."
   },
   "volunteers": {
     "title": "Voluntários pela paz",
@@ -62,7 +65,7 @@
   "form": {
     "title": "Assine pela paz",
     "subtitle": "Acrescente sua voz. Grátis, anônimo ao público, seguro.",
-    "name": "Nome completo",
+    "name": "Nome",
     "namePlaceholder": "Seu nome",
     "email": "E-mail",
     "emailPlaceholder": "voce@exemplo.com",
@@ -93,7 +96,7 @@
     "errorDisposable": "Por favor, use um e-mail permanente."
   },
   "counter": {
-    "label": "assinaturas de",
+    "label": "assinaturas",
     "countries": "{count, plural, one {# país} other {# países}}",
     "loading": "Carregando contador…"
   },

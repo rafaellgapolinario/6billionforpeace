@@ -37,15 +37,18 @@
   },
   "principles": {
     "title": "Nos principes",
-    "noIdeologies": "Pas d'idéologies.",
-    "noWar": "Pas de guerre.",
-    "withoutWar": "Pas de guerre.",
+    "noIdeologies": "Pas d'idéologies",
+    "noWar": "Pas de guerre",
+    "withoutWar": "Pas de guerre",
     "noRevolutions": "",
     "sovereignty": "Aucune ingérence dans les lois internes ou la souveraineté d'aucune nation.",
     "requirementTitle": "Il n'y a qu'une seule exigence :",
     "requirementBody": "la fin de la guerre.",
     "maturity": "L'humanité a suffisamment mûri pour résoudre les conflits sans s'autodétruire. Nous connaissons l'horreur de la guerre. Il est temps de connaître la joie de la paix.",
-    "cta": "Signer pour la paix"
+    "cta": "Signer pour la paix",
+    "subtitle": "Fondé sur la dignité, la solidarité humaine, le respect et la transparence.",
+    "everyLifeTitle": "Chaque vie compte",
+    "everyLifeBody": "Indépendamment de la nationalité, du sexe, de l’origine ethnique ou de la religion. Par-dessus tout, nous devons protéger la vie des enfants."
   },
   "volunteers": {
     "title": "Volontaires pour la paix",
@@ -62,7 +65,7 @@
   "form": {
     "title": "Signer pour la paix",
     "subtitle": "Ajoutez votre voix. Gratuit, anonyme au public, sécurisé.",
-    "name": "Nom complet",
+    "name": "Nom",
     "namePlaceholder": "Votre nom",
     "email": "E-mail",
     "emailPlaceholder": "vous@exemple.com",
@@ -93,7 +96,7 @@
     "errorDisposable": "Veuillez utiliser une adresse e-mail permanente."
   },
   "counter": {
-    "label": "signatures de",
+    "label": "signatures",
     "countries": "{count, plural, one {# pays} other {# pays}}",
     "loading": "Chargement du compteur…"
   },

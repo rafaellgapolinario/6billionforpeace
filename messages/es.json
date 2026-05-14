@@ -37,15 +37,18 @@
   },
   "principles": {
     "title": "Nuestros principios",
-    "noIdeologies": "Sin ideologías.",
-    "noWar": "Sin guerra.",
-    "withoutWar": "Sin guerra.",
+    "noIdeologies": "Sin ideologías",
+    "noWar": "Sin guerra",
+    "withoutWar": "Sin guerra",
     "noRevolutions": "",
     "sovereignty": "Sin interferencia en las leyes internas o la soberanía de ninguna nación.",
     "requirementTitle": "Solo existe una exigencia:",
     "requirementBody": "el fin de la guerra.",
     "maturity": "La humanidad ha madurado lo suficiente para resolver conflictos sin autodestruirse. Conocemos el horror de la guerra. Ahora es momento de experimentar la alegría de la paz.",
-    "cta": "Firmar por la paz"
+    "cta": "Firmar por la paz",
+    "subtitle": "Construido sobre la dignidad, la solidaridad humana, el respeto y la transparencia.",
+    "everyLifeTitle": "Toda vida importa",
+    "everyLifeBody": "Independientemente de nacionalidad, sexo, etnia o religión. Por encima de todo, debemos proteger las vidas de los niños."
   },
   "volunteers": {
     "title": "Voluntarios por la paz",
@@ -62,7 +65,7 @@
   "form": {
     "title": "Firma por la paz",
     "subtitle": "Suma tu voz. Gratis, anónima al público, segura.",
-    "name": "Nombre completo",
+    "name": "Nombre",
     "namePlaceholder": "Tu nombre",
     "email": "Correo electrónico",
     "emailPlaceholder": "tu@ejemplo.com",
@@ -93,7 +96,7 @@
     "errorDisposable": "Por favor, usa un correo permanente."
   },
   "counter": {
-    "label": "firmas de",
+    "label": "firmas",
     "countries": "{count, plural, one {# país} other {# países}}",
     "loading": "Cargando contador…"
   },

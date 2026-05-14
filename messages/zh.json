@@ -37,15 +37,18 @@
   },
   "principles": {
     "title": "我们的原则",
-    "noIdeologies": "不要意识形态。",
-    "noWar": "不要战争。",
-    "withoutWar": "不要战争。",
+    "noIdeologies": "不要意识形态",
+    "noWar": "不要战争",
+    "withoutWar": "不要战争",
     "noRevolutions": "",
     "sovereignty": "不干涉任何国家的内部法律或主权。",
     "requirementTitle": "只有一个要求:",
     "requirementBody": "结束战争。",
     "maturity": "人类已足够成熟,可以在不自我毁灭的情况下解决冲突。我们了解战争的恐怖。现在,是体验和平之喜悦的时候。",
-    "cta": "为和平签名"
+    "cta": "为和平签名",
+    "subtitle": "建立在尊严、人类团结、尊重与透明之上。",
+    "everyLifeTitle": "每一个生命都重要",
+    "everyLifeBody": "无论国籍、性别、种族或宗教如何。最重要的是，我们必须保护儿童的生命。"
   },
   "volunteers": {
     "title": "和平志愿者",
@@ -62,7 +65,7 @@
   "form": {
     "title": "为和平签名",
     "subtitle": "添加您的声音。免费、对公众匿名、安全。",
-    "name": "全名",
+    "name": "姓名",
     "namePlaceholder": "您的姓名",
     "email": "电子邮件",
     "emailPlaceholder": "you@example.com",
@@ -93,7 +96,7 @@
     "errorDisposable": "请使用长期有效的邮箱。"
   },
   "counter": {
-    "label": "签名,来自",
+    "label": "份签名",
     "countries": "{count, plural, other {# 个国家}}",
     "loading": "加载计数器…"
   },

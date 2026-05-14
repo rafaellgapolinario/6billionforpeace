@@ -14,7 +14,14 @@ export function VolunteersSection() {
         <p className="mt-4 text-balance text-xl font-light sm:text-2xl">
           {t('subtitle')}
         </p>
-        <span className="mt-8 inline-flex items-center rounded-full bg-white/15 px-5 py-2 text-xs font-semibold uppercase tracking-[0.25em] text-white backdrop-blur-sm">
+        <span
+          className="mt-8 inline-flex items-center rounded-full px-6 py-2.5 text-sm font-bold uppercase tracking-[0.25em] text-navy-900"
+          style={{
+            background: '#34D399',
+            boxShadow:
+              '0 0 0 3px rgba(52,211,153,0.35), 0 0 24px rgba(52,211,153,0.55)',
+          }}
+        >
           {t('comingSoon')}
         </span>
       </div>
