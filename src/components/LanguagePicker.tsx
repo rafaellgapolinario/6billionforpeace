@@ -64,7 +64,10 @@ export function LanguagePicker({
           />
           <ul
             role="listbox"
-            className="absolute right-0 z-50 mt-2 w-56 overflow-hidden rounded-xl border border-navy-100 bg-white py-1 shadow-2xl shadow-navy-900/10"
+            className={cn(
+              'absolute z-50 mt-2 w-56 max-w-[calc(100vw-2rem)] overflow-hidden rounded-xl border border-navy-100 bg-white py-1 shadow-2xl shadow-navy-900/10',
+              compact ? 'left-0' : 'right-0',
+            )}
           >
             {locales.map((lc) => (
               <li key={lc}>
