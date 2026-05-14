@@ -30,8 +30,8 @@ export function HeroHeart() {
       dir="ltr"
     >
 
-      <div className="relative mx-auto flex min-h-[58vh] max-w-5xl flex-col items-center justify-center px-6 py-12 text-center sm:py-16">
-        <div className="relative aspect-square w-[min(88vw,520px)]">
+      <div className="relative mx-auto flex max-w-5xl flex-col items-center px-6 py-10 text-center sm:py-14">
+        <div className="relative aspect-square w-[min(72vw,360px)]">
           <div className="absolute inset-0 flex items-center justify-center">
             <svg
               viewBox="0 0 32 32"
@@ -63,7 +63,7 @@ export function HeroHeart() {
           })}
         </div>
 
-        <h1 className="mt-12 max-w-3xl text-balance text-4xl font-semibold leading-tight text-white sm:text-6xl">
+        <h1 className="mt-8 max-w-3xl text-balance text-2xl font-semibold leading-tight text-white sm:text-4xl">
           {t('tagline')}
         </h1>
       </div>
