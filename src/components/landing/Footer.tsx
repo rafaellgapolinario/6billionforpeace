@@ -11,6 +11,7 @@ export function Footer() {
     { href: '/transparency',     label: t('transparency'), external: false },
     { href: '/donations',        label: t('donations'),    external: false },
     { href: '/peace-wall',       label: t('peaceWall'),    external: false },
+    { href: '/peace-declaration', label: t('declaration'), external: false },
   ];
   return (
     <footer className="bg-navy-900 px-6 py-14 text-white">

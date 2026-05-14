@@ -114,7 +114,8 @@
     "privacy": "Política de privacidad",
     "terms": "Términos",
     "language": "Idioma",
-    "rightsReserved": "Todos los derechos reservados"
+    "rightsReserved": "Todos los derechos reservados",
+    "declaration": "Peace Declaration"
   },
   "shareLink": {
     "title": "Envía a un amigo",
@@ -162,6 +163,21 @@
       "subtitle": "A collective space where humanity shares what becomes possible when peace is real.",
       "voiceTitle": "Your voice matters. If you wish, send a short message or photo about peace. We may feature it in the Global Peace Mural.",
       "construction": "In construction"
+    },
+    "declaration": {
+      "title": "Global Civil Peace Declaration",
+      "subtitle": "“6 Billion for Peace” is more than a symbolic movement.",
+      "paragraphs": [
+        "We are a civic grassroots initiative dedicated to the recognition of peace, human dignity, freedom of conscience, and the protection of life as fundamental human rights.",
+        "The movement seeks to build an unprecedented civil declaration in history and present it to all international courts and the governments of the 195 countries of the world.",
+        "Our mission is to encourage legal, non-violent, and democratic pathways through which individuals may publicly and legally affirm their commitment to peace and to the protection of human life.",
+        "Following global mobilization, participants may receive support to voluntarily seek legal recognition as “Citizens of Peace” within their respective national legal systems, always with full respect for the laws and democratic processes of each country.",
+        "This initiative supports dialogue, diplomacy, human rights, and the peaceful evolution of the international community, especially in a time of growing global instability and increasing urgency for the human right to live in peace, with clarity of purpose.",
+        "Our intention is clear: to transform peace into a global civil voice — democratic, legal, and sustained by billions of human beings — with the shared goal of resolving conflicts without destroying human life, especially that of children, or the planet we inhabit.",
+        "We are here to strengthen humanity, protect future generations, and preserve life on Earth. Our actions are always ethical, transparent, focused on the common good, with no distinction between people, strengthening respect for humanity, international cooperation, and global responsibility among all nations.",
+        "Peace is our first and most important step forward. We will not wait any longer. We will build peace — now, together."
+      ],
+      "closing": "After all, we are only human beings living on a small planet."
     }
   },
   "cookie": {

@@ -114,7 +114,8 @@
     "privacy": "Política de privacidade",
     "terms": "Termos",
     "language": "Idioma",
-    "rightsReserved": "Todos os direitos reservados"
+    "rightsReserved": "Todos os direitos reservados",
+    "declaration": "Declaração pela Paz"
   },
   "shareLink": {
     "title": "Envie pra um amigo",
@@ -162,6 +163,21 @@
       "subtitle": "Um espaço coletivo onde a humanidade compartilha o que se torna possível quando a paz é real.",
       "voiceTitle": "Sua voz importa. Se quiser, envie uma mensagem curta ou foto sobre a paz. Podemos destacá-la no Mural Global da Paz.",
       "construction": "Em construção"
+    },
+    "declaration": {
+      "title": "Declaração Civil Global pela Paz",
+      "subtitle": "“6 Billion for Peace” é mais do que um movimento simbólico.",
+      "paragraphs": [
+        "Somos uma iniciativa cívica de base, dedicada ao reconhecimento da paz, da dignidade humana, da liberdade de consciência e da proteção da vida como direitos humanos fundamentais.",
+        "O movimento busca construir uma declaração civil sem precedentes na história e apresentá-la a todos os tribunais internacionais e aos governos dos 195 países do mundo.",
+        "Nossa missão é incentivar caminhos legais, não violentos e democráticos por meio dos quais cada pessoa possa afirmar pública e legalmente seu compromisso com a paz e com a proteção da vida humana.",
+        "Após a mobilização global, os participantes poderão receber apoio para buscar voluntariamente o reconhecimento legal como “Cidadãos da Paz” em seus respectivos sistemas jurídicos nacionais, sempre com pleno respeito às leis e aos processos democráticos de cada país.",
+        "Esta iniciativa apoia o diálogo, a diplomacia, os direitos humanos e a evolução pacífica da comunidade internacional, especialmente em um tempo de crescente instabilidade global e de urgência cada vez maior pelo direito humano de viver em paz, com clareza de propósito.",
+        "Nossa intenção é clara: transformar a paz em uma voz civil global — democrática, legal e sustentada por bilhões de seres humanos — com o objetivo compartilhado de resolver conflitos sem destruir vidas humanas, especialmente as das crianças, nem o planeta que habitamos.",
+        "Estamos aqui para fortalecer a humanidade, proteger as futuras gerações e preservar a vida na Terra. Nossas ações são sempre éticas, transparentes, voltadas ao bem comum, sem distinção entre pessoas, fortalecendo o respeito pela humanidade, a cooperação internacional e a responsabilidade global entre todas as nações.",
+        "A paz é o nosso primeiro e mais importante passo. Não esperaremos mais. Construiremos a paz — agora, juntos."
+      ],
+      "closing": "Afinal, somos apenas seres humanos vivendo em um pequeno planeta."
     }
   },
   "humansForPeace": {
