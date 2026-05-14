@@ -97,7 +97,7 @@
   },
   "counter": {
     "label": "firmas",
-    "countries": "{count, plural, one {# país} other {# países}}",
+    "countries": "{count, plural, one {país} other {países}}",
     "loading": "Cargando contador…"
   },
   "map": {

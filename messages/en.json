@@ -103,7 +103,7 @@
   },
   "counter": {
     "label": "signatures",
-    "countries": "{count, plural, one {# country} other {# countries}}",
+    "countries": "{count, plural, one {country} other {countries}}",
     "loading": "Loading counter…"
   },
   "map": {

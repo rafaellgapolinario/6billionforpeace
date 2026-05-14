@@ -97,7 +97,7 @@
   },
   "counter": {
     "label": "signatures",
-    "countries": "{count, plural, one {# pays} other {# pays}}",
+    "countries": "{count, plural, one {pays} other {pays}}",
     "loading": "Chargement du compteur…"
   },
   "map": {

@@ -71,11 +71,15 @@ export function LiveCounter({ initialStats }: { initialStats?: Stats }) {
 
   return (
     <div className="text-center">
-      <div className="text-lg font-semibold text-navy-900 sm:text-xl">
+      <div className="font-script text-6xl text-cyan-500 sm:text-7xl">
+        {formatNumber(countries, locale)}
+      </div>
+      <div className="mt-1 text-lg font-medium text-navy-700 sm:text-xl">
         {t('countries', { count: countries })}
       </div>
+
       <div
-        className={`mt-3 font-script text-6xl text-cyan-500 sm:text-7xl ${bump ? 'count-bump' : ''}`}
+        className={`mt-6 font-script text-6xl text-cyan-500 sm:text-7xl ${bump ? 'count-bump' : ''}`}
       >
         {formatNumber(total, locale)}
       </div>

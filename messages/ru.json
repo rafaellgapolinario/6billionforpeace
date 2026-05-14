@@ -103,7 +103,7 @@
   },
   "counter": {
     "label": "подписей",
-    "countries": "{count, plural, one {# страна} few {# страны} many {# стран} other {# стран}}",
+    "countries": "{count, plural, one {страна} few {страны} many {стран} other {стран}}",
     "loading": "Загружаем счётчик…"
   },
   "map": {

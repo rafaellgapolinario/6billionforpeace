@@ -97,7 +97,7 @@
   },
   "counter": {
     "label": "份签名",
-    "countries": "{count, plural, other {# 个国家}}",
+    "countries": "{count, plural, one {国家} other {国家}}",
     "loading": "加载计数器…"
   },
   "map": {

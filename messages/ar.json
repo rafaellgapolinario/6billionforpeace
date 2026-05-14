@@ -97,7 +97,7 @@
   },
   "counter": {
     "label": "توقيع",
-    "countries": "{count, plural, zero {لا دول} one {دولة واحدة} two {دولتين} few {# دول} many {# دولة} other {# دولة}}",
+    "countries": "{count, plural, one {دولة} other {دول}}",
     "loading": "جارٍ تحميل العداد…"
   },
   "map": {

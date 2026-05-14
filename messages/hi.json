@@ -103,7 +103,7 @@
   },
   "counter": {
     "label": "हस्ताक्षर",
-    "countries": "{count, plural, one {# देश} other {# देश}}",
+    "countries": "{count, plural, one {देश} other {देश}}",
     "loading": "काउंटर लोड हो रहा है…"
   },
   "map": {

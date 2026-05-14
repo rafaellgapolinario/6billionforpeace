@@ -97,7 +97,7 @@
   },
   "counter": {
     "label": "assinaturas",
-    "countries": "{count, plural, one {# país} other {# países}}",
+    "countries": "{count, plural, one {país} other {países}}",
     "loading": "Carregando contador…"
   },
   "map": {
