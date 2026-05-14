@@ -7,10 +7,7 @@ export function EverestSection() {
     <section className="bg-white px-6 pt-4 pb-12">
       <div className="mx-auto grid max-w-5xl items-center gap-10 rounded-3xl bg-gradient-to-br from-cyan-300 via-cyan-400 to-cyan-500 px-8 py-14 text-navy-900 sm:grid-cols-[1fr_auto] sm:px-14 sm:py-20">
         <div>
-          <p className="text-balance text-lg leading-relaxed sm:text-xl">
-            {t('body')}
-          </p>
-          <div className="mt-8 flex items-center gap-5">
+          <div className="flex items-center gap-5">
             <svg viewBox="0 0 48 56" className="h-28 w-24 shrink-0 sm:h-36 sm:w-28" aria-hidden>
               {/* Mastro */}
               <rect x="4" y="6" width="3" height="48" fill="#0A2540" rx="1" />
@@ -31,6 +28,9 @@ export function EverestSection() {
               {t('title')}
             </span>
           </div>
+          <p className="mt-8 text-balance text-lg leading-relaxed sm:text-xl">
+            {t('body')}
+          </p>
         </div>
 
         <div className="relative hidden h-32 w-32 shrink-0 items-center justify-center sm:flex">
