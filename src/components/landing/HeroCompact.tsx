@@ -1,5 +1,3 @@
-import { Logo } from '@/components/Logo';
-
 /**
  * Versão compacta do hero pra páginas internas. Mesmo layout visual
  * da HeroHeart da home (cor, órbita das palavras, tamanho do coração)
@@ -30,9 +28,7 @@ export function HeroCompact() {
       />
 
       <div className="relative mx-auto flex max-w-5xl flex-col items-center px-6 py-10 sm:py-14">
-        <Logo size="md" />
-
-        <div className="relative mt-8 aspect-square w-[min(72vw,360px)]">
+        <div className="relative aspect-square w-[min(72vw,360px)]">
           <div className="absolute inset-0 flex items-center justify-center">
             <svg
               viewBox="0 0 32 32"

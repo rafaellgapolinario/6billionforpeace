@@ -10,9 +10,12 @@ import { cn } from '@/lib/utils';
 export function LanguagePicker({
   variant = 'light',
   showFlags = false,
+  compact = false,
 }: {
   variant?: 'light' | 'dark';
   showFlags?: boolean;
+  /** Esconde o nome do idioma no mobile, mostra só o globo + chevron. */
+  compact?: boolean;
 }) {
   const t = useTranslations('header');
   const router = useRouter();
@@ -45,7 +48,9 @@ export function LanguagePicker({
         )}
       >
         <Globe size={16} />
-        <span className="font-medium">{localeMeta[current].native}</span>
+        <span className={cn('font-medium', compact && 'hidden sm:inline')}>
+          {localeMeta[current].native}
+        </span>
         <ChevronDown size={14} className={cn('transition-transform', open && 'rotate-180')} />
       </button>
 

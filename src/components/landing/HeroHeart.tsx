@@ -1,5 +1,4 @@
 import { useTranslations } from 'next-intl';
-import { Logo } from '@/components/Logo';
 
 /**
  * Palavras de paz em alfabetos diferentes — FIXAS, não traduzem.
@@ -36,9 +35,7 @@ export function HeroHeart() {
       />
 
       <div className="relative mx-auto flex min-h-[78vh] max-w-5xl flex-col items-center justify-center px-6 py-16 text-center sm:py-20">
-        <Logo variant="light" size="lg" />
-
-        <div className="relative mt-10 aspect-square w-[min(88vw,520px)]">
+        <div className="relative aspect-square w-[min(88vw,520px)]">
           <div className="absolute inset-0 flex items-center justify-center">
             <svg
               viewBox="0 0 32 32"

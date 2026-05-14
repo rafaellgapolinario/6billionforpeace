@@ -22,18 +22,22 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-30 border-b border-white/5 bg-navy-900">
-      <div className="mx-auto grid h-20 max-w-7xl grid-cols-3 items-center px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-start">
-          <LanguagePicker variant="light" showFlags={false} />
+      <div className="relative mx-auto flex h-28 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 flex-shrink-0">
+          <LanguagePicker variant="light" showFlags={false} compact />
         </div>
 
-        <div className="flex justify-center">
-          <Link href="/" className="text-2xl" aria-label="6billionforpeace">
-            <Logo variant="light" size="md" />
+        <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
+          <Link
+            href="/"
+            className="pointer-events-auto"
+            aria-label="6billionforpeace"
+          >
+            <Logo variant="light" size="sm" className="sm:h-14" />
           </Link>
         </div>
 
-        <div className="flex justify-end">
+        <div className="relative z-10 flex-shrink-0">
           <button
             type="button"
             onClick={() => setOpen((o) => !o)}
@@ -48,7 +52,7 @@ export function Header() {
 
       <div
         className={cn(
-          'overflow-hidden border-t border-white/5 bg-navy-900 transition-[max-height] duration-300',
+          'absolute inset-x-0 top-full overflow-hidden border-t border-white/5 bg-navy-900 shadow-2xl shadow-black/40 transition-[max-height] duration-300',
           open ? 'max-h-72' : 'max-h-0',
         )}
       >

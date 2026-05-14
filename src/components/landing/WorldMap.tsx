@@ -67,12 +67,11 @@ export function WorldMap({ initialStats }: { initialStats?: Stats }) {
       const map = L.map(containerRef.current, {
         scrollWheelZoom: false,
         zoomControl: true,
-        attributionControl: true,
+        attributionControl: false,
       }).setView([18, 0], 2);
 
       L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 8,
-        attribution: '&copy; OpenStreetMap',
       }).addTo(map);
 
       const group = L.layerGroup().addTo(map);
