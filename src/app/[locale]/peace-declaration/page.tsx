@@ -59,6 +59,12 @@ export default async function PeaceDeclarationPage({
           </p>
         </div>
       </section>
+
+      <section className="bg-white px-6 py-16 sm:py-20">
+        <p className="mx-auto max-w-3xl text-balance text-center text-lg leading-relaxed text-navy-800 sm:text-xl">
+          {t('archive')}
+        </p>
+      </section>
     </PageShell>
   );
 }
