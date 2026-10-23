@@ -41,11 +41,11 @@ export default async function DonationsPage({
           </p>
 
           <a
-            href="mailto:donations@6billionforpeace.net"
+            href="mailto:donations.for.peace@mail.com"
             className="mt-6 inline-flex items-center gap-2 text-base font-semibold text-cyan-600 underline-offset-4 hover:underline sm:text-lg"
           >
             <Mail className="h-4 w-4 sm:h-5 sm:w-5" strokeWidth={2} />
-            donations@6billionforpeace.net
+            donations.for.peace@mail.com
           </a>
 
           <p className="mx-auto mt-12 max-w-2xl text-balance text-lg italic leading-relaxed text-navy-800 sm:text-xl">

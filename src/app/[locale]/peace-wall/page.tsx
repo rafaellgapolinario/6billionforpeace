@@ -111,11 +111,11 @@ export default async function PeaceWallPage({
             {t('voiceTitle')}
           </p>
           <a
-            href="mailto:mural@6billionforpeace.net"
+            href="mailto:mural.peace@mail.com"
             className="mt-6 inline-flex items-center gap-2 text-lg font-bold text-cyan-600 underline-offset-4 hover:underline sm:text-xl"
           >
             <Mail className="h-5 w-5" strokeWidth={2} />
-            mural@6billionforpeace.net
+            mural.peace@mail.com
           </a>
         </div>
       </section>
